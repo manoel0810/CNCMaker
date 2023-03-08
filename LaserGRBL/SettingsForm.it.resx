@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BtnCancel.Text" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="BtnSave.Text" xml:space="preserve">
+    <value>Salva</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 52</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Modalità di invio:
+- Buffered: ottimizza l'invio di comandi  saturando il buffer di grbl [raccomandato]
+- Synchronous: attende l'esecuzione di ciascun comando prima di inviare il successivo [lento ma sicuro]
+- RepeatOnError: come Synchronous ma ripete i comandi se intercetta errori [sperimentale]</value>
+  </data>
+  <data name="BtnStreamingMode.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIMSURBVDhPpc9PSNNhHMfxZ7/pQYIOHioMojBnyMLN
+        FUSOiNEfWyASls0Fk2jVdEwTCzwU5aXoUHaxoEOHDh2m/bECFZZ/1qFyQ1JYI+kPg3JQW3qwjS6fns8z
+        /fHLgxE98IIvz/O8nx8/AeC/CHP1kDS8xmwbaZX6pchf8E6ramS79MBQm8M7PRO6tZC7cOcn/rSI87cL
+        uvoW0XZjPmf3vJ1hU3hg+3MaCN6cz/muzMGooTOprNz3X/uWY8NWmK2DNBrq/YGm7k86d3Ba/mJhcTae
+        +a+mwYatMFc9otGz19Oo70jo9p2OLeVQs/HsxKXPYMNWaJVhGmvpSeFgYErnOvUGlrqHKN/fj0r3Y2w9
+        MKBwdvomwIat0Coe0Lj34gf1pb0nX8PeGIHl0CBisRji8Tgq6p7A4n6mqzkaARu2Qiu/T+NN3e9R63sF
+        65ExVDW8wLb6YRUnEgk1c2+Z/VgUbNgKbfM9mjjcnoTNM4nq4wXWxqiKU6mUmpf3qcYbAxu2Qtt0l6Ku
+        4EfsbEnqbJ64ijOZjJqNZ8SGrdA29tFLVyiN3We+6Hb43qk4m82q2XhGbNgKbX0vPXUG5vJ72hdgZG+e
+        Ulbu7/J/zbNhK0xFW4Rp7eWOMkd41hn4nnd1/cJqauWdDTXhWTZsuUqFqdQhipp7RPG5EVHcObk6eYd3
+        2bCVq0RaJ5X9I9mIkt+LaQarb80ZCAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>546, 52</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Protocollo di connessione:
+- UsbSerial, il protocollo più comune. Da usare se la tua marcatrice è connessa via porta USB o COM.
+- Telnet, se hai un collegamento WiFi-Telnet. Implementa un semplice client-server telnet.
+- LaserWebESP8266 fornisce la connessione WiFi via WebSocket. Modalità compatible con LaserWeb-ESP8266.</value>
+  </data>
+  <data name="BtnProtocol.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIMSURBVDhPpc9PSNNhHMfxZ7/pQYIOHioMojBnyMLN
+        FUSOiNEfWyASls0Fk2jVdEwTCzwU5aXoUHaxoEOHDh2m/bECFZZ/1qFyQ1JYI+kPg3JQW3qwjS6fns8z
+        /fHLgxE98IIvz/O8nx8/AeC/CHP1kDS8xmwbaZX6pchf8E6ramS79MBQm8M7PRO6tZC7cOcn/rSI87cL
+        uvoW0XZjPmf3vJ1hU3hg+3MaCN6cz/muzMGooTOprNz3X/uWY8NWmK2DNBrq/YGm7k86d3Ba/mJhcTae
+        +a+mwYatMFc9otGz19Oo70jo9p2OLeVQs/HsxKXPYMNWaJVhGmvpSeFgYErnOvUGlrqHKN/fj0r3Y2w9
+        MKBwdvomwIat0Coe0Lj34gf1pb0nX8PeGIHl0CBisRji8Tgq6p7A4n6mqzkaARu2Qiu/T+NN3e9R63sF
+        65ExVDW8wLb6YRUnEgk1c2+Z/VgUbNgKbfM9mjjcnoTNM4nq4wXWxqiKU6mUmpf3qcYbAxu2Qtt0l6Ku
+        4EfsbEnqbJ64ijOZjJqNZ8SGrdA29tFLVyiN3We+6Hb43qk4m82q2XhGbNgKbX0vPXUG5vJ72hdgZG+e
+        Ulbu7/J/zbNhK0xFW4Rp7eWOMkd41hn4nnd1/cJqauWdDTXhWTZsuUqFqdQhipp7RPG5EVHcObk6eYd3
+        2bCVq0RaJ5X9I9mIkt+LaQarb80ZCAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>513, 39</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Modalità Thread: UltraFast, Fast, Quiet, Slow. [Default Fast]
+Questa impostazione influisce sulla velocità dei thread di invio e sulla frequenza di aggiornamento degli stati.
+Se rilevi problemi di comunicazione e di stabilità prova a diminuire questo valore.</value>
+  </data>
+  <data name="BtnThreadingModel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIMSURBVDhPpc9PSNNhHMfxZ7/pQYIOHioMojBnyMLN
+        FUSOiNEfWyASls0Fk2jVdEwTCzwU5aXoUHaxoEOHDh2m/bECFZZ/1qFyQ1JYI+kPg3JQW3qwjS6fns8z
+        /fHLgxE98IIvz/O8nx8/AeC/CHP1kDS8xmwbaZX6pchf8E6ramS79MBQm8M7PRO6tZC7cOcn/rSI87cL
+        uvoW0XZjPmf3vJ1hU3hg+3MaCN6cz/muzMGooTOprNz3X/uWY8NWmK2DNBrq/YGm7k86d3Ba/mJhcTae
+        +a+mwYatMFc9otGz19Oo70jo9p2OLeVQs/HsxKXPYMNWaJVhGmvpSeFgYErnOvUGlrqHKN/fj0r3Y2w9
+        MKBwdvomwIat0Coe0Lj34gf1pb0nX8PeGIHl0CBisRji8Tgq6p7A4n6mqzkaARu2Qiu/T+NN3e9R63sF
+        65ExVDW8wLb6YRUnEgk1c2+Z/VgUbNgKbfM9mjjcnoTNM4nq4wXWxqiKU6mUmpf3qcYbAxu2Qtt0l6Ku
+        4EfsbEnqbJ64ijOZjJqNZ8SGrdA29tFLVyiN3We+6Hb43qk4m82q2XhGbNgKbX0vPXUG5vJ72hdgZG+e
+        Ulbu7/J/zbNhK0xFW4Rp7eWOMkd41hn4nnd1/cJqauWdDTXhWTZsuUqFqdQhipp7RPG5EVHcObk6eYd3
+        2bCVq0RaJ5X9I9mIkt+LaQarb80ZCAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="CbIssueDetector.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 17</value>
+  </data>
+  <data name="CbIssueDetector.Text" xml:space="preserve">
+    <value>Intercetta Errori</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>511, 26</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>LaserGRBL può intercettare e riconoscere alcuni problemi e avvisare l'utente suggerento stategie risolutive.
+Se disabilitato tutti i problemi vengono gestiti silenziosamente senza avvisi.</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>395, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Se abilitato LaserGRBL invia un soft-reset nel momento in cui apre la connessione.</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>528, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Se abilitato LaserGRBL invia un hard-reset nel momento in cui apre la connessione. [La posizione viene persa!]</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 65</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 4</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>546, 39</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>LaserGRBL usa la modulazione di potenza attraverso il comando G-Code "S" per produrre immagini in toni di grigio.
+Il tuo laser deve supportare il controllo TTL collegato al pin D11 di Arduino.
+Se la tua configurazione non lo prevede, disabilita la modalità PWM.</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 50</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>663, 26</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Di default LaserGRBL produce righe di marcatura in entrambe le direzioni di viaggio della testa laser. Alcuni test hanno mostrato che questa modalità (che è più veloce) produce risultati di qualità inferiore. Se si desidera la massima qualità di marcatura attivare questa opzione.</value>
+  </data>
+  <data name="CbUnidirectional.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 17</value>
+  </data>
+  <data name="CbUnidirectional.Text" xml:space="preserve">
+    <value>Marcatura Monodirezionale</value>
+  </data>
+  <data name="CBSupportPWM.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 17</value>
+  </data>
+  <data name="CBSupportPWM.Text" xml:space="preserve">
+    <value>Supporta PWM</value>
+  </data>
+  <data name="BtnModulationInfo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAABl0RVh0U29m
+        dHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAIMSURBVDhPpc9PSNNhHMfxZ7/pQYIOHioMojBnyMLN
+        FUSOiNEfWyASls0Fk2jVdEwTCzwU5aXoUHaxoEOHDh2m/bECFZZ/1qFyQ1JYI+kPg3JQW3qwjS6fns8z
+        /fHLgxE98IIvz/O8nx8/AeC/CHP1kDS8xmwbaZX6pchf8E6ramS79MBQm8M7PRO6tZC7cOcn/rSI87cL
+        uvoW0XZjPmf3vJ1hU3hg+3MaCN6cz/muzMGooTOprNz3X/uWY8NWmK2DNBrq/YGm7k86d3Ba/mJhcTae
+        +a+mwYatMFc9otGz19Oo70jo9p2OLeVQs/HsxKXPYMNWaJVhGmvpSeFgYErnOvUGlrqHKN/fj0r3Y2w9
+        MKBwdvomwIat0Coe0Lj34gf1pb0nX8PeGIHl0CBisRji8Tgq6p7A4n6mqzkaARu2Qiu/T+NN3e9R63sF
+        65ExVDW8wLb6YRUnEgk1c2+Z/VgUbNgKbfM9mjjcnoTNM4nq4wXWxqiKU6mUmpf3qcYbAxu2Qtt0l6Ku
+        4EfsbEnqbJ64ijOZjJqNZ8SGrdA29tFLVyiN3We+6Hb43qk4m82q2XhGbNgKbX0vPXUG5vJ72hdgZG+e
+        Ulbu7/J/zbNhK0xFW4Rp7eWOMkd41hn4nnd1/cJqauWdDTXhWTZsuUqFqdQhipp7RPG5EVHcObk6eYd3
+        2bCVq0RaJ5X9I9mIkt+LaQarb80ZCAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Configurazione</value>
+  </data>
+  <data name="CbSoftReset.Text" xml:space="preserve">
+    <value>Soft Reset [Ctrl-X]</value>
+  </data>
+  <data name="CbHardReset.Text" xml:space="preserve">
+    <value>Hard Reset [DTR+RTS]</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Tipo di Firmware
+- Grbl: il fantastico firmware per cui LaserGRBL è stato creato.
+- Smoothie [sperimentale]: il supporto è sperimentale e non testato.</value>
+  </data>
+  <data name="TpHardware.Text" xml:space="preserve">
+    <value>Protocollo</value>
+  </data>
+  <data name="TpRasterImport.Text" xml:space="preserve">
+    <value>Importa immagini raster</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Senza "Jog continuo" quando si preme una freccia di direzione LaserGRBL invia una richiesta di movimento con velocità e passo impostati; e il movimento viene eseguito.
+Se abiliti "Jog continuo" LaserGRBL invia tanti piccoli movimenti fino a che il mouse è premuto, quindi avrai un posizionamento più approssimativo ma molto comodo da usare.
+
+NOTA: "Jog continuo" funziona solo su Grbl v1.1 o successivi, e richiede di configurare correttamente le dimensioni di lavoro (Menu "Grbl" -&gt; "Configurazione Grbl" $130, $131, $132)</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>LaserGRBL non è pensato per supportare l'asse Z, ma se hai il terzo asse forse potresti trovare comoda questa opzione.</value>
+  </data>
+  <data name="CbEnableZJog.Text" xml:space="preserve">
+    <value>Mostra controlli asse Z</value>
+  </data>
+  <data name="CbContinuosJog.Text" xml:space="preserve">
+    <value>Jog Continuo</value>
+  </data>
+  <data name="TpJogControl.Text" xml:space="preserve">
+    <value>Controlli Spostamento</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Tempo OFF: dopo questo tempo di raffreddamento il lavoro viene fatto ripartire.</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Alcuni diodi possono scaldarsi troppo se lavorano per molto tempo alla massima potenza. Per prevenire il surriscaldamento puoi programmare dei cicli di raffreddamento automatico".</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Tempo ON: tempo massimo di funzionamento del laser. Dopo questo tempo LaserGRBL comanda una pausa per permettere al laser di raffreddarsi.</value>
+  </data>
+  <data name="CbAutoCooling.Text" xml:space="preserve">
+    <value>Abilita raffreddamento automatico</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Acceso</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>sec</value>
+  </data>
+  <data name="label17.Text" xml:space="preserve">
+    <value>min</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Spento</value>
+  </data>
+  <data name="label19.Text" xml:space="preserve">
+    <value>sec</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Attenzione! Questa funzionalità è disponibile solo con versioni di Grbl &gt; v1.1 e con il "laser mode" abilitato.
+Se utilizzata con versioni più vecchie il laser non si spegnerà durante le pause e potrebbe fare "buchi" nel tuo lavoro.</value>
+  </data>
+  <data name="TpAutoCooling.Text" xml:space="preserve">
+    <value>Raffreddamento automatico</value>
+  </data>
+  <data name="LblHeader.Text" xml:space="preserve">
+    <value>LaserGRBL aggiunge questo codice prima di eseguire ogni lavoro.
+
+Puoi personalizzare questo codice per aggiungere cose come M8 per accendere la ventola etc.
+
+E' possibile usare la stessa sintassi dei "custom button".</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Header</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Footer</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Multiple Passes</value>
+  </data>
+  <data name="LblFooter.Text" xml:space="preserve">
+    <value>LaserGRBL aggiunge questo codice al termine di ogni lavoro.
+
+Puoi personalizzare questo codice per aggiungere cose come M9 per spegnere la ventola, per ritornare alla posizione di zero etc.
+
+E' possibile usare la stessa sintassi dei "custom button".</value>
+  </data>
+  <data name="LblPasses.Text" xml:space="preserve">
+    <value>Quando si eseguono passate multiple LaserGRBL inserisce questo codice tra una passata e l'altra.
+E' utile per esempio per affondare l'asse Z ed eseguire tagli più profondi.</value>
+  </data>
+  <data name="TpGCodeSettings.Text" xml:space="preserve">
+    <value>GCode</value>
+  </data>
+  <data name="CbHiRes.Text" xml:space="preserve">
+    <value>Alta Risoluzione</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>LaserGRBL limita la massima risoluzione a 20 linee/mm, che è un valore più che sufficiente per la maggior parte degli utenti. Se hai bisogno di una risoluzione più alta puoi abilitare questa voce. Attenzione: LaserGRBL avrà bisogno di più risorse e più tempo per elaborare le immagini.</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Imposta il suono per l'evento di fine marcatura.</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Imposta il suono che segnala dei problemi non bloccanti durante la marcatura.</value>
+  </data>
+  <data name="label26.Text" xml:space="preserve">
+    <value>Segnale di avviso</value>
+  </data>
+  <data name="changeWarBtn.Text" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>File audio</value>
+  </data>
+  <data name="warningSoundLabel.Text" xml:space="preserve">
+    <value>.\Sound\warning.wav</value>
+  </data>
+  <data name="label29.Text" xml:space="preserve">
+    <value>Segnale di errore</value>
+  </data>
+  <data name="changeFatBtn.Text" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="label30.Text" xml:space="preserve">
+    <value>File audio</value>
+  </data>
+  <data name="fatalSoundLabel.Text" xml:space="preserve">
+    <value>.\Sound\fatal.wav</value>
+  </data>
+  <data name="label34.Text" xml:space="preserve">
+    <value>Segnale di connessione</value>
+  </data>
+  <data name="changeConBtn.Text" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="label35.Text" xml:space="preserve">
+    <value>File audio</value>
+  </data>
+  <data name="connectSoundLabel.Text" xml:space="preserve">
+    <value>.\Sound\connect.wav</value>
+  </data>
+  <data name="label37.Text" xml:space="preserve">
+    <value>Segnale di disconnessione</value>
+  </data>
+  <data name="changeDconBtn.Text" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="label38.Text" xml:space="preserve">
+    <value>File audio</value>
+  </data>
+  <data name="disconnectSoundLabel.Text" xml:space="preserve">
+    <value>.\Sound\disconnect.wav</value>
+  </data>
+  <data name="LblSuccessSound.Text" xml:space="preserve">
+    <value>Segnale di fine lavoro</value>
+  </data>
+  <data name="changeSucBtn.Text" xml:space="preserve">
+    <value>Modifica</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>File audio</value>
+  </data>
+  <data name="successSoundLabel.Text" xml:space="preserve">
+    <value>.\Sound\success.wav</value>
+  </data>
+  <data name="label32.Text" xml:space="preserve">
+    <value>Imposta il suono che segnala l'avvenuta connessione.</value>
+  </data>
+  <data name="label36.Text" xml:space="preserve">
+    <value>Imposta il suono che segnala la disconnessione.</value>
+  </data>
+  <data name="label28.Text" xml:space="preserve">
+    <value>Imposta il suono per i segnali di errore, per esempio quando la macchina smette di rispondere durante un lavoro di marcatura.</value>
+  </data>
+  <data name="TpSoundSettings.Text" xml:space="preserve">
+    <value>Notifiche</value>
+  </data>
+  <data name="SoundBrowserDialog.Filter" xml:space="preserve">
+    <value>File audio Wave|*.wav</value>
+  </data>
+  <data name="CbDisableSkip.Text" xml:space="preserve">
+    <value>Disabilita i salti veloci G0</value>
+  </data>
+  <data name="label39.Text" xml:space="preserve">
+    <value>Normalmente LaserGRBL usa il comando G0 - movimento rapido - per saltare le parti bianche del tuo lavoro. Questo velocizza il processo ma può generare un posizionamento approssimativo con risultati imperfetti. E' solitamente possibile migliorare il risultato correggendo le impostazioni della velocità e dell'accelerazione massime ($120, 121, 222 e $110, 111, 112) nella configurazione di grbl.
+
+Se disabiliti questa prestazione LaserGRBL utilizzerà G1 (movimento lineare) così come impostato dalla velocità di lavoro, con il risultato che tutto il processo di marcatura verrà eseguito alla stessa velocità. Questo rallenterà il lavoro ma può migliorare drasticamente la qualità del risultato dove altri approci falliscono.</value>
+  </data>
+  <data name="CbDisableBoundWarn.Text" xml:space="preserve">
+    <value>Disabilita l'allarme dimensioni</value>
+  </data>
+  <data name="label40.Text" xml:space="preserve">
+    <value>LaserGRBL ti avvisa se stai creando un lavoro più grande del tuo macchinario. Imposta questa opzione se non vuoi che venga fatto questo controllo di sicurezza.</value>
+  </data>
+  <data name="CbClickNJog.Text" xml:space="preserve">
+    <value>Clicca e posiziona</value>
+  </data>
+  <data name="label41.Text" xml:space="preserve">
+    <value>Se abiliti questa opzione potrai posizionarti velocemente facendo doppio-click sull'anteprima di disegno.</value>
+  </data>
+  <data name="LblWarnOrturAC.Text" xml:space="preserve">
+    <value>Utenti Ortur: Il firmware Ortur, fino alla versione 137, ha un bug che impedisce alla macchina di ripartire correttamente dopo la pausa di raffreddamento. Si prega di non attivare "raffreddamento automatico" con le marcatrici Ortur fino a rilascio di un nuovo firmware.</value>
+  </data>
+</root>

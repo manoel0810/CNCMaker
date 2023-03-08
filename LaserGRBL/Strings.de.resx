@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BoxAutoUpdateFailed" xml:space="preserve">
+    <value>Automatisches Update fehlgeschlagen!
+Bitte laden Sie die neue Version manuell von lasergrbl herunter.</value>
+  </data>
+  <data name="BoxAutoUpdateRequireAdmin" xml:space="preserve">
+    <value>Update erfordert Administratorrechte!</value>
+  </data>
+  <data name="BoxAutoUpdateResult" xml:space="preserve">
+    <value>Update Ergebnis</value>
+  </data>
+  <data name="BoxAutoUpdateSuccess" xml:space="preserve">
+    <value>Update erfolgreich!</value>
+  </data>
+  <data name="BoxConnectErrorTitle" xml:space="preserve">
+    <value>Kann nicht mit dem Gerät verbinden</value>
+  </data>
+  <data name="BoxExportConfigError" xml:space="preserve">
+    <value>Fehler beim Exportieren der Konfiguration!</value>
+  </data>
+  <data name="BoxExportConfigErrorTitle" xml:space="preserve">
+    <value>Fehler </value>
+  </data>
+  <data name="BoxExportConfigFileNotFound" xml:space="preserve">
+    <value>Datei existiert nicht!</value>
+  </data>
+  <data name="BoxExportConfigSuccess" xml:space="preserve">
+    <value>{0} Konfiguration erfolgreich exportiert!</value>
+  </data>
+  <data name="BoxExportConfigSuccessTitle" xml:space="preserve">
+    <value>Erfolgreich</value>
+  </data>
+  <data name="BoxImportConfigFileError" xml:space="preserve">
+    <value>Fehler beim lesen der Datei!</value>
+  </data>
+  <data name="BoxImportConfigWithError" xml:space="preserve">
+    <value>{0}  Konfiguration importiert mit {1} Fehlern!</value>
+  </data>
+  <data name="BoxImportConfigWithoutError" xml:space="preserve">
+    <value>{0}  Konfiguration erfolgreich importiert!</value>
+  </data>
+  <data name="CustomButtonEdit" xml:space="preserve">
+    <value>Schaltfläche Bearbeiten</value>
+  </data>
+  <data name="CustomButtonRemove" xml:space="preserve">
+    <value>Schaltfläche Entfernen</value>
+  </data>
+  <data name="DirectionDiagonal" xml:space="preserve">
+    <value>Diagonal (old)</value>
+  </data>
+  <data name="DirectionHorizontal" xml:space="preserve">
+    <value>Horizontal (old)</value>
+  </data>
+  <data name="DirectionNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="DirectionVertical" xml:space="preserve">
+    <value>Vertikal (old)</value>
+  </data>
+  <data name="FormulaCustom" xml:space="preserve">
+    <value>Benutzerdefiniert</value>
+  </data>
+  <data name="FormulaOpticalCorrect" xml:space="preserve">
+    <value>Optisch Korrekt</value>
+  </data>
+  <data name="FormulaSimpleAverage" xml:space="preserve">
+    <value>Einfacher Durchschnitt</value>
+  </data>
+  <data name="FormulaWeightAverage" xml:space="preserve">
+    <value>Gewicht Durchschnitt</value>
+  </data>
+  <data name="InterpolationModeHighQualityBicubic" xml:space="preserve">
+    <value>Sanft (HQ Bicubic)</value>
+  </data>
+  <data name="InterpolationModeNearestNeighbor" xml:space="preserve">
+    <value>Scharf (nächster Nachbar)</value>
+  </data>
+  <data name="LanguageRequireRestart" xml:space="preserve">
+    <value>Neustart erforderlich</value>
+  </data>
+  <data name="LanguageRequireRestartNow" xml:space="preserve">
+    <value>Neustart der Anwendung erforderlich, jetzt neu starten?</value>
+  </data>
+  <data name="MacStatusAlarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="MacStatusCheck" xml:space="preserve">
+    <value>Kontrolle</value>
+  </data>
+  <data name="MacStatusConnecting" xml:space="preserve">
+    <value>Verbinden</value>
+  </data>
+  <data name="MacStatusDisconnected" xml:space="preserve">
+    <value>Getrennt</value>
+  </data>
+  <data name="MacStatusDoor" xml:space="preserve">
+    <value>Tür</value>
+  </data>
+  <data name="MacStatusHold" xml:space="preserve">
+    <value>Halten</value>
+  </data>
+  <data name="MacStatusHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="MacStatusIdle" xml:space="preserve">
+    <value>Leerlauf</value>
+  </data>
+  <data name="MacStatusJog" xml:space="preserve">
+    <value>Tippen</value>
+  </data>
+  <data name="MacStatusRun" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="MacStatusUnknown" xml:space="preserve">
+    <value>Unbekannt</value>
+  </data>
+  <data name="MainFormEstimatedTime" xml:space="preserve">
+    <value>Geschätzte Zeit:</value>
+  </data>
+  <data name="MainFormProjectedTime" xml:space="preserve">
+    <value>Prognostizierte Zeit:</value>
+  </data>
+  <data name="AddCustomButtonsHint" xml:space="preserve">
+    <value>Klicken Sie hier mit der rechten Maustaste, um benutzerdefinierte Schaltflächen hinzuzufügen</value>
+  </data>
+  <data name="FirmwareRequireRestart" xml:space="preserve">
+    <value>Neustart erforderlich</value>
+  </data>
+  <data name="BoxImportCustomButtonrCaption" xml:space="preserve">
+    <value>Bestätigung</value>
+  </data>
+  <data name="BoxReadConfigSuccess" xml:space="preserve">
+    <value>{0} Konfiguration erfolgreich gelesen!</value>
+  </data>
+  <data name="BoxImportCustomButtonCaption" xml:space="preserve">
+    <value>Benutzerdefinierte  Schaltfläche  importieren</value>
+  </data>
+  <data name="BoxWriteConfigWithError" xml:space="preserve">
+    <value>{0} Konfiguration mit {1} Fehlern geschrieben!</value>
+  </data>
+  <data name="BoxReadConfigPleaseConnect" xml:space="preserve">
+    <value>Zwischengespeicherte Werte anzeigen...</value>
+  </data>
+  <data name="BoxCustomButtonPleaseToolTipText" xml:space="preserve">
+    <value>Bitte geben Sie einen Tooltip-Text an</value>
+  </data>
+  <data name="FirmwareRequireRestartNow" xml:space="preserve">
+    <value>Ein Neustart ist erforderlich, um Änderungen des Firmware-Typs anzuwenden. Jetzt neu starten?</value>
+  </data>
+  <data name="BoxWriteConfigNoChange" xml:space="preserve">
+    <value>Keine Änderungen... nichts zu schreiben!</value>
+  </data>
+  <data name="BoxCustomButtonPleaseGCodeText" xml:space="preserve">
+    <value>Bitte GCode-Befehle angeben</value>
+  </data>
+  <data name="ResumeJobHomingRequiredTitle" xml:space="preserve">
+    <value>Unbekannte Position</value>
+  </data>
+  <data name="SpeedSliderToolTip" xml:space="preserve">
+    <value>Geschwindigkeit:</value>
+  </data>
+  <data name="BoxWriteConfigWithoutError" xml:space="preserve">
+    <value>{0} Config erfolgreich geschrieben!</value>
+  </data>
+  <data name="BoxCustomButtonPleaseToolTipTitle" xml:space="preserve">
+    <value>Fehlendes Feld</value>
+  </data>
+  <data name="BoxDeleteCustomButtonTitle" xml:space="preserve">
+    <value>Benutzerdefinierte Schaltfläche löschen</value>
+  </data>
+  <data name="DisconnectAnyway" xml:space="preserve">
+    <value>Dateiübertragung läuft. Verbindung trotzdem trennen?</value>
+  </data>
+  <data name="ExitAnyway" xml:space="preserve">
+    <value>Dateiübertragung läuft. Trotzdem beenden?</value>
+  </data>
+  <data name="StepSliderToolTip" xml:space="preserve">
+    <value>Schritt:</value>
+  </data>
+  <data name="BoxConfigDetectedChanges" xml:space="preserve">
+    <value>Es gibt einige Änderungen, die nicht angewandt wurden.
+Möchten Sie die Konfiguration neu schreiben?</value>
+  </data>
+  <data name="BtnDisconnectTT" xml:space="preserve">
+    <value>Verbindung trennen</value>
+  </data>
+  <data name="BoxImportCustomButtonClearText" xml:space="preserve">
+    <value>Aktuelle Schaltflächen entfernen? Wählen Sie Ja zum Entfernen, Nein zum Behalten.</value>
+  </data>
+  <data name="BtnConnectTT" xml:space="preserve">
+    <value>verbinden</value>
+  </data>
+  <data name="UnsupportedFiletype" xml:space="preserve">
+    <value>Dieser Dateityp wird nicht unterstützt.</value>
+  </data>
+  <data name="BoxConfigDetectedChangesTitle" xml:space="preserve">
+    <value>Änderungen entdeckt!</value>
+  </data>
+  <data name="BoxReadConfigError" xml:space="preserve">
+    <value>Fehler beim Lesen der Konfiguration!</value>
+  </data>
+  <data name="ResumeJobHomingRequired" xml:space="preserve">
+    <value>Es scheint, dass Grbl die aktuelle Position nicht mehr bekannt ist.
+Ohne das Homing-Verfahren ($H) ist das Ergebnis möglicherweise nicht zuverlässig.
+Trotzdem weitermachen?</value>
+  </data>
+  <data name="BoxDeleteCustomButtonText" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die ausgewählte Schaltfläche löschen wollen?</value>
+  </data>
+  <data name="BoxAbortProgramConfirm" xml:space="preserve">
+    <value>Aktuelle Tätigkeit abbrechen?</value>
+  </data>
+  <data name="MsgboxCannotOpenFileNow" xml:space="preserve">
+    <value>Jetzt kann gerade keine neue Datei geöffnet werden.</value>
+  </data>
+  <data name="WarnMessageBoxHeader" xml:space="preserve">
+    <value>Warnung</value>
+  </data>
+  <data name="DirectionNewCross" xml:space="preserve">
+    <value>Kreuz-Füllung</value>
+  </data>
+  <data name="DirectionNewDiagonal" xml:space="preserve">
+    <value>Diagonal</value>
+  </data>
+  <data name="DirectionNewDiagonalCross" xml:space="preserve">
+    <value>Diagonal Kreuz-Füllung</value>
+  </data>
+  <data name="DirectionNewDiagonalGrid" xml:space="preserve">
+    <value>Diagonal Gitter</value>
+  </data>
+  <data name="DirectionNewGrid" xml:space="preserve">
+    <value>Gitter</value>
+  </data>
+  <data name="DirectionNewHorizontal" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="DirectionNewInsetFilling" xml:space="preserve">
+    <value>Einsatz-Füllung (nach innen gerichtet)</value>
+  </data>
+  <data name="DirectionNewReverseDiagonal" xml:space="preserve">
+    <value>Diagonal Umgekehrt</value>
+  </data>
+  <data name="DirectionNewSquares" xml:space="preserve">
+    <value>Quadrate</value>
+  </data>
+  <data name="DirectionNewVertical" xml:space="preserve">
+    <value>Vertikal</value>
+  </data>
+  <data name="DirectionNewZigZag" xml:space="preserve">
+    <value>Zickzack</value>
+  </data>
+  <data name="WarnWrongLaserModeTitle" xml:space="preserve">
+    <value>Warnung</value>
+  </data>
+  <data name="DirectionNewHilbert" xml:space="preserve">
+    <value>Hilbert</value>
+  </data>
+</root>

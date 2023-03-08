@@ -1,0 +1,169 @@
+﻿//Copyright (c) 2016-2021 Diego Settimi - https://github.com/arkypita/
+
+// This program is free software; you can redistribute it and/or modify  it under the terms of the GPLv3 General Public License as published by  the Free Software Foundation; either version 3 of the License, or (at  your option) any later version.
+// This program is distributed in the hope that it will be useful, but  WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GPLv3  General Public License for more details.
+// You should have received a copy of the GPLv3 General Public License  along with this program; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,  USA. using System;
+
+using System;
+using System.Drawing;
+using System.Windows.Forms;
+
+namespace LaserGRBL
+{
+    public partial class CustomButtonForm : Form
+    {
+        CustomButton inedit = null;
+
+        private CustomButtonForm()
+        {
+            InitializeComponent();
+
+            BackColor = ColorScheme.FormBackColor;
+            ForeColor = ColorScheme.FormForeColor;
+            BtnCancel.BackColor = BtnCreate.BackColor = ColorScheme.FormButtonsColor;
+
+            CbEStyles.DataSource = Enum.GetValues(typeof(CustomButton.EnableStyles));
+            CbEStyles.SelectedItem = CustomButton.EnableStyles.Always;
+
+            CbByttonType.DataSource = Enum.GetValues(typeof(CustomButton.ButtonTypes));
+            CbEStyles.SelectedItem = CustomButton.ButtonTypes.Button;
+        }
+
+        public static void CreateAndShowDialog(Form parent)
+        {
+            using (CustomButtonForm f = new CustomButtonForm())
+                f.ShowDialog(parent);
+        }
+
+        internal static void CreateAndShowDialog(Form parent, CustomButton cb)
+        {
+            using (CustomButtonForm f = new CustomButtonForm())
+                f.ShowDialog(parent, cb);
+        }
+
+        private void ShowDialog(Form parent, CustomButton cb)
+        {
+            TBGCode.Text = cb.GCode;
+            TBGCode2.Text = cb.GCode2;
+            BTOpenImage.Image = cb.Image;
+            TbCaption.Text = cb.Caption;
+            TbToolTip.Text = cb.ToolTip;
+            CbEStyles.SelectedItem = cb.EnableStyle;
+            CbByttonType.SelectedItem = cb.ButtonType;
+
+            BtnCreate.Text = "Save";
+            inedit = cb;
+
+            base.ShowDialog(parent);
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+            CbByttonType_SelectedIndexChanged(this, null);
+        }
+
+        private void BtnCreate_Click(object sender, EventArgs e)
+        {
+            if (TBGCode.Text.Trim().Length == 0)
+            {
+                MessageBox.Show(Strings.BoxCustomButtonPleaseGCodeText, Strings.BoxCustomButtonPleaseToolTipTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TBGCode.Focus();
+                return;
+            }
+
+            if (TBGCode2.Visible && TBGCode2.Text.Trim().Length == 0)
+            {
+                MessageBox.Show(Strings.BoxCustomButtonPleaseGCodeText, Strings.BoxCustomButtonPleaseToolTipTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TBGCode2.Focus();
+                return;
+            }
+
+            if (TbToolTip.Text.Trim().Length == 0)
+            {
+                MessageBox.Show(Strings.BoxCustomButtonPleaseToolTipText, Strings.BoxCustomButtonPleaseToolTipTitle, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TbToolTip.Focus();
+                return;
+            }
+
+            if (inedit == null)
+            {
+                CustomButton cb = new CustomButton
+                {
+                    ButtonType = (CustomButton.ButtonTypes)CbByttonType.SelectedItem,
+                    GCode = TBGCode.Text,
+                    GCode2 = TBGCode2.Text,
+                    Image = BTOpenImage.Image,
+                    Caption = TbCaption.Text,
+                    ToolTip = TbToolTip.Text,
+                    EnableStyle = (CustomButton.EnableStyles)CbEStyles.SelectedItem
+                };
+
+                CustomButtons.Add(cb);
+            }
+            else
+            {
+                inedit.GCode = TBGCode.Text;
+                inedit.GCode2 = TBGCode2.Text;
+                inedit.Image = BTOpenImage.Image;
+                inedit.Caption = TbCaption.Text;
+                inedit.ToolTip = TbToolTip.Text;
+                inedit.EnableStyle = (CustomButton.EnableStyles)CbEStyles.SelectedItem;
+                inedit.ButtonType = (CustomButton.ButtonTypes)CbByttonType.SelectedItem;
+            }
+
+            CustomButtons.SaveFile();
+
+            Close();
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void BTOpenImage_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                ofd.Filter = "Image file|*.bmp;*.png;*.jpg;*.jpeg;*.gif";
+                ofd.CheckFileExists = true;
+                ofd.Multiselect = false;
+                ofd.RestoreDirectory = true;
+
+                DialogResult dialogResult = DialogResult.Cancel;
+                try
+                {
+                    dialogResult = ofd.ShowDialog(this);
+                }
+                catch (System.Runtime.InteropServices.COMException)
+                {
+                    ofd.AutoUpgradeEnabled = false;
+                    dialogResult = ofd.ShowDialog(this);
+                }
+
+
+                if (dialogResult == DialogResult.OK)
+                {
+                    using (Image newicon = Bitmap.FromFile(ofd.FileName))
+                        BTOpenImage.Image = RasterConverter.ImageTransform.ResizeImage(newicon, new Size(48, 48), false, System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic);
+                }
+            }
+        }
+
+        private void CbByttonType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SuspendLayout();
+            LblGCode2.Visible = TBGCode2.Visible = ((CustomButton.ButtonTypes)CbByttonType.SelectedItem) != CustomButton.ButtonTypes.Button;
+            tableLayoutPanel3.SetColumnSpan(TBGCode, TBGCode2.Visible ? 1 : 2);
+            ResumeLayout();
+        }
+
+        private void LblDescription_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            string link = (sender as LinkLabel).Tag.ToString();
+            if (!string.IsNullOrEmpty(link))
+            { Tools.Utils.OpenLink(link); }
+        }
+    }
+}
