@@ -394,7 +394,7 @@ namespace LaserGRBL
 
         private void RefreshFormTitle()
         {
-            string FormTitle = string.Format("LaserGRBL vb{0} - IFPB", Program.CurrentVersion.ToString(3));
+            string FormTitle = string.Format("CNC v.b. {0} - IFPB", Program.CurrentVersion.ToString(3));
 
             if (Core.Type != Firmware.Grbl)
                 FormTitle += $" (for {Core.Type})";

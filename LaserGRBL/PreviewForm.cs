@@ -516,8 +516,5 @@ namespace LaserGRBL
             CustomButtonArea.ButtonPositionUnlocked = !MnLockButton.Checked;
             Refresh();
         }
-
-
     }
-
 }

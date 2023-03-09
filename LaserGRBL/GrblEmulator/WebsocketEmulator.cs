@@ -66,8 +66,5 @@ namespace LaserGRBL.GrblEmulator
 
 
         }
-
-
-
     }
 }

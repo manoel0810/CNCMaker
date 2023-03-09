@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // utilizzando l'asterisco (*) come descritto di seguito:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("4.9.4")]
-[assembly: NeutralResourcesLanguage("pt-BR")]
+[assembly: NeutralResourcesLanguage("en")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
