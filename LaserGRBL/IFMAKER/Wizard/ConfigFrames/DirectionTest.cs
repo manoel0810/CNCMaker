@@ -12,9 +12,12 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
 {
     public partial class DirectionTest : Form
     {
-        public DirectionTest()
+        private string Config;
+
+        public DirectionTest(string Configurations)
         {
             InitializeComponent();
+            Config = Configurations;
         }
     }
 }

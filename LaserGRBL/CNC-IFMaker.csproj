@@ -145,11 +145,23 @@
     <Compile Include="IFMAKER\Wizard\ConfigFrames\CalibrationPass.Designer.cs">
       <DependentUpon>CalibrationPass.cs</DependentUpon>
     </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\HomingConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\HomingConfiguration.Designer.cs">
+      <DependentUpon>HomingConfiguration.cs</DependentUpon>
+    </Compile>
     <Compile Include="IFMAKER\Wizard\ConfigFrames\ImportSettings.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IFMAKER\Wizard\ConfigFrames\ImportSettings.Designer.cs">
       <DependentUpon>ImportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\LimitConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\LimitConfiguration.Designer.cs">
+      <DependentUpon>LimitConfiguration.cs</DependentUpon>
     </Compile>
     <Compile Include="IFMAKER\Wizard\PassControl.cs">
       <SubType>UserControl</SubType>
@@ -868,8 +880,14 @@
     <EmbeddedResource Include="IFMAKER\Wizard\ConfigFrames\CalibrationPass.resx">
       <DependentUpon>CalibrationPass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\Wizard\ConfigFrames\HomingConfiguration.resx">
+      <DependentUpon>HomingConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IFMAKER\Wizard\ConfigFrames\ImportSettings.resx">
       <DependentUpon>ImportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\Wizard\ConfigFrames\LimitConfiguration.resx">
+      <DependentUpon>LimitConfiguration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IFMAKER\Wizard\PassControl.resx">
       <DependentUpon>PassControl.cs</DependentUpon>

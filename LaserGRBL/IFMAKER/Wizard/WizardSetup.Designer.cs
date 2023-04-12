@@ -43,7 +43,7 @@
             // 
             // Btn_Next
             // 
-            this.Btn_Next.Location = new System.Drawing.Point(657, 439);
+            this.Btn_Next.Location = new System.Drawing.Point(677, 438);
             this.Btn_Next.Name = "Btn_Next";
             this.Btn_Next.Size = new System.Drawing.Size(75, 23);
             this.Btn_Next.TabIndex = 2;
@@ -53,7 +53,7 @@
             // 
             // Btn_Last
             // 
-            this.Btn_Last.Location = new System.Drawing.Point(576, 439);
+            this.Btn_Last.Location = new System.Drawing.Point(596, 438);
             this.Btn_Last.Name = "Btn_Last";
             this.Btn_Last.Size = new System.Drawing.Size(75, 23);
             this.Btn_Last.TabIndex = 2;
@@ -91,7 +91,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 338);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 350);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(223, 81);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,9 +104,9 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.Itens);
             this.panel1.Controls.Add(this.Pb_Header);
-            this.panel1.Location = new System.Drawing.Point(3, 12);
+            this.panel1.Location = new System.Drawing.Point(3, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(223, 420);
+            this.panel1.Size = new System.Drawing.Size(223, 432);
             this.panel1.TabIndex = 0;
             // 
             // WizardSetup

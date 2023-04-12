@@ -89,8 +89,6 @@ namespace LaserGRBL
         public MainForm(string[] args) : this()
         {
             this.args = args;
-            WizardSetup Z = new WizardSetup();
-            Z.Show();
         }
 
         private void MnAutoUpdateDropDown_Closing(object sender, ToolStripDropDownClosingEventArgs e)
@@ -319,6 +317,12 @@ namespace LaserGRBL
             MnStartFromPosition.Enabled = Core.CanSendFile;
             MnRunMulti.Enabled = Core.CanSendFile || Core.CanResumeHold || Core.CanFeedHold;
             MnGrblConfig.Enabled = true;
+
+            if (Core.MachineStatus != GrblCore.MacStatus.Disconnected)
+                GrblWizardSetup.Enabled = true;
+            else
+                GrblWizardSetup.Enabled = false;
+
             //MnExportConfig.Enabled = Core.CanImportExport;
             //MnImportConfig.Enabled = Core.CanImportExport;
             MnGrblReset.Enabled = Core.CanResetGrbl;
@@ -992,6 +996,12 @@ namespace LaserGRBL
         private void MnConfigureOrturWiFi_Click(object sender, EventArgs e)
         {
             ShowWiFiConfig();
+        }
+
+        private void GrblWizardSetup_Click(object sender, EventArgs e)
+        {
+            WizardSetup Wizard = new WizardSetup();
+            Wizard.Show();
         }
     }
 

@@ -61,6 +61,7 @@
             this.MnUnlock = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MnGrblConfig = new System.Windows.Forms.ToolStripMenuItem();
+            this.GrblWizardSetup = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnMaterialDB = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
@@ -326,6 +327,7 @@
             this.MnUnlock,
             this.toolStripSeparator1,
             this.MnGrblConfig,
+            this.GrblWizardSetup,
             this.settingsToolStripMenuItem,
             this.MnMaterialDB,
             this.toolStripSeparator2,
@@ -386,6 +388,12 @@
             resources.ApplyResources(this.MnGrblConfig, "MnGrblConfig");
             this.MnGrblConfig.Name = "MnGrblConfig";
             this.MnGrblConfig.Click += new System.EventHandler(this.GrblConfigurationToolStripMenuItem_Click);
+            // 
+            // GrblWizardSetup
+            // 
+            resources.ApplyResources(this.GrblWizardSetup, "GrblWizardSetup");
+            this.GrblWizardSetup.Name = "GrblWizardSetup";
+            this.GrblWizardSetup.Click += new System.EventHandler(this.GrblWizardSetup_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -1065,6 +1073,7 @@
 		private System.Windows.Forms.ToolStripMenuItem dutchToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem MnConfigureOrturWiFi;
 		private System.Windows.Forms.ToolStripSeparator MnSeparatorConfigWiFi;
-	}
+        private System.Windows.Forms.ToolStripMenuItem GrblWizardSetup;
+    }
 }
 

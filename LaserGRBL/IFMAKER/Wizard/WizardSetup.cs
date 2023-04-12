@@ -17,11 +17,11 @@ namespace LaserGRBL.IFMAKER.Wizard
             InitializeComponent();
             Formns = new Formularios[]
             {
-               new Formularios(0, "1.   Importar Configurações", new PassControl(), new ImportSettings()),
-               new Formularios(1, "2.   Teste de direção", new PassControl(), new DirectionTest()),
-               new Formularios(2, "3.   Calibragem de passo", new PassControl(), new CalibrationForm()),
-               new Formularios(3, "4.   Configuração de limite", new PassControl()),
-               new Formularios(4, "5.   Homing", new PassControl())
+               new Formularios(0, "1.   Importar Configurações", new PassControl(), new ImportSettings(FormatedCommandString)),
+               new Formularios(1, "2.   Teste de direção", new PassControl(), new DirectionTest(FormatedCommandString)),
+               new Formularios(2, "3.   Calibragem de passo", new PassControl(), new CalibrationForm(FormatedCommandString)),
+               new Formularios(3, "4.   Configuração de limite", new PassControl(), new LimitConfiguration(FormatedCommandString)),
+               new Formularios(4, "5.   Homing", new PassControl(), new HomingConfiguration(FormatedCommandString))
             };
 
             //this.mCore = mCore;
@@ -48,6 +48,9 @@ namespace LaserGRBL.IFMAKER.Wizard
         {
             foreach (var item in Formns)
                 item.Control.SetProperties(new Font("Arial", 8f, FontStyle.Regular), item.Description);
+
+            //Inicia na primeira tela de configurações
+            DrawPass(++Index);
         }
 
         private void DrawPass(int Index)
@@ -101,7 +104,7 @@ namespace LaserGRBL.IFMAKER.Wizard
             if (PainelOps.Controls.Count > 0)
                 PainelOps.Controls.Clear();
 
-            Form NF = Formns[Index].Forumlario;
+            Form NF = Formns[Index].Formulario;
             NF.TopLevel = false;
             NF.Dock = DockStyle.Fill;
 
@@ -128,7 +131,7 @@ namespace LaserGRBL.IFMAKER.Wizard
             public int Index { get; set; }
             public string Description { get; set; }
             public PassControl Control { get; set; }
-            public Form Forumlario { get; set; }
+            public Form Formulario { get; set; }
 
             public Formularios()
             {
@@ -147,7 +150,7 @@ namespace LaserGRBL.IFMAKER.Wizard
                 this.Index = Index;
                 this.Description = Description;
                 this.Control = Control;
-                this.Forumlario = Formulario;
+                this.Formulario = Formulario;
             }
         }
     }

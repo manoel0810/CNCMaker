@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
 {
-    public partial class ImportSettings : Form
+    public partial class LimitConfiguration : Form
     {
         private string Config;
 
-        public ImportSettings(string Configurations)
+        public LimitConfiguration(string Configurations)
         {
             InitializeComponent();
             Config = Configurations;
