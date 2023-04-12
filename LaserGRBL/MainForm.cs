@@ -4,6 +4,7 @@
 // This program is distributed in the hope that it will be useful, but  WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GPLv3  General Public License for more details.
 // You should have received a copy of the GPLv3 General Public License  along with this program; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,  USA. using System;
 
+using LaserGRBL.IFMAKER.Wizard;
 using LaserGRBL.WiFiConfigurator;
 using System;
 using System.Drawing;
@@ -88,6 +89,8 @@ namespace LaserGRBL
         public MainForm(string[] args) : this()
         {
             this.args = args;
+            WizardSetup Z = new WizardSetup();
+            Z.Show();
         }
 
         private void MnAutoUpdateDropDown_Closing(object sender, ToolStripDropDownClosingEventArgs e)

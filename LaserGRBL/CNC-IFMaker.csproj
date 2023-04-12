@@ -133,6 +133,42 @@
     <Compile Include="ComWrapper\MySerial\StopBits.cs" />
     <Compile Include="ComWrapper\MySerial\WinSerialStream.cs" />
     <Compile Include="ComWrapper\UsbSerial2.cs" />
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\DirectionTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\DirectionTest.Designer.cs">
+      <DependentUpon>DirectionTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\CalibrationPass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\CalibrationPass.Designer.cs">
+      <DependentUpon>CalibrationPass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\ImportSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\ConfigFrames\ImportSettings.Designer.cs">
+      <DependentUpon>ImportSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\PassControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\PassControl.Designer.cs">
+      <DependentUpon>PassControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\WizardSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\Wizard\WizardSetup.Designer.cs">
+      <DependentUpon>WizardSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFMAKER\ZSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IFMAKER\ZSettings.Designer.cs">
+      <DependentUpon>ZSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tools\Project.cs" />
     <Compile Include="Core\VigoCore.cs" />
     <Compile Include="CsPotrace\PotraceClipper.cs" />
@@ -825,6 +861,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HotkeyManagerForm.ro-RO.resx">
       <DependentUpon>HotkeyManagerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\Wizard\ConfigFrames\DirectionTest.resx">
+      <DependentUpon>DirectionTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\Wizard\ConfigFrames\CalibrationPass.resx">
+      <DependentUpon>CalibrationPass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\Wizard\ConfigFrames\ImportSettings.resx">
+      <DependentUpon>ImportSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\Wizard\PassControl.resx">
+      <DependentUpon>PassControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\Wizard\WizardSetup.resx">
+      <DependentUpon>WizardSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IFMAKER\ZSettings.resx">
+      <DependentUpon>ZSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IssueDetectorForm.nl-NL.resx">
       <DependentUpon>IssueDetectorForm.cs</DependentUpon>

@@ -68,9 +68,6 @@ namespace LaserGRBL.UserControls
                     ScrollBar.Maximum = 0;
                 }
 
-
-
-
                 int howmany = Math.Min(Height / RowHeight, queueCount);
                 int index = ScrollBar.Value;
                 mDraw = mCom.SentCommand(index, howmany);

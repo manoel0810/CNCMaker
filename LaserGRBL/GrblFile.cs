@@ -329,15 +329,15 @@ namespace LaserGRBL
                     using (Graphics g = Graphics.FromImage(ptb))
                     {
                         double inset = Math.Max(1, c.res / c.fres); //bordino da togliere per finire un po' prima del bordo
-
                         Potrace.Export2GDIPlus(plist, g, Brushes.Black, null, inset);
 
                         using (Bitmap resampled = RasterConverter.ImageTransform.ResizeImage(ptb, new Size((int)(bmp.Width * c.fres / c.res) + 1, (int)(bmp.Height * c.fres / c.res) + 1), true, InterpolationMode.HighQualityBicubic))
                         {
                             if (c.pwm)
-                                list.Add(new GrblCommand(String.Format("{0} S0", c.lOn))); //laser on and power to zero
+                                list.Add(new GrblCommand(String.Format("{0} S0", c.lOn)));
                             else
-                                list.Add(new GrblCommand(String.Format($"{c.lOff} S{GrblCore.Configuration.MaxPWM}"))); //laser off and power to max power
+                                list.Add(new GrblCommand(String.Format($"{c.lOff} S{GrblCore.Configuration.MaxPWM}")));
+
 
                             //set speed to markspeed
                             // For marlin, need to specify G1 each time :
@@ -356,11 +356,12 @@ namespace LaserGRBL
 
             bool supportPWM = Settings.GetObject("Support Hardware PWM", true);
 
-
             if (supportPWM)
-                list.Add(new GrblCommand($"{c.lOn} S0"));   //laser on and power to 0
+                list.Add(new GrblCommand(String.Format("{0} S0", c.lOn))); //laser on and power to zero           
             else
-                list.Add(new GrblCommand($"{c.lOff} S{GrblCore.Configuration.MaxPWM}"));   //laser off and power to maxPower
+                list.Add(new GrblCommand(String.Format($"{c.lOff} S{GrblCore.Configuration.MaxPWM}"))); //laser off and power to max power
+
+
 
             //trace raster filling
             if (flist != null)
@@ -369,7 +370,8 @@ namespace LaserGRBL
                 if (supportPWM)
                     gc.AddRange(Potrace.Export2GCode(flist, c.oX, c.oY, c.res, $"S{c.maxPower}", "S0", bmp.Size, skipcmd));
                 else
-                    gc.AddRange(Potrace.Export2GCode(flist, c.oX, c.oY, c.res, c.lOn, c.lOff, bmp.Size, skipcmd));
+                    gc.AddRange(Potrace.Export2GCode(flist, c.oX, c.oY, c.res, $"S{c.lOn}", $"S{c.lOff}", bmp.Size, skipcmd));
+
 
                 list.Add(new GrblCommand(String.Format("F{0}", c.markSpeed)));
                 foreach (string code in gc)
@@ -390,7 +392,7 @@ namespace LaserGRBL
                 if (supportPWM)
                     gc.AddRange(Potrace.Export2GCode(plist, c.oX, c.oY, c.res, $"S{c.maxPower}", "S0", bmp.Size, skipcmd));
                 else
-                    gc.AddRange(Potrace.Export2GCode(plist, c.oX, c.oY, c.res, c.lOn, c.lOff, bmp.Size, skipcmd));
+                    gc.AddRange(Potrace.Export2GCode(plist, c.oX, c.oY, c.res, $"S{c.lOn}", $"S{c.lOff}", bmp.Size, skipcmd));
 
                 // For marlin, need to specify G1 each time :
                 //list.Add(new GrblCommand(String.Format("G1 F{0}", c.borderSpeed)));
@@ -398,15 +400,6 @@ namespace LaserGRBL
                 foreach (string code in gc)
                     list.Add(new GrblCommand(code));
             }
-
-            //if (supportPWM)
-            //	gc = Potrace.Export2GCode(flist, c.oX, c.oY, c.res, $"S{c.maxPower}", "S0", bmp.Size, skipcmd);
-            //else
-            //	gc = Potrace.Export2GCode(flist, c.oX, c.oY, c.res, c.lOn, c.lOff, bmp.Size, skipcmd);
-
-            //foreach (string code in gc)
-            //	list.Add(new GrblCommand(code));
-
 
             //laser off (superflua??)
             if (supportPWM)

@@ -131,6 +131,12 @@ namespace CsPotrace
                 rv.Add(String.Format("{0} X{1} Y{2}", skipcmd, formatnumber(Curves[0].A.X + oX, scale), formatnumber(Curves[0].A.Y + oY, scale)));
                 //turn on laser
                 rv.Add(lOn);
+                //Adicionar cota z aqui
+                if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z)
+                {
+                    rv.Add($"G0 Z-{LaserGRBL.IFMAKER.ZSettings.Z_COTE.ToString().Replace(",", ".")}");
+                    //rv.Add($"G4 P1800");
+                }
             }
         }
 
@@ -138,7 +144,14 @@ namespace CsPotrace
         {
             //turn off laser
             if (Curves.Count > 0)
+            {
                 rv.Add(lOff);
+                if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z)
+                {
+                    rv.Add($"G0 Z0");
+                    //rv.Add($"G4 P1800");
+                }
+            }
         }
 
         private static string GetArcGC(Arc arc, double oX, double oY, double scale, Graphics g)
