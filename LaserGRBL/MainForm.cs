@@ -18,6 +18,7 @@ namespace LaserGRBL
     public partial class MainForm : Form
     {
         private readonly GrblCore Core;
+        private WizardSetup Wizard;
         private UsageStats.MessageData ToolBarMessage;
         private bool IsBufferStuck = false;
         private bool MultiRunShown = false;
@@ -318,7 +319,7 @@ namespace LaserGRBL
             MnRunMulti.Enabled = Core.CanSendFile || Core.CanResumeHold || Core.CanFeedHold;
             MnGrblConfig.Enabled = true;
 
-            if (Core.MachineStatus != GrblCore.MacStatus.Disconnected)
+            if (Core.MachineStatus == GrblCore.MacStatus.Idle)
                 GrblWizardSetup.Enabled = true;
             else
                 GrblWizardSetup.Enabled = false;
@@ -1000,7 +1001,9 @@ namespace LaserGRBL
 
         private void GrblWizardSetup_Click(object sender, EventArgs e)
         {
-            WizardSetup Wizard = new WizardSetup();
+            Wizard?.Dispose();
+
+            Wizard = new WizardSetup(Core);
             Wizard.Show();
         }
     }

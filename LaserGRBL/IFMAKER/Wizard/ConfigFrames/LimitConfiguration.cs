@@ -12,9 +12,9 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
 {
     public partial class LimitConfiguration : Form
     {
-        private string Config;
+        private string[] Config;
 
-        public LimitConfiguration(string Configurations)
+        public LimitConfiguration(string[] Configurations)
         {
             InitializeComponent();
             Config = Configurations;

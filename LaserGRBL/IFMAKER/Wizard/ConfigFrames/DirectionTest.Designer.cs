@@ -29,164 +29,187 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Btn_XP = new System.Windows.Forms.Button();
+            this.Btn_XM = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Cb_InvertedX = new System.Windows.Forms.CheckBox();
+            this.Btn_YP = new System.Windows.Forms.Button();
+            this.Btn_YM = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Cb_InvertedY = new System.Windows.Forms.CheckBox();
+            this.Btn_ZP = new System.Windows.Forms.Button();
+            this.Btn_ZM = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.Cb_InvertedZ = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 17);
+            this.label1.Location = new System.Drawing.Point(28, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(232, 24);
+            this.label1.Size = new System.Drawing.Size(345, 36);
             this.label1.TabIndex = 1;
             this.label1.Text = "Teste de movimentação";
             // 
-            // button1
+            // Btn_XP
             // 
-            this.button1.Location = new System.Drawing.Point(65, 143);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(30, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "X+";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Btn_XP.Location = new System.Drawing.Point(278, 228);
+            this.Btn_XP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_XP.Name = "Btn_XP";
+            this.Btn_XP.Size = new System.Drawing.Size(45, 46);
+            this.Btn_XP.TabIndex = 2;
+            this.Btn_XP.Text = "X+";
+            this.Btn_XP.UseVisualStyleBackColor = true;
+            this.Btn_XP.Click += new System.EventHandler(this.Btn_XP_Click);
             // 
-            // button2
+            // Btn_XM
             // 
-            this.button2.Location = new System.Drawing.Point(156, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(30, 30);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "X-";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Btn_XM.Location = new System.Drawing.Point(97, 228);
+            this.Btn_XM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_XM.Name = "Btn_XM";
+            this.Btn_XM.Size = new System.Drawing.Size(45, 46);
+            this.Btn_XM.TabIndex = 2;
+            this.Btn_XM.Text = "X-";
+            this.Btn_XM.UseVisualStyleBackColor = true;
+            this.Btn_XM.Click += new System.EventHandler(this.Btn_XM_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(61, 125);
+            this.label2.Location = new System.Drawing.Point(92, 192);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 18);
+            this.label2.Size = new System.Drawing.Size(270, 27);
             this.label2.TabIndex = 3;
             this.label2.Text = "Movimentação do eixo X";
             // 
-            // checkBox1
+            // Cb_InvertedX
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(408, 148);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(94, 17);
-            this.checkBox1.TabIndex = 4;
-            this.checkBox1.Text = "Inverter eixo X";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.Cb_InvertedX.AutoSize = true;
+            this.Cb_InvertedX.Location = new System.Drawing.Point(612, 228);
+            this.Cb_InvertedX.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Cb_InvertedX.Name = "Cb_InvertedX";
+            this.Cb_InvertedX.Size = new System.Drawing.Size(136, 24);
+            this.Cb_InvertedX.TabIndex = 4;
+            this.Cb_InvertedX.Text = "Inverter eixo X";
+            this.Cb_InvertedX.UseVisualStyleBackColor = true;
+            this.Cb_InvertedX.Click += new System.EventHandler(this.Cb_InvertedX_Click);
             // 
-            // button3
+            // Btn_YP
             // 
-            this.button3.Location = new System.Drawing.Point(65, 206);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(30, 30);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Y+";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Btn_YP.Location = new System.Drawing.Point(278, 325);
+            this.Btn_YP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_YP.Name = "Btn_YP";
+            this.Btn_YP.Size = new System.Drawing.Size(45, 46);
+            this.Btn_YP.TabIndex = 2;
+            this.Btn_YP.Text = "Y+";
+            this.Btn_YP.UseVisualStyleBackColor = true;
+            this.Btn_YP.Click += new System.EventHandler(this.Btn_XP_Click);
             // 
-            // button4
+            // Btn_YM
             // 
-            this.button4.Location = new System.Drawing.Point(156, 206);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(30, 30);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "Y-";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Btn_YM.Location = new System.Drawing.Point(97, 325);
+            this.Btn_YM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_YM.Name = "Btn_YM";
+            this.Btn_YM.Size = new System.Drawing.Size(45, 46);
+            this.Btn_YM.TabIndex = 2;
+            this.Btn_YM.Text = "Y-";
+            this.Btn_YM.UseVisualStyleBackColor = true;
+            this.Btn_YM.Click += new System.EventHandler(this.Btn_XM_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(61, 188);
+            this.label3.Location = new System.Drawing.Point(92, 289);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(178, 18);
+            this.label3.Size = new System.Drawing.Size(271, 27);
             this.label3.TabIndex = 3;
             this.label3.Text = "Movimentação do eixo Y";
             // 
-            // checkBox2
+            // Cb_InvertedY
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(408, 211);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(94, 17);
-            this.checkBox2.TabIndex = 4;
-            this.checkBox2.Text = "Inverter eixo Y";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.Cb_InvertedY.AutoSize = true;
+            this.Cb_InvertedY.Location = new System.Drawing.Point(612, 325);
+            this.Cb_InvertedY.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Cb_InvertedY.Name = "Cb_InvertedY";
+            this.Cb_InvertedY.Size = new System.Drawing.Size(136, 24);
+            this.Cb_InvertedY.TabIndex = 4;
+            this.Cb_InvertedY.Text = "Inverter eixo Y";
+            this.Cb_InvertedY.UseVisualStyleBackColor = true;
+            this.Cb_InvertedY.Click += new System.EventHandler(this.Cb_InvertedX_Click);
             // 
-            // button5
+            // Btn_ZP
             // 
-            this.button5.Location = new System.Drawing.Point(65, 269);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(30, 30);
-            this.button5.TabIndex = 2;
-            this.button5.Text = "Z+";
-            this.button5.UseVisualStyleBackColor = true;
+            this.Btn_ZP.Location = new System.Drawing.Point(278, 422);
+            this.Btn_ZP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_ZP.Name = "Btn_ZP";
+            this.Btn_ZP.Size = new System.Drawing.Size(45, 46);
+            this.Btn_ZP.TabIndex = 2;
+            this.Btn_ZP.Text = "Z+";
+            this.Btn_ZP.UseVisualStyleBackColor = true;
+            this.Btn_ZP.Click += new System.EventHandler(this.Btn_XP_Click);
             // 
-            // button6
+            // Btn_ZM
             // 
-            this.button6.Location = new System.Drawing.Point(156, 269);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(30, 30);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "Z-";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Btn_ZM.Location = new System.Drawing.Point(97, 422);
+            this.Btn_ZM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Btn_ZM.Name = "Btn_ZM";
+            this.Btn_ZM.Size = new System.Drawing.Size(45, 46);
+            this.Btn_ZM.TabIndex = 2;
+            this.Btn_ZM.Text = "Z-";
+            this.Btn_ZM.UseVisualStyleBackColor = true;
+            this.Btn_ZM.Click += new System.EventHandler(this.Btn_XM_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(61, 251);
+            this.label4.Location = new System.Drawing.Point(92, 386);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(178, 18);
+            this.label4.Size = new System.Drawing.Size(270, 27);
             this.label4.TabIndex = 3;
             this.label4.Text = "Movimentação do eixo Z";
             // 
-            // checkBox3
+            // Cb_InvertedZ
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(408, 274);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(94, 17);
-            this.checkBox3.TabIndex = 4;
-            this.checkBox3.Text = "Inverter eixo Z";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.Cb_InvertedZ.AutoSize = true;
+            this.Cb_InvertedZ.Location = new System.Drawing.Point(612, 422);
+            this.Cb_InvertedZ.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Cb_InvertedZ.Name = "Cb_InvertedZ";
+            this.Cb_InvertedZ.Size = new System.Drawing.Size(135, 24);
+            this.Cb_InvertedZ.TabIndex = 4;
+            this.Cb_InvertedZ.Text = "Inverter eixo Z";
+            this.Cb_InvertedZ.UseVisualStyleBackColor = true;
+            this.Cb_InvertedZ.Click += new System.EventHandler(this.Cb_InvertedX_Click);
             // 
             // DirectionTest
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
-            this.ClientSize = new System.Drawing.Size(536, 432);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(804, 665);
+            this.Controls.Add(this.Cb_InvertedZ);
+            this.Controls.Add(this.Cb_InvertedY);
+            this.Controls.Add(this.Cb_InvertedX);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.Btn_ZM);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.Btn_YM);
+            this.Controls.Add(this.Btn_ZP);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Btn_YP);
+            this.Controls.Add(this.Btn_XM);
+            this.Controls.Add(this.Btn_XP);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DirectionTest";
             this.Text = "DirectionTest";
             this.ResumeLayout(false);
@@ -197,17 +220,17 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Btn_XP;
+        private System.Windows.Forms.Button Btn_XM;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.CheckBox Cb_InvertedX;
+        private System.Windows.Forms.Button Btn_YP;
+        private System.Windows.Forms.Button Btn_YM;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.CheckBox Cb_InvertedY;
+        private System.Windows.Forms.Button Btn_ZP;
+        private System.Windows.Forms.Button Btn_ZM;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox Cb_InvertedZ;
     }
 }

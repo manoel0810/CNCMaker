@@ -12,9 +12,9 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
 {
     public partial class CalibrationForm : Form
     {
-        private string Config;
+        private string[] Config;
 
-        public CalibrationForm(string Configurations)
+        public CalibrationForm(string[] Configurations)
         {
             InitializeComponent();
             Config = Configurations;

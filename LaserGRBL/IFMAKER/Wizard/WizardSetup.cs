@@ -9,23 +9,25 @@ namespace LaserGRBL.IFMAKER.Wizard
     {
         private readonly Formularios[] Formns;
         private int Index = -1;
-        private string FormatedCommandString = "";
-        //private readonly GrblCore mCore;
+        private string[] FormatedCommandString = new string[0];
+        private readonly GrblCore mCore;
 
-        public WizardSetup(/*GrblCore mCore*/)
+        public WizardSetup(GrblCore mCore)
         {
             InitializeComponent();
+            CheckConnection.Start();
+            ReadCommands();
+
             Formns = new Formularios[]
             {
-               new Formularios(0, "1.   Importar Configurações", new PassControl(), new ImportSettings(FormatedCommandString)),
-               new Formularios(1, "2.   Teste de direção", new PassControl(), new DirectionTest(FormatedCommandString)),
+               new Formularios(0, "1.   Importar Configurações", new PassControl(), new ImportSettings(mCore)),
+               new Formularios(1, "2.   Teste de direção", new PassControl(), new DirectionTest(FormatedCommandString, mCore)),
                new Formularios(2, "3.   Calibragem de passo", new PassControl(), new CalibrationForm(FormatedCommandString)),
                new Formularios(3, "4.   Configuração de limite", new PassControl(), new LimitConfiguration(FormatedCommandString)),
                new Formularios(4, "5.   Homing", new PassControl(), new HomingConfiguration(FormatedCommandString))
             };
 
-            //this.mCore = mCore;
-            ReadCommands();
+            this.mCore = mCore;
         }
 
         private void Btn_Last_Click(object sender, EventArgs e)
@@ -121,9 +123,9 @@ namespace LaserGRBL.IFMAKER.Wizard
             var config = GrblCore.Configuration.ToList();
             string s = "";
             foreach (var c in config)
-                s += $"{c.DollarNumber}={c.Value}\n";
+                s += $"{c.DollarNumber}={c.Value}%";
 
-            FormatedCommandString = s;
+            FormatedCommandString = s.Split('%');
         }
 
         private sealed class Formularios
@@ -151,6 +153,25 @@ namespace LaserGRBL.IFMAKER.Wizard
                 this.Description = Description;
                 this.Control = Control;
                 this.Formulario = Formulario;
+            }
+        }
+
+        private void CheckConnection_Tick(object sender, EventArgs e)
+        {
+            if (mCore.MachineStatus != GrblCore.MacStatus.Idle)
+            {
+                PainelOps.Enabled = false;
+                Btn_Next.Enabled = false;
+                Btn_Last.Enabled = false;
+            }
+            else
+            {
+                if (PainelOps.Enabled == false)
+                {
+                    PainelOps.Enabled = false;
+                    Btn_Next.Enabled = false;
+                    Btn_Last.Enabled = false;
+                }
             }
         }
     }

@@ -12,9 +12,9 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
 {
     public partial class HomingConfiguration : Form
     {
-        private string Config;
+        private string[] Config;
 
-        public HomingConfiguration(string Configurations)
+        public HomingConfiguration(string[] Configurations)
         {
             InitializeComponent();
             Config = Configurations;
