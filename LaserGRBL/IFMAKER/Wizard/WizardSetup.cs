@@ -168,9 +168,9 @@ namespace LaserGRBL.IFMAKER.Wizard
             {
                 if (PainelOps.Enabled == false)
                 {
-                    PainelOps.Enabled = false;
-                    Btn_Next.Enabled = false;
-                    Btn_Last.Enabled = false;
+                    PainelOps.Enabled = true;
+                    Btn_Next.Enabled = true;
+                    Btn_Last.Enabled = true;
                 }
             }
         }
