@@ -22,7 +22,7 @@ namespace LaserGRBL.IFMAKER.Wizard
             {
                new Formularios(0, "1.   Importar Configurações", new PassControl(), new ImportSettings(mCore)),
                new Formularios(1, "2.   Teste de direção", new PassControl(), new DirectionTest(FormatedCommandString, mCore)),
-               new Formularios(2, "3.   Calibragem de passo", new PassControl(), new CalibrationForm(FormatedCommandString)),
+               new Formularios(2, "3.   Calibragem de passo", new PassControl(), new CalibrationForm(FormatedCommandString, mCore)),
                new Formularios(3, "4.   Configuração de limite", new PassControl(), new LimitConfiguration(FormatedCommandString)),
                new Formularios(4, "5.   Homing", new PassControl(), new HomingConfiguration(FormatedCommandString))
             };
