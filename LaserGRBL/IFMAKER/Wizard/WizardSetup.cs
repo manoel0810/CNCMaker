@@ -23,8 +23,8 @@ namespace LaserGRBL.IFMAKER.Wizard
                new Formularios(0, "1.   Importar Configurações", new PassControl(), new ImportSettings(mCore)),
                new Formularios(1, "2.   Teste de direção", new PassControl(), new DirectionTest(FormatedCommandString, mCore)),
                new Formularios(2, "3.   Calibragem de passo", new PassControl(), new CalibrationForm(FormatedCommandString, mCore)),
-               new Formularios(3, "4.   Configuração de limite", new PassControl(), new LimitConfiguration(FormatedCommandString)),
-               new Formularios(4, "5.   Homing", new PassControl(), new HomingConfiguration(FormatedCommandString))
+               new Formularios(3, "4.   Configuração de limite", new PassControl(), new LimitConfiguration(FormatedCommandString, mCore)),
+               new Formularios(4, "5.   Homing", new PassControl(), new HomingConfiguration(FormatedCommandString, mCore))
             };
 
             this.mCore = mCore;
@@ -41,7 +41,10 @@ namespace LaserGRBL.IFMAKER.Wizard
         private void Btn_Next_Click(object sender, EventArgs e)
         {
             if (Index == (Formns.Length - 1))
+            {
+                Close();
                 return;
+            }
 
             DrawPass(++Index);
         }
@@ -78,13 +81,21 @@ namespace LaserGRBL.IFMAKER.Wizard
 
             if (Index > 0 && !Btn_Last.Enabled)
                 Btn_Last.Enabled = true;
-            else if (Index < (Formns.Length - 1) && !Btn_Next.Enabled)
-                Btn_Next.Enabled = true;
+            else if (Index < (Formns.Length - 1) /*&& !Btn_Next.Enabled*/)
+            {
+                Btn_Next.Text = "Próximo";
+                //Btn_Next.Enabled = true;
+            }
+
 
             if (Index == 0)
                 Btn_Last.Enabled = false;
             else if (Index == (Formns.Length - 1))
-                Btn_Next.Enabled = false;
+            {
+                Btn_Next.Text = "Concluir";
+                //Btn_Next.Enabled = false;
+            }
+
 
             UpdateList();
             ChangeForm(Index);

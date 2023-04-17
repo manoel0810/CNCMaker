@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.CB_HommingEnable = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // CB_HommingEnable
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(23, 211);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(148, 17);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Habilitar a função Homing";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.CB_HommingEnable.AutoSize = true;
+            this.CB_HommingEnable.Location = new System.Drawing.Point(23, 211);
+            this.CB_HommingEnable.Name = "CB_HommingEnable";
+            this.CB_HommingEnable.Size = new System.Drawing.Size(148, 17);
+            this.CB_HommingEnable.TabIndex = 9;
+            this.CB_HommingEnable.Text = "Habilitar a função Homing";
+            this.CB_HommingEnable.UseVisualStyleBackColor = true;
+            this.CB_HommingEnable.Click += new System.EventHandler(this.CB_EnableHomming_Click);
             // 
             // label3
             // 
@@ -80,7 +81,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(536, 432);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.CB_HommingEnable);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -94,7 +95,7 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox CB_HommingEnable;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

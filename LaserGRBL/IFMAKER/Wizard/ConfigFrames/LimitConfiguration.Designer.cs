@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.CB_EnableHardLimit = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -64,15 +64,16 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Ative/desative a caixa de confirmação para este recurso:";
             // 
-            // checkBox1
+            // CB_EnableHardLimit
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(23, 211);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(137, 17);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Habilitar o limite máximo";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.CB_EnableHardLimit.AutoSize = true;
+            this.CB_EnableHardLimit.Location = new System.Drawing.Point(23, 211);
+            this.CB_EnableHardLimit.Name = "CB_EnableHardLimit";
+            this.CB_EnableHardLimit.Size = new System.Drawing.Size(137, 17);
+            this.CB_EnableHardLimit.TabIndex = 5;
+            this.CB_EnableHardLimit.Text = "Habilitar o limite máximo";
+            this.CB_EnableHardLimit.UseVisualStyleBackColor = true;
+            this.CB_EnableHardLimit.Click += new System.EventHandler(this.CB_EnableHardLimit_Click);
             // 
             // LimitConfiguration
             // 
@@ -80,7 +81,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(536, 432);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.CB_EnableHardLimit);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -97,6 +98,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox CB_EnableHardLimit;
     }
 }
