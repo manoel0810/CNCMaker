@@ -283,5 +283,19 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
                 return;
             }
         }
+
+        private void Zerar_Click(object sender, EventArgs e)
+        {
+            ExecuteQuery("G0 X0 Y0 Z0");
+            for (int i = 0; i < POS.Length; i++)
+            {
+                POS[i] = 0;
+                UpdateLabel(i);
+            }
+
+            RMX.Value = 0;
+            RMY.Value = 0;
+            RMZ.Value = 0;
+        }
     }
 }

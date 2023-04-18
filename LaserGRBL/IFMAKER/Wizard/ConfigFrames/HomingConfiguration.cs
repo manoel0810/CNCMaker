@@ -25,12 +25,17 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
                     HommingEnable = s.Substring(4).Equals("1");
 
             CB_HommingEnable.Checked = HommingEnable;
+            LBWarning.Visible = HommingEnable;
         }
 
         private void CB_EnableHomming_Click(object sender, EventArgs e)
         {
             if (WriteConfig(22, (CB_HommingEnable.Checked ? "1" : "0")))
+            {
                 HommingEnable = CB_HommingEnable.Checked;
+                LBWarning.Visible = HommingEnable;
+
+            }
             else
             {
                 MessageBox.Show("Erro ao gravar configurações. Verifique a entrada de dados e se a controladora está devidamente conectada", "Wizard Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
