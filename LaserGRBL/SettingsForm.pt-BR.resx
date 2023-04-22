@@ -123,7 +123,7 @@ Você precisa conectar sua fonte ao pino D11 do arduino
 Caso contrário, desabilite a opção "Suporte PWM"</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Hardware Compativel</value>
+    <value>Hardware compatível</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Configurações</value>

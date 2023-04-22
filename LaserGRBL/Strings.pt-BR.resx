@@ -112,71 +112,71 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BoxAutoUpdateFailed" xml:space="preserve">
-    <value>Automatic update failed!
-Please manually download the new version from lasergrbl site.</value>
+    <value>Falha na atualização automática!
+Por favor, baixe a nova versão manualmente para atualização.</value>
   </data>
   <data name="BoxAutoUpdateRequireAdmin" xml:space="preserve">
-    <value>Update require administrator privilege!</value>
+    <value>A atualização requer privilégios de administrador!</value>
   </data>
   <data name="BoxAutoUpdateResult" xml:space="preserve">
-    <value>Update result</value>
+    <value>Resultado da atualização</value>
   </data>
   <data name="BoxAutoUpdateSuccess" xml:space="preserve">
-    <value>Update success!</value>
+    <value>Atualização bem sucedida</value>
   </data>
   <data name="BoxConnectErrorTitle" xml:space="preserve">
-    <value>Cannot connect to device</value>
+    <value>Não é possível se conectar ao dispositivo</value>
   </data>
   <data name="BoxExportConfigError" xml:space="preserve">
-    <value>Error exporting config!</value>
+    <value>Erro ao exportar configurações</value>
   </data>
   <data name="BoxExportConfigErrorTitle" xml:space="preserve">
-    <value>Error</value>
+    <value>Erro</value>
   </data>
   <data name="BoxExportConfigFileNotFound" xml:space="preserve">
-    <value>File does not exist!</value>
+    <value>O arquivo não existe!</value>
   </data>
   <data name="BoxExportConfigSuccess" xml:space="preserve">
-    <value>{0} Config exported with success!</value>
+    <value>{0} Configurações exportadas com sucesso!</value>
   </data>
   <data name="BoxExportConfigSuccessTitle" xml:space="preserve">
-    <value>Success</value>
+    <value>Sucesso</value>
   </data>
   <data name="BoxImportConfigFileError" xml:space="preserve">
-    <value>Error reading file!</value>
+    <value>Erro na leitura do arquivo</value>
   </data>
   <data name="BoxImportConfigWithError" xml:space="preserve">
-    <value>{0} Config imported with {1} errors!</value>
+    <value>{0} Configurações importadas com {1} erros!</value>
   </data>
   <data name="BoxImportConfigWithoutError" xml:space="preserve">
-    <value>{0} Config imported with success!</value>
+    <value>{0} Configurações importadas com sucesso!</value>
   </data>
   <data name="CustomButtonEdit" xml:space="preserve">
-    <value>Edit button</value>
+    <value>Botão editar</value>
   </data>
   <data name="CustomButtonRemove" xml:space="preserve">
-    <value>Remove button</value>
+    <value>Botão remover</value>
   </data>
   <data name="DirectionDiagonal" xml:space="preserve">
-    <value>Diagonal (old)</value>
+    <value>Diagonal (antigo)</value>
   </data>
   <data name="DirectionHorizontal" xml:space="preserve">
-    <value>Horizontal (old)</value>
+    <value>Horizontal (antigo)</value>
   </data>
   <data name="DirectionNone" xml:space="preserve">
     <value>None</value>
   </data>
   <data name="DirectionVertical" xml:space="preserve">
-    <value>Vertical (old)</value>
+    <value>Vertical (antigo)</value>
   </data>
   <data name="FormulaCustom" xml:space="preserve">
-    <value>Custom</value>
+    <value>Customizar</value>
   </data>
   <data name="FormulaOpticalCorrect" xml:space="preserve">
     <value>OpticalCorrect</value>
@@ -194,22 +194,22 @@ Please manually download the new version from lasergrbl site.</value>
     <value>Sharp (NearestNeighbor)</value>
   </data>
   <data name="LanguageRequireRestart" xml:space="preserve">
-    <value>Restart required</value>
+    <value>É necessário reiniciar</value>
   </data>
   <data name="LanguageRequireRestartNow" xml:space="preserve">
-    <value>Require application restart, restart now?</value>
+    <value>É necessário a reinicialização do aplicativo, reiniciar agora?</value>
   </data>
   <data name="MacStatusAlarm" xml:space="preserve">
-    <value>Alarm</value>
+    <value>Alarme</value>
   </data>
   <data name="MacStatusCheck" xml:space="preserve">
-    <value>Check</value>
+    <value>Verificar</value>
   </data>
   <data name="MacStatusConnecting" xml:space="preserve">
-    <value>Connecting</value>
+    <value>Conectando</value>
   </data>
   <data name="MacStatusDisconnected" xml:space="preserve">
-    <value>Disconnected</value>
+    <value>Disconectado</value>
   </data>
   <data name="MacStatusDoor" xml:space="preserve">
     <value>Door</value>
@@ -230,12 +230,12 @@ Please manually download the new version from lasergrbl site.</value>
     <value>Run</value>
   </data>
   <data name="MacStatusUnknown" xml:space="preserve">
-    <value>Unknown</value>
+    <value>Desconhecido</value>
   </data>
   <data name="MainFormEstimatedTime" xml:space="preserve">
-    <value>Estimated Time:</value>
+    <value>Tempo estimado:</value>
   </data>
   <data name="MainFormProjectedTime" xml:space="preserve">
-    <value>Projected Time:</value>
+    <value>Tempo projetado:</value>
   </data>
 </root>

@@ -12,7 +12,7 @@ namespace LaserGRBL
     class ColorScheme
     {
         public enum Scheme
-        { BlueLaser, RedLaser, Dark, Hacker, Nighty }
+        { BlueLaser, RedLaser, Dark, Hacker, Nighty, IFPB }
 
         public static Dictionary<Scheme, Color[]> mData;
 
@@ -169,8 +169,38 @@ namespace LaserGRBL
 				Color.Yellow,				//link color
 				Color.Violet,				//visited link color
             });
+            mData.Add(Scheme.IFPB, new Color[]
+            {
+                SystemColors.ButtonHighlight,		//form backcolor
+				SystemColors.ControlText,			//form forecolor
 
-            CurrentScheme = Scheme.RedLaser;
+				Color.LightYellow,			//preview background
+				Color.Black,				//preview text
+				Color.Empty,				//preview grid?
+				Color.LightGray,			//preview reference line
+				Color.Blue,					//preview first line
+				Color.LightGray,			//preview other line
+				Color.Red,					//preview laser
+				Color.Black,					//preview cross position
+
+				Color.White,				//log background
+				Color.Black,				//command text
+				Color.DarkGreen,			//startup
+				Color.Crimson,				//alarm
+				Color.DimGray,				//config
+				Color.DodgerBlue,			//feedback
+				Color.OrangeRed,			//position
+				Color.Purple,				//others
+				
+				Color.DarkBlue,				//response good
+				Color.Red,					//response bad
+				Color.Black,				//response others
+
+				Color.DodgerBlue,			//link color
+				Color.Purple,				//visited link color
+			});
+
+            CurrentScheme = Scheme.IFPB;
         }
 
         public static bool DarkScheme

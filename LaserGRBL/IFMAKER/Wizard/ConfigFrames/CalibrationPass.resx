@@ -185,7 +185,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>NoControl</value>
   </data>
   <data name="PZ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 191</value>
+    <value>71, 191</value>
   </data>
   <data name="PZ.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -215,7 +215,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>NoControl</value>
   </data>
   <data name="PY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 133</value>
+    <value>71, 133</value>
   </data>
   <data name="PY.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -242,7 +242,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>True</value>
   </data>
   <data name="PX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>76, 75</value>
+    <value>71, 75</value>
   </data>
   <data name="PX.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>

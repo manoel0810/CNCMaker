@@ -31,9 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.ConnectionForm = new LaserGRBL.ConnectLogForm();
-            this.JogForm = new LaserGRBL.JogForm();
-            this.PreviewForm = new LaserGRBL.PreviewForm();
             this.StatusBar = new System.Windows.Forms.StatusStrip();
             this.TTLLines = new System.Windows.Forms.ToolStripStatusLabel();
             this.TTTLines = new System.Windows.Forms.ToolStripStatusLabel();
@@ -61,13 +58,14 @@
             this.MnUnlock = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.MnGrblConfig = new System.Windows.Forms.ToolStripMenuItem();
-            this.GrblWizardSetup = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnMaterialDB = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.MnHotkeys = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripSeparator();
             this.MnExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.TooltipConfiguracoes = new System.Windows.Forms.ToolStripMenuItem();
+            this.GrblWizardSetup = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnFileOpen = new System.Windows.Forms.ToolStripMenuItem();
             this.MnFileAppend = new System.Windows.Forms.ToolStripMenuItem();
@@ -142,6 +140,10 @@
             this.licenseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AwakeTimer = new System.Windows.Forms.Timer(this.components);
             this.MultipleInstanceTimer = new System.Windows.Forms.Timer(this.components);
+            this.ConnectionForm = new LaserGRBL.ConnectLogForm();
+            this.JogForm = new LaserGRBL.JogForm();
+            this.PreviewForm = new LaserGRBL.PreviewForm();
+            this.IFPBScheme = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -165,21 +167,6 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.PreviewForm);
             this.splitContainer1.SplitterMoved += new System.Windows.Forms.SplitterEventHandler(this.SplitContainer1_SplitterMoved);
-            // 
-            // ConnectionForm
-            // 
-            resources.ApplyResources(this.ConnectionForm, "ConnectionForm");
-            this.ConnectionForm.Name = "ConnectionForm";
-            // 
-            // JogForm
-            // 
-            resources.ApplyResources(this.JogForm, "JogForm");
-            this.JogForm.Name = "JogForm";
-            // 
-            // PreviewForm
-            // 
-            resources.ApplyResources(this.PreviewForm, "PreviewForm");
-            this.PreviewForm.Name = "PreviewForm";
             // 
             // StatusBar
             // 
@@ -305,6 +292,7 @@
             // 
             this.MMn.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MnGrbl,
+            this.TooltipConfiguracoes,
             this.fileToolStripMenuItem,
             this.MNEsp8266,
             this.schemaToolStripMenuItem,
@@ -327,7 +315,6 @@
             this.MnUnlock,
             this.toolStripSeparator1,
             this.MnGrblConfig,
-            this.GrblWizardSetup,
             this.settingsToolStripMenuItem,
             this.MnMaterialDB,
             this.toolStripSeparator2,
@@ -389,12 +376,6 @@
             this.MnGrblConfig.Name = "MnGrblConfig";
             this.MnGrblConfig.Click += new System.EventHandler(this.GrblConfigurationToolStripMenuItem_Click);
             // 
-            // GrblWizardSetup
-            // 
-            resources.ApplyResources(this.GrblWizardSetup, "GrblWizardSetup");
-            this.GrblWizardSetup.Name = "GrblWizardSetup";
-            this.GrblWizardSetup.Click += new System.EventHandler(this.GrblWizardSetup_Click);
-            // 
             // settingsToolStripMenuItem
             // 
             resources.ApplyResources(this.settingsToolStripMenuItem, "settingsToolStripMenuItem");
@@ -428,6 +409,19 @@
             resources.ApplyResources(this.MnExit, "MnExit");
             this.MnExit.Name = "MnExit";
             this.MnExit.Click += new System.EventHandler(this.ExitToolStripMenuItemClick);
+            // 
+            // TooltipConfiguracoes
+            // 
+            this.TooltipConfiguracoes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.GrblWizardSetup});
+            this.TooltipConfiguracoes.Name = "TooltipConfiguracoes";
+            resources.ApplyResources(this.TooltipConfiguracoes, "TooltipConfiguracoes");
+            // 
+            // GrblWizardSetup
+            // 
+            resources.ApplyResources(this.GrblWizardSetup, "GrblWizardSetup");
+            this.GrblWizardSetup.Name = "GrblWizardSetup";
+            this.GrblWizardSetup.Click += new System.EventHandler(this.GrblWizardSetup_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -537,7 +531,8 @@
             this.redLaserToolStripMenuItem,
             this.darkToolStripMenuItem,
             this.hackerToolStripMenuItem,
-            this.nightyToolStripMenuItem});
+            this.nightyToolStripMenuItem,
+            this.IFPBScheme});
             this.schemaToolStripMenuItem.Name = "schemaToolStripMenuItem";
             resources.ApplyResources(this.schemaToolStripMenuItem, "schemaToolStripMenuItem");
             // 
@@ -932,6 +927,27 @@
             this.MultipleInstanceTimer.Interval = 1000;
             this.MultipleInstanceTimer.Tick += new System.EventHandler(this.MultipleInstanceTimer_Tick);
             // 
+            // ConnectionForm
+            // 
+            resources.ApplyResources(this.ConnectionForm, "ConnectionForm");
+            this.ConnectionForm.Name = "ConnectionForm";
+            // 
+            // JogForm
+            // 
+            resources.ApplyResources(this.JogForm, "JogForm");
+            this.JogForm.Name = "JogForm";
+            // 
+            // PreviewForm
+            // 
+            resources.ApplyResources(this.PreviewForm, "PreviewForm");
+            this.PreviewForm.Name = "PreviewForm";
+            // 
+            // IFPBScheme
+            // 
+            this.IFPBScheme.Name = "IFPBScheme";
+            resources.ApplyResources(this.IFPBScheme, "IFPBScheme");
+            this.IFPBScheme.Click += new System.EventHandler(this.IFPBScheme_Click);
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -1073,7 +1089,9 @@
 		private System.Windows.Forms.ToolStripMenuItem dutchToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem MnConfigureOrturWiFi;
 		private System.Windows.Forms.ToolStripSeparator MnSeparatorConfigWiFi;
+        private System.Windows.Forms.ToolStripMenuItem TooltipConfiguracoes;
         private System.Windows.Forms.ToolStripMenuItem GrblWizardSetup;
+        private System.Windows.Forms.ToolStripMenuItem IFPBScheme;
     }
 }
 

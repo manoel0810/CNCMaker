@@ -1006,6 +1006,11 @@ namespace LaserGRBL
             Wizard = new WizardSetup(Core);
             Wizard.Show();
         }
+
+        private void IFPBScheme_Click(object sender, EventArgs e)
+        {
+            SetSchema(ColorScheme.Scheme.IFPB);
+        }
     }
 
 

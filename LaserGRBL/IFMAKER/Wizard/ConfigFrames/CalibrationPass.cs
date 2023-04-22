@@ -11,12 +11,15 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
         private readonly string[] Config;
         readonly int[] POS = new int[] { 0, 0, 0 };
         private readonly decimal[] parahm = new decimal[] { 0, 0, 0 };
+        private readonly GPoint mPoint;
 
         public CalibrationForm(string[] Configurations, GrblCore mCore)
         {
             InitializeComponent();
             Config = Configurations;
             this.mCore = mCore;
+            mPoint = mCore.MachinePosition;
+
             LoadConfiguration();
         }
 
@@ -24,27 +27,31 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
         {
             var obj = (Button)sender;
             int selectedbutton = -1;
+            float initialAxysValue = 0;
 
             switch (obj.Text)
             {
                 case "X+":
-                    POS[0] += 1;
+                    POS[0] += 10;
                     selectedbutton = 0;
+                    initialAxysValue = mPoint.X;
                     break;
                 case "Y+":
-                    POS[1] += 1;
+                    POS[1] += 10;
                     selectedbutton = 1;
+                    initialAxysValue = mPoint.Y;
                     break;
                 case "Z+":
-                    POS[2] += 1;
+                    POS[2] += 10;
                     selectedbutton = 2;
+                    initialAxysValue = mPoint.Z;
                     break;
             }
 
             if (selectedbutton == -1)
                 return;
 
-            string command = $"G0 {obj.Text.Substring(0, 1)}{POS[selectedbutton]}";
+            string command = $"G0 {obj.Text.Substring(0, 1)}{(POS[selectedbutton] + initialAxysValue).ToString().Replace(",", ".")}";
             ExecuteQuery(command);
             UpdateLabel(selectedbutton);
         }
@@ -53,27 +60,31 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
         {
             var obj = (Button)sender;
             int selectedbutton = -1;
+            float initialAxysValue = 0;
 
             switch (obj.Text)
             {
                 case "X-":
-                    POS[0] -= 1;
+                    POS[0] -= 10;
                     selectedbutton = 0;
+                    initialAxysValue = mPoint.X;
                     break;
                 case "Y-":
-                    POS[1] -= 1;
+                    POS[1] -= 10;
                     selectedbutton = 1;
+                    initialAxysValue = mPoint.Y;
                     break;
                 case "Z-":
-                    POS[2] -= 1;
+                    POS[2] -= 10;
                     selectedbutton = 2;
+                    initialAxysValue = mPoint.Z;
                     break;
             }
 
             if (selectedbutton == -1)
                 return;
 
-            string command = $"G0 {obj.Text.Substring(0, 1)}{POS[selectedbutton]}";
+            string command = $"G0 {obj.Text.Substring(0, 1)}{(POS[selectedbutton] + initialAxysValue).ToString().Replace(",", ".")}";
             ExecuteQuery(command);
             UpdateLabel(selectedbutton);
         }
