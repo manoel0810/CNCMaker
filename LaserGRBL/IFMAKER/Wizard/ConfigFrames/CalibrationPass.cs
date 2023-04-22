@@ -297,7 +297,7 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
 
         private void Zerar_Click(object sender, EventArgs e)
         {
-            ExecuteQuery("G0 X0 Y0 Z0");
+            ExecuteQuery($"G0 X{QFormat(mPoint.X)} Y{QFormat(mPoint.Y)} Z{QFormat(mPoint.Z)}");
             for (int i = 0; i < POS.Length; i++)
             {
                 POS[i] = 0;
@@ -308,5 +308,7 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
             RMY.Value = 0;
             RMZ.Value = 0;
         }
+
+        private string QFormat(float f) { return f.ToString().Replace(",", "."); }
     }
 }

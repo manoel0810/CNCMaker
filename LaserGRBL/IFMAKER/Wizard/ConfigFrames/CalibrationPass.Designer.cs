@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Zerar = new System.Windows.Forms.Button();
             this.PZ = new System.Windows.Forms.Label();
             this.PY = new System.Windows.Forms.Label();
             this.PX = new System.Windows.Forms.Label();
@@ -49,6 +50,8 @@
             this.RMZ = new System.Windows.Forms.NumericUpDown();
             this.RMY = new System.Windows.Forms.NumericUpDown();
             this.RMX = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -62,7 +65,6 @@
             this.NX = new System.Windows.Forms.NumericUpDown();
             this.NY = new System.Windows.Forms.NumericUpDown();
             this.NZ = new System.Windows.Forms.NumericUpDown();
-            this.Zerar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RMZ)).BeginInit();
@@ -100,6 +102,14 @@
             this.panel1.Controls.Add(this.label3);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // Zerar
+            // 
+            this.Zerar.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Zerar, "Zerar");
+            this.Zerar.Name = "Zerar";
+            this.Zerar.UseVisualStyleBackColor = false;
+            this.Zerar.Click += new System.EventHandler(this.Zerar_Click);
             // 
             // PZ
             // 
@@ -172,6 +182,8 @@
             this.panel2.Controls.Add(this.RMZ);
             this.panel2.Controls.Add(this.RMY);
             this.panel2.Controls.Add(this.RMX);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label4);
             resources.ApplyResources(this.panel2, "panel2");
@@ -227,6 +239,16 @@
             resources.ApplyResources(this.RMX, "RMX");
             this.RMX.Name = "RMX";
             this.RMX.ValueChanged += new System.EventHandler(this.RMX_ValueChanged);
+            // 
+            // label7
+            // 
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Name = "label7";
+            // 
+            // label6
+            // 
+            resources.ApplyResources(this.label6, "label6");
+            this.label6.Name = "label6";
             // 
             // label9
             // 
@@ -328,14 +350,6 @@
             0});
             this.NZ.Name = "NZ";
             // 
-            // Zerar
-            // 
-            this.Zerar.BackColor = System.Drawing.Color.Lime;
-            resources.ApplyResources(this.Zerar, "Zerar");
-            this.Zerar.Name = "Zerar";
-            this.Zerar.UseVisualStyleBackColor = false;
-            this.Zerar.Click += new System.EventHandler(this.Zerar_Click);
-            // 
             // CalibrationForm
             // 
             resources.ApplyResources(this, "$this");
@@ -401,5 +415,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Button Zerar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
     }
 }
