@@ -62,6 +62,7 @@
             this.NX = new System.Windows.Forms.NumericUpDown();
             this.NY = new System.Windows.Forms.NumericUpDown();
             this.NZ = new System.Windows.Forms.NumericUpDown();
+            this.Zerar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RMZ)).BeginInit();
@@ -86,6 +87,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.Zerar);
             this.panel1.Controls.Add(this.PZ);
             this.panel1.Controls.Add(this.PY);
             this.panel1.Controls.Add(this.PX);
@@ -326,6 +328,14 @@
             0});
             this.NZ.Name = "NZ";
             // 
+            // Zerar
+            // 
+            this.Zerar.BackColor = System.Drawing.Color.Lime;
+            resources.ApplyResources(this.Zerar, "Zerar");
+            this.Zerar.Name = "Zerar";
+            this.Zerar.UseVisualStyleBackColor = false;
+            this.Zerar.Click += new System.EventHandler(this.Zerar_Click);
+            // 
             // CalibrationForm
             // 
             resources.ApplyResources(this, "$this");
@@ -390,5 +400,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button Zerar;
     }
 }

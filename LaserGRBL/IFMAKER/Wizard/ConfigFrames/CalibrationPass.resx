@@ -177,15 +177,42 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Zerar.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="Zerar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 207</value>
+  </data>
+  <data name="Zerar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 31</value>
+  </data>
+  <data name="Zerar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Zerar.Text" xml:space="preserve">
+    <value>Zero</value>
+  </data>
+  <data name="&gt;&gt;Zerar.Name" xml:space="preserve">
+    <value>Zerar</value>
+  </data>
+  <data name="&gt;&gt;Zerar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Zerar.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;Zerar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="PZ.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PZ.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="PZ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 191</value>
+    <value>76, 161</value>
   </data>
   <data name="PZ.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -206,7 +233,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PZ.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="PY.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -215,7 +242,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>NoControl</value>
   </data>
   <data name="PY.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 133</value>
+    <value>76, 103</value>
   </data>
   <data name="PY.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -236,13 +263,13 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PY.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="PX.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="PX.Location" type="System.Drawing.Point, System.Drawing">
-    <value>71, 75</value>
+    <value>76, 45</value>
   </data>
   <data name="PX.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 13</value>
@@ -263,19 +290,19 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;PX.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="Btn_ZP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Btn_ZP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 180</value>
+    <value>119, 150</value>
   </data>
   <data name="Btn_ZP.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
   </data>
   <data name="Btn_ZP.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="Btn_ZP.Text" xml:space="preserve">
     <value>Z+</value>
@@ -290,19 +317,19 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Btn_ZP.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Btn_YP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Btn_YP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 122</value>
+    <value>119, 92</value>
   </data>
   <data name="Btn_YP.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
   </data>
   <data name="Btn_YP.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="Btn_YP.Text" xml:space="preserve">
     <value>Y+</value>
@@ -317,19 +344,19 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Btn_YP.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="Btn_XP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Btn_XP.Location" type="System.Drawing.Point, System.Drawing">
-    <value>119, 64</value>
+    <value>119, 34</value>
   </data>
   <data name="Btn_XP.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
   </data>
   <data name="Btn_XP.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Btn_XP.Text" xml:space="preserve">
     <value>X+</value>
@@ -344,19 +371,19 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Btn_XP.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="Btn_ZM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Btn_ZM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 180</value>
+    <value>12, 150</value>
   </data>
   <data name="Btn_ZM.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
   </data>
   <data name="Btn_ZM.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="Btn_ZM.Text" xml:space="preserve">
     <value>Z-</value>
@@ -371,19 +398,19 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Btn_ZM.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Btn_YM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Btn_YM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 122</value>
+    <value>12, 92</value>
   </data>
   <data name="Btn_YM.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
   </data>
   <data name="Btn_YM.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="Btn_YM.Text" xml:space="preserve">
     <value>Y-</value>
@@ -398,10 +425,10 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Btn_YM.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="Btn_XM.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 64</value>
+    <value>12, 34</value>
   </data>
   <data name="Btn_XM.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 35</value>
@@ -422,7 +449,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Btn_XM.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -452,7 +479,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 131</value>
@@ -461,7 +488,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>170, 253</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
     <value>panel1</value>
@@ -569,7 +596,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>105, 20</value>
   </data>
   <data name="RMZ.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>11</value>
   </data>
   <data name="&gt;&gt;RMZ.Name" xml:space="preserve">
     <value>RMZ</value>
@@ -590,7 +617,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>105, 20</value>
   </data>
   <data name="RMY.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>10</value>
   </data>
   <data name="&gt;&gt;RMY.Name" xml:space="preserve">
     <value>RMY</value>
@@ -611,7 +638,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>105, 20</value>
   </data>
   <data name="RMX.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>9</value>
   </data>
   <data name="&gt;&gt;RMX.Name" xml:space="preserve">
     <value>RMX</value>
@@ -692,7 +719,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>170, 253</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
@@ -806,7 +833,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>75, 23</value>
   </data>
   <data name="UpdateZ.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>18</value>
   </data>
   <data name="UpdateZ.Text" xml:space="preserve">
     <value>Atualizar</value>
@@ -836,7 +863,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>75, 23</value>
   </data>
   <data name="UpdateY.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>16</value>
   </data>
   <data name="UpdateY.Text" xml:space="preserve">
     <value>Atualizar</value>
@@ -863,7 +890,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>75, 23</value>
   </data>
   <data name="UpdateX.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>14</value>
   </data>
   <data name="UpdateX.Text" xml:space="preserve">
     <value>Atualizar</value>
@@ -920,7 +947,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>74, 20</value>
   </data>
   <data name="NX.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;NX.Name" xml:space="preserve">
     <value>NX</value>
@@ -941,7 +968,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>74, 20</value>
   </data>
   <data name="NY.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;NY.Name" xml:space="preserve">
     <value>NY</value>
@@ -962,7 +989,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>74, 20</value>
   </data>
   <data name="NZ.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;NZ.Name" xml:space="preserve">
     <value>NZ</value>
@@ -983,7 +1010,7 @@ Mova os eixos, verifique e atualize os passos, se necessário.</value>
     <value>170, 253</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;panel3.Name" xml:space="preserve">
     <value>panel3</value>

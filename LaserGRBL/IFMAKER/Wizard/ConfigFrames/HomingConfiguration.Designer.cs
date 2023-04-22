@@ -32,6 +32,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.LBWarning = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // CB_HommingEnable
@@ -75,12 +76,24 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Habilitar/Desabilitar Homing";
             // 
+            // LBWarning
+            // 
+            this.LBWarning.AutoSize = true;
+            this.LBWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LBWarning.Location = new System.Drawing.Point(20, 231);
+            this.LBWarning.Name = "LBWarning";
+            this.LBWarning.Size = new System.Drawing.Size(270, 13);
+            this.LBWarning.TabIndex = 10;
+            this.LBWarning.Text = "Atenção: Esta função requer fim de curso nos três eixos";
+            this.LBWarning.Visible = false;
+            // 
             // HomingConfiguration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
             this.ClientSize = new System.Drawing.Size(536, 432);
+            this.Controls.Add(this.LBWarning);
             this.Controls.Add(this.CB_HommingEnable);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -99,5 +112,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LBWarning;
     }
 }

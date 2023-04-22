@@ -132,7 +132,7 @@
             this.MinimizeBox = false;
             this.Name = "WizardSetup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "WizardSetup";
+            this.Text = "Configurações rápidas";
             this.Load += new System.EventHandler(this.WizardSetup_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Pb_Header)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
