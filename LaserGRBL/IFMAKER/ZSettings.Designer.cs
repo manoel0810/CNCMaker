@@ -156,9 +156,19 @@
             0,
             0,
             0});
+            this.NunCamadas.Minimum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             this.NunCamadas.Name = "NunCamadas";
             this.NunCamadas.Size = new System.Drawing.Size(120, 20);
             this.NunCamadas.TabIndex = 0;
+            this.NunCamadas.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
             this.NunCamadas.ValueChanged += new System.EventHandler(this.NunCamadas_ValueChanged);
             // 
             // CbHabilitarMulti

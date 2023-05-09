@@ -5,6 +5,7 @@
 // You should have received a copy of the GPLv3 General Public License  along with this program; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,  USA. using System;
 
 using CsPotrace.BezierToBiarc;
+using LaserGRBL;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -59,6 +60,7 @@ namespace CsPotrace
 
             if (LaserGRBL.IFMAKER.ZSettings.MULTI_LAYERS_ENABLE)
             {
+                //rv.Add("G1Z10");
                 for (int i = 0; i < LaserGRBL.IFMAKER.ZSettings.LAYERS_COUNT; i++)
                 {
                     double multFactor = LaserGRBL.IFMAKER.ZSettings.LAYERS_COTE * (i + 1);
@@ -169,7 +171,7 @@ namespace CsPotrace
                 rv.Add(lOff);
                 if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z || LaserGRBL.IFMAKER.ZSettings.MULTI_LAYERS_ENABLE)
                 {
-                    rv.Add($"G0 Z0");
+                    rv.Add($"G0 Z2");
                     //rv.Add($"G4 P1800");
                 }
             }
