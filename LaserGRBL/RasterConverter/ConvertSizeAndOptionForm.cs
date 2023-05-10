@@ -62,7 +62,7 @@ namespace LaserGRBL.RasterConverter
                 tableWidth = (int)GrblCore.Configuration.TableWidth;
                 tableHeight = (int)GrblCore.Configuration.TableHeight;
             }
-            catch (Exception ex) { MessageBox.Show(Strings.BoxMachineSizeOutOfRangeText, Strings.BoxMachineSizeOutOfRangeTitle, MessageBoxButtons.OK, MessageBoxIcon.Error); }
+            catch /*(Exception ex)*/ { MessageBox.Show(Strings.BoxMachineSizeOutOfRangeText, Strings.BoxMachineSizeOutOfRangeTitle, MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             IISizeW.MaxValue = tableWidth;
             IISizeH.MaxValue = tableHeight;

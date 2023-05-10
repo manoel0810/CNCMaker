@@ -411,6 +411,7 @@ namespace LaserGRBL
         public virtual Firmware Type
         { get { return Firmware.Grbl; } }
 
+        
         public static GrblConfST Configuration
         {
             get
@@ -1083,8 +1084,8 @@ namespace LaserGRBL
                 }
                 catch (Exception ex)
                 {
-                    //Logger.LogException("Write Config", ex);
-                    //throw (ex);
+                    Logger.LogException("Write Config", ex);
+                    throw (ex);
                 }
                 finally
                 {
@@ -3311,6 +3312,8 @@ namespace LaserGRBL
             foreach (KeyValuePair<int, string> kvp in configTable)
                 mData.Add(kvp.Key, kvp.Value);
         }
+
+        
 
         public GrblConfST(GrblConf old) : this(old?.GrblVersion)
         {
