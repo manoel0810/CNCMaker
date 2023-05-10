@@ -961,6 +961,27 @@ namespace LaserGRBL
         private void DrawJobPreview(Graphics g, GrblCommand.StatePositionBuilder spb, float zoom)
         {
             bool firstline = true; //used to draw the first line in a different color
+            /*
+            List<GrblCommand> ComandosJaExecutados = new List<GrblCommand>();
+            List<Color> Cores = new List<Color>()
+            {
+                Color.Red,
+                Color.Blue,
+                Color.Green,
+                Color.Purple,
+                Color.Orange,
+                Color.Yellow,
+                Color.Teal,
+                Color.Magenta,
+                Color.DarkCyan,
+                Color.DarkSlateGray
+            };
+
+            int Index = 0;
+            Color CurrentColor = Cores[0];
+            decimal CurrentZLayer = 0;
+            */
+
             foreach (GrblCommand cmd in list)
             {
                 try
@@ -968,6 +989,15 @@ namespace LaserGRBL
                     cmd.BuildHelper();
                     spb.AnalyzeCommand(cmd, false);
 
+                    /*
+                    if (cmd.Z.Number < CurrentZLayer)
+                        CurrentColor = Cores[Index++];
+                    else if (cmd.Z.Number > CurrentZLayer && cmd.Z.Number != 0)
+                    {
+                        Index = 0;
+                        CurrentColor = Cores[Index++];
+                    }
+                    */
 
                     if (spb.TrueMovement())
                     {
@@ -1001,6 +1031,9 @@ namespace LaserGRBL
 
                         firstline = false;
                     }
+
+                    //Aqui, armazenamos todos os comandos grbl que já foram executados. Dessa forma, podemos mudar a cor de camadas já executadas
+                    //ComandosJaExecutados.Add(cmd);
                 }
                 catch (Exception ex) { throw ex; }
                 finally { cmd.DeleteHelper(); }

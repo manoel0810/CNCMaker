@@ -5,6 +5,7 @@
 // You should have received a copy of the GPLv3 General Public License  along with this program; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,  USA. using System;
 
 using CsPotrace.BezierToBiarc;
+using LaserGRBL;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -57,12 +58,31 @@ namespace CsPotrace
         {
             List<string> rv = new List<string>();
 
-            OnPathBegin(Curves, lOn, oX, oY, scale, rv, skipcmd);
+            if (LaserGRBL.IFMAKER.ZSettings.MULTI_LAYERS_ENABLE)
+            {
+                //rv.Add("G1Z10");
+                for (int i = 0; i < LaserGRBL.IFMAKER.ZSettings.LAYERS_COUNT; i++)
+                {
+                    double multFactor = LaserGRBL.IFMAKER.ZSettings.LAYERS_COTE * (i + 1);
 
-            foreach (CsPotrace.Curve Curve in Curves)
-                OnPathSegment(Curve, oX, oY, scale, rv, g);
+                    OnPathBegin(Curves, lOn, oX, oY, scale, rv, skipcmd, multFactor);
 
-            OnPathEnd(Curves, lOff, oX, oY, scale, rv);
+                    foreach (Curve Curve in Curves)
+                        OnPathSegment(Curve, oX, oY, scale, rv, g);
+
+                    OnPathEnd(Curves, lOff, oX, oY, scale, rv);
+                }
+            }
+            else
+            {
+                OnPathBegin(Curves, lOn, oX, oY, scale, rv, skipcmd);
+
+                foreach (Curve Curve in Curves)
+                    OnPathSegment(Curve, oX, oY, scale, rv, g);
+
+                OnPathEnd(Curves, lOff, oX, oY, scale, rv);
+            }
+
 
             return rv;
         }
@@ -123,7 +143,7 @@ namespace CsPotrace
             }
         }
 
-        private static void OnPathBegin(List<CsPotrace.Curve> Curves, string lOn, double oX, double oY, double scale, List<string> rv, string skipcmd)
+        private static void OnPathBegin(List<CsPotrace.Curve> Curves, string lOn, double oX, double oY, double scale, List<string> rv, string skipcmd, double zIncrement = 0)
         {
             if (Curves.Count > 0)
             {
@@ -131,12 +151,15 @@ namespace CsPotrace
                 rv.Add(String.Format("{0} X{1} Y{2}", skipcmd, formatnumber(Curves[0].A.X + oX, scale), formatnumber(Curves[0].A.Y + oY, scale)));
                 //turn on laser
                 rv.Add(lOn);
+
                 //Adicionar cota z aqui
-                if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z)
+                if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z && !LaserGRBL.IFMAKER.ZSettings.MULTI_LAYERS_ENABLE)
                 {
                     rv.Add($"G0 Z-{LaserGRBL.IFMAKER.ZSettings.Z_COTE.ToString().Replace(",", ".")}");
                     //rv.Add($"G4 P1800");
                 }
+                else if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z && LaserGRBL.IFMAKER.ZSettings.MULTI_LAYERS_ENABLE)
+                    rv.Add($"G0 Z-{zIncrement.ToString().Replace(",", ".")}");
             }
         }
 
@@ -146,9 +169,9 @@ namespace CsPotrace
             if (Curves.Count > 0)
             {
                 rv.Add(lOff);
-                if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z)
+                if (LaserGRBL.IFMAKER.ZSettings.USE_COTE_Z || LaserGRBL.IFMAKER.ZSettings.MULTI_LAYERS_ENABLE)
                 {
-                    rv.Add($"G0 Z0");
+                    rv.Add($"G0 Z2");
                     //rv.Add($"G4 P1800");
                 }
             }

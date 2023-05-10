@@ -1226,6 +1226,9 @@ namespace LaserGRBL
 
 
                 Logger.LogMessage("EnqueueProgram", "Push File, {0} lines", file.Count);
+                //float ZPosition = MachinePosition.Z < 0 ? (Math.Abs(MachinePosition.Z) + 3) : (MachinePosition.Z + 3);
+                mQueuePtr.Enqueue(new GrblCommand($"G0Z{2}"));
+
                 foreach (GrblCommand cmd in file)
                     mQueuePtr.Enqueue(cmd.Clone() as GrblCommand);
 
@@ -1646,7 +1649,12 @@ namespace LaserGRBL
             {
                 mPrenotedJogDirection = JogDirection.None;
                 if (dir == JogDirection.Home)
+                {
+                    if (IFMAKER.ZSettings.USE_COTE_Z)
+                        EnqueueCommand(new GrblCommand("G0Z0"));
+
                     EnqueueCommand(new GrblCommand(string.Format("$J=G90X0Y0F{0}", mPrenotedJogSpeed)));
+                }
                 else
                     EnqueueCommand(GetRelativeJogCommandv11(dir, step));
             }
