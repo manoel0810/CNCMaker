@@ -53,7 +53,7 @@ namespace LaserGRBL
                     //return (RV.Success);
                 }
             }
-            catch (Exception ex) { }
+            catch { }
         }
 
         private class MyWebClient : WebClient
