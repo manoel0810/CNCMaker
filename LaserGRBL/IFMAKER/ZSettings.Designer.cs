@@ -41,6 +41,7 @@
             this.NunCamadas = new System.Windows.Forms.NumericUpDown();
             this.CbHabilitarMulti = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Seguranca = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.Espessura)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Profundidade)).BeginInit();
             this.PainelCamadas.SuspendLayout();
@@ -70,7 +71,7 @@
             0,
             0,
             65536});
-            this.Profundidade.Location = new System.Drawing.Point(12, 91);
+            this.Profundidade.Location = new System.Drawing.Point(12, 66);
             this.Profundidade.Maximum = new decimal(new int[] {
             0,
             0,
@@ -79,6 +80,7 @@
             this.Profundidade.Name = "Profundidade";
             this.Profundidade.Size = new System.Drawing.Size(148, 20);
             this.Profundidade.TabIndex = 1;
+            this.Profundidade.Enter += new System.EventHandler(this.Profundidade_Enter);
             // 
             // label1
             // 
@@ -92,7 +94,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 75);
+            this.label2.Location = new System.Drawing.Point(9, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 13);
             this.label2.TabIndex = 1;
@@ -185,6 +187,7 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.Seguranca);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Espessura);
             this.panel1.Controls.Add(this.Profundidade);
@@ -193,6 +196,18 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(191, 131);
             this.panel1.TabIndex = 5;
+            // 
+            // Seguranca
+            // 
+            this.Seguranca.AutoSize = true;
+            this.Seguranca.Location = new System.Drawing.Point(12, 92);
+            this.Seguranca.Name = "Seguranca";
+            this.Seguranca.Size = new System.Drawing.Size(105, 17);
+            this.Seguranca.TabIndex = 4;
+            this.Seguranca.Text = "Exceder margem";
+            this.Seguranca.UseVisualStyleBackColor = true;
+            this.Seguranca.CheckedChanged += new System.EventHandler(this.Seguranca_CheckedChanged);
+            this.Seguranca.MouseHover += new System.EventHandler(this.Seguranca_MouseHover);
             // 
             // ZSettings
             // 
@@ -237,5 +252,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Estimador;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox Seguranca;
     }
 }

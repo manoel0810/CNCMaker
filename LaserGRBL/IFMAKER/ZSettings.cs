@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace LaserGRBL.IFMAKER
@@ -10,6 +11,8 @@ namespace LaserGRBL.IFMAKER
         public static double Z_COTE = 0.0d;
         public static double LAYERS_COTE = 0.0d;
         public static int LAYERS_COUNT = 0;
+
+        private ToolTip Tipe = new ToolTip();
 
         public DialogResult ExitResult { get; set; }
 
@@ -28,7 +31,7 @@ namespace LaserGRBL.IFMAKER
 
         private void Btn_Definir_Click(object sender, EventArgs e)
         {
-            if (Profundidade.Value <= 0)
+            if (Profundidade.Value <= 0 || Espessura.Value <= 0)
             {
                 MessageBox.Show("Nenhuma cota Z foi definida para a profundidade do corte", "Cotas Z", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -64,6 +67,41 @@ namespace LaserGRBL.IFMAKER
         private void CbHabilitarMulti_CheckedChanged(object sender, EventArgs e)
         {
             PainelCamadas.Enabled = CbHabilitarMulti.Checked;
+
+            var t = NunCamadas.Value;
+            NunCamadas.Value = 3;
+            NunCamadas.Value = t;
+        }
+
+        private void Seguranca_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Seguranca.Checked)
+            {
+                Profundidade.Maximum = 1000;
+                Profundidade.ForeColor = Color.DarkRed;
+            }
+            else
+            {
+                Profundidade.Maximum = Espessura.Value;
+                Profundidade.Value = Espessura.Value / 2;
+                Profundidade.ForeColor = Color.Black;
+            }
+        }
+
+        private void Seguranca_MouseHover(object sender, EventArgs e)
+        {
+            Tipe?.Dispose();
+
+            Tipe = new ToolTip();
+            Tipe.SetToolTip((CheckBox)sender, "Permite que a espessura de corte ultrapasse o diâmetro do material");
+        }
+
+        private void Profundidade_Enter(object sender, EventArgs e)
+        {
+            Tipe?.Dispose();
+
+            Tipe = new ToolTip();
+            Tipe.SetToolTip((NumericUpDown)sender, "A margem de segurança foi desabilitada!");
         }
     }
 }
