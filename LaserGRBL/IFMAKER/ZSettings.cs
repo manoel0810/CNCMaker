@@ -93,7 +93,7 @@ namespace LaserGRBL.IFMAKER
             Tipe?.Dispose();
 
             Tipe = new ToolTip();
-            Tipe.SetToolTip((CheckBox)sender, "Permite que a espessura de corte ultrapasse o diâmetro do material");
+            Tipe.SetToolTip((CheckBox)sender, "Permite que o diâmetro de corte ultrapasse o diâmetro do material");
         }
 
         private void Profundidade_Enter(object sender, EventArgs e)

@@ -209,7 +209,7 @@ Por favor, baixe a nova versão manualmente para atualização.</value>
     <value>Conectando</value>
   </data>
   <data name="MacStatusDisconnected" xml:space="preserve">
-    <value>Disconectado</value>
+    <value>Desconectado</value>
   </data>
   <data name="MacStatusDoor" xml:space="preserve">
     <value>Door</value>

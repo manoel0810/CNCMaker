@@ -151,7 +151,7 @@
     <value>13</value>
   </data>
   <data name="BtnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="&gt;&gt;BtnCancel.Name" xml:space="preserve">
     <value>BtnCancel</value>
@@ -178,7 +178,7 @@
     <value>5</value>
   </data>
   <data name="BtnSave.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Salvar</value>
   </data>
   <data name="&gt;&gt;BtnSave.Name" xml:space="preserve">
     <value>BtnSave</value>
@@ -304,16 +304,16 @@
     <value>690, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>527, 52</value>
+    <value>561, 52</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
-    <value>Streaming Mode: [Default Buffered]
-- Buffered: optimize commands streaming filling up grbl receive buffer [recommended]
-- Synchronous: wait for the execution of each command prior to send the very next command [slower but safer]
-- RepeatOnError:  same as Synchronous but repeat commands if detect error [experimental]</value>
+    <value>Modo de streaming: [Buffer padrão]
+- Buffered: otimiza o streaming de comandos preenchendo o buffer de recebimento grbl [recomendado]
+- Síncrono: aguarde a execução de cada comando antes de enviar o próximo comando [mais lento, mas mais seguro]
+- RepeatOnError: o mesmo que Synchronous, mas repete comandos se detectar erro [experimental]</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -382,7 +382,7 @@
     <value>BtnStreamingMode</value>
   </data>
   <data name="&gt;&gt;BtnStreamingMode.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.8.4.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.9.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnStreamingMode.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -433,17 +433,17 @@
     <value>690, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 65</value>
+    <value>566, 65</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>29</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>Connection Protocol:
-- UsbSerial: is the most common protocol. Should be used if your engraver is connected to USB or COM port.
-- UsbSerial2: an alternative implementation of USB serial to bypass Microsoft SerialPort issues
-- Telnet: if you have a WiFi-Telnet bridge. Communication is implemented like a simple telnet client-server.
-- LaserWebESP8266: support WiFi connection via WebSocket. Compatible with LaserWeb-ESP8266 software.</value>
+    <value>Protocolo de conexão:
+- UsbSerial: é o protocolo mais comum. Deve ser usado se o gravador estiver conectado à porta USB ou COM.
+- UsbSerial2: uma implementação alternativa de serial USB para contornar os problemas do Microsoft SerialPort
+- Telnet: se você tiver uma ponte WiFi-Telnet. A comunicação é implementada como um simples cliente-servidor telnet.
+- LaserWebESP8266: suporta conexão Wi-Fi via WebSocket. Compatível com o software LaserWeb-ESP8266.</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -485,7 +485,7 @@
     <value>BtnProtocol</value>
   </data>
   <data name="&gt;&gt;BtnProtocol.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.8.4.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.9.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnProtocol.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -509,15 +509,15 @@
     <value>690, 0</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 39</value>
+    <value>562, 39</value>
   </data>
   <data name="label6.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
-    <value>Threading Mode: UltraFast, Fast, Quiet, Slow. [Default Fast]
-This setting affect the speed of sending thread and the frequency of status report request.
-Set slower values if you are experiencing issues.</value>
+    <value>Modo de Threading: UltraFast, Fast, Quiet, Slow. [Rápido padrão]
+Essa configuração afeta a velocidade do encadeamento de envio e a frequência da solicitação do relatório de status.
+Defina valores mais lentos se estiver enfrentando problemas.</value>
   </data>
   <data name="&gt;&gt;label6.Name" xml:space="preserve">
     <value>label6</value>
@@ -559,7 +559,7 @@ Set slower values if you are experiencing issues.</value>
     <value>BtnThreadingModel</value>
   </data>
   <data name="&gt;&gt;BtnThreadingModel.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.8.4.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.9.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnThreadingModel.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -577,13 +577,13 @@ Set slower values if you are experiencing issues.</value>
     <value>28, 247</value>
   </data>
   <data name="CbIssueDetector.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 17</value>
+    <value>136, 17</value>
   </data>
   <data name="CbIssueDetector.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="CbIssueDetector.Text" xml:space="preserve">
-    <value>Issue detector</value>
+    <value> Detector de problemas</value>
   </data>
   <data name="&gt;&gt;CbIssueDetector.Name" xml:space="preserve">
     <value>CbIssueDetector</value>
@@ -613,14 +613,14 @@ Set slower values if you are experiencing issues.</value>
     <value>690, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 26</value>
+    <value>484, 26</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
-    <value>LaserGRBL can detect issues and warn the user providing info about how to solve them.
-If disabled all the issues are silently managed without warning.</value>
+    <value>O GRBL pode detectar problemas e avisar o usuário fornecendo informações sobre como resolvê-los.
+Se desativado, todos os problemas são gerenciados silenciosamente sem aviso.</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -644,13 +644,13 @@ If disabled all the issues are silently managed without warning.</value>
     <value>28, 280</value>
   </data>
   <data name="CbSoftReset.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 17</value>
+    <value>142, 17</value>
   </data>
   <data name="CbSoftReset.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
   <data name="CbSoftReset.Text" xml:space="preserve">
-    <value>Soft Reset [Ctrl-X]</value>
+    <value>Reinicialização suave [Ctrl-X]</value>
   </data>
   <data name="&gt;&gt;CbSoftReset.Name" xml:space="preserve">
     <value>CbSoftReset</value>
@@ -680,13 +680,13 @@ If disabled all the issues are silently managed without warning.</value>
     <value>690, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 13</value>
+    <value>444, 13</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>If enabled LaserGRBL send a soft-reset when the connection to grbl is opened.</value>
+    <value>Se ativado, o GRBL envia uma reinicialização suave quando a conexão com o grbl é aberta.</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -746,13 +746,13 @@ If disabled all the issues are silently managed without warning.</value>
     <value>690, 0</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>462, 13</value>
+    <value>475, 13</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
-    <value>If enabled LaserGRBL send a hard-reset when the connection to grbl is opened. [Position is lost!]</value>
+    <value>Se ativado, o GRBL envia um hard-reset quando a conexão com o grbl é aberta. [Posição perdida!]</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -776,17 +776,17 @@ If disabled all the issues are silently managed without warning.</value>
     <value>177, 1</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>391, 65</value>
+    <value>449, 65</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
-    <value>Firmware type
-- Grbl: the awesome firmware for which LaserGRBL was developed for.
-- Smoothie [experimental]: support has been added recently and is not fully tested.
-- Marlin [experimental]: support has been added recently and is not fully tested.
-- VigoWork [experimental]: support for VG-L7x model that is non grbl-standard.</value>
+    <value>Tipo de firmware
+- Grbl: o incrível firmware para o qual o LaserGRBL foi desenvolvido.
+- Smoothie [experimental]: o suporte foi adicionado recentemente e não foi totalmente testado.
+- Marlin [experimental]: o suporte foi adicionado recentemente e não foi totalmente testado.
+- VigoWork [experimental]: suporte para modelo VG-L7x que não é padrão grbl.</value>
   </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
@@ -828,7 +828,7 @@ If disabled all the issues are silently managed without warning.</value>
     <value>BtnFType</value>
   </data>
   <data name="&gt;&gt;BtnFType.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.8.4.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.9.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnFType.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -846,13 +846,13 @@ If disabled all the issues are silently managed without warning.</value>
     <value>28, 328</value>
   </data>
   <data name="CbQueryDI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 17</value>
+    <value>141, 17</value>
   </data>
   <data name="CbQueryDI.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
   <data name="CbQueryDI.Text" xml:space="preserve">
-    <value>Query $I at connect</value>
+    <value>Consultar $I na conexão</value>
   </data>
   <data name="&gt;&gt;CbQueryDI.Name" xml:space="preserve">
     <value>CbQueryDI</value>
@@ -876,14 +876,14 @@ If disabled all the issues are silently managed without warning.</value>
     <value>177, 325</value>
   </data>
   <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
-    <value>580, 26</value>
+    <value>624, 26</value>
   </data>
   <data name="label46.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
   <data name="label46.Text" xml:space="preserve">
-    <value>In enabled LaserGRBL send a $I command and detect some information from the machine (i.e. the machine rx buffer size).
-Please do not disable this feature.</value>
+    <value>Em GRBL ativado, envie um comando $I e detecte algumas informações da máquina (ou seja, o tamanho do buffer rx da máquina).
+Por favor, não desabilite este recurso.</value>
   </data>
   <data name="&gt;&gt;label46.Name" xml:space="preserve">
     <value>label46</value>
@@ -940,7 +940,7 @@ Please do not disable this feature.</value>
     <value>0</value>
   </data>
   <data name="TpHardware.Text" xml:space="preserve">
-    <value>Protocol</value>
+    <value>Protocolo</value>
   </data>
   <data name="&gt;&gt;TpHardware.Name" xml:space="preserve">
     <value>TpHardware</value>
@@ -973,7 +973,7 @@ Please do not disable this feature.</value>
     <value>NoControl</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 4</value>
+    <value>180, 4</value>
   </data>
   <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -982,15 +982,15 @@ Please do not disable this feature.</value>
     <value>690, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>449, 39</value>
+    <value>556, 39</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>LaserGRBL use power modulation through G-Code "S command" to produce grayscale tones.
-Your laser must support TTL control connected to arduino PIN D11.
-If not, please disable PWM support.</value>
+    <value>[LASER!] O GRBL usa modulação de energia por meio do "comando S" do código G para produzir de tons de cinza.
+Seu laser deve suportar o controle TTL conectado ao arduino PIN D11.
+Caso contrário, desative o suporte a PWM.</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -1011,7 +1011,7 @@ If not, please disable PWM support.</value>
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 50</value>
+    <value>180, 50</value>
   </data>
   <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1020,13 +1020,13 @@ If not, please disable PWM support.</value>
     <value>690, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>662, 26</value>
+    <value>676, 39</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="label5.Text" xml:space="preserve">
-    <value>By default LaserGRBL produces engraving lines in both travel directions of the laser head. Some tests have shown that this mode (which is faster) produces lower quality results. If the maximum marking quality is desired, activate this option.</value>
+    <value>[LASER!] Por padrão, o LaserGRBL produz linhas de gravação em ambas as direções de deslocamento do cabeçote do laser. Alguns testes mostraram que este modo (que é mais rápido) produz resultados de qualidade inferior. Se desejar a máxima qualidade de marcação, ative esta opção.</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -1050,13 +1050,13 @@ If not, please disable PWM support.</value>
     <value>28, 50</value>
   </data>
   <data name="CbUnidirectional.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 17</value>
+    <value>137, 17</value>
   </data>
   <data name="CbUnidirectional.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
   <data name="CbUnidirectional.Text" xml:space="preserve">
-    <value>Unidirectional Engraving</value>
+    <value>Gravação Unidirecional</value>
   </data>
   <data name="&gt;&gt;CbUnidirectional.Name" xml:space="preserve">
     <value>CbUnidirectional</value>
@@ -1086,7 +1086,7 @@ If not, please disable PWM support.</value>
     <value>0</value>
   </data>
   <data name="CBSupportPWM.Text" xml:space="preserve">
-    <value>Support PWM</value>
+    <value>Suporte PWM</value>
   </data>
   <data name="&gt;&gt;CBSupportPWM.Name" xml:space="preserve">
     <value>CBSupportPWM</value>
@@ -1128,7 +1128,7 @@ If not, please disable PWM support.</value>
     <value>BtnModulationInfo</value>
   </data>
   <data name="&gt;&gt;BtnModulationInfo.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.8.4.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.9.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnModulationInfo.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -1143,7 +1143,7 @@ If not, please disable PWM support.</value>
     <value>NoControl</value>
   </data>
   <data name="CbHiRes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 83</value>
+    <value>28, 96</value>
   </data>
   <data name="CbHiRes.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 17</value>
@@ -1173,7 +1173,7 @@ If not, please disable PWM support.</value>
     <value>NoControl</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 83</value>
+    <value>180, 96</value>
   </data>
   <data name="label22.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1182,14 +1182,14 @@ If not, please disable PWM support.</value>
     <value>690, 0</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>624, 26</value>
+    <value>678, 26</value>
   </data>
   <data name="label22.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
   <data name="label22.Text" xml:space="preserve">
-    <value>The max resolution available in LaserGRBL is 20 lines/mm (about 500dpi) that is high enough for most user.
-If you need higher resolution you can enable "HiRes" and remove this limit.  Be careful: LaserGRBL will need many more resources!</value>
+    <value>A resolução máxima disponível no GRBL é de 20 linhas/mm (cerca de 500 dpi) que é alta o suficiente para a maioria dos usuários.
+Se precisar de uma resolução mais alta, você pode habilitar "HiRes" e remover esse limite. Cuidado: o GRBL precisará de muito mais recursos!</value>
   </data>
   <data name="&gt;&gt;label22.Name" xml:space="preserve">
     <value>label22</value>
@@ -1210,16 +1210,16 @@ If you need higher resolution you can enable "HiRes" and remove this limit.  Be 
     <value>NoControl</value>
   </data>
   <data name="CbDisableSkip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 116</value>
+    <value>28, 129</value>
   </data>
   <data name="CbDisableSkip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 17</value>
+    <value>145, 17</value>
   </data>
   <data name="CbDisableSkip.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
   <data name="CbDisableSkip.Text" xml:space="preserve">
-    <value>Disable G0 fast skip</value>
+    <value>Desativar salto rápido G0</value>
   </data>
   <data name="&gt;&gt;CbDisableSkip.Name" xml:space="preserve">
     <value>CbDisableSkip</value>
@@ -1240,7 +1240,7 @@ If you need higher resolution you can enable "HiRes" and remove this limit.  Be 
     <value>NoControl</value>
   </data>
   <data name="label39.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 116</value>
+    <value>180, 129</value>
   </data>
   <data name="label39.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1249,15 +1249,15 @@ If you need higher resolution you can enable "HiRes" and remove this limit.  Be 
     <value>690, 0</value>
   </data>
   <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>688, 78</value>
+    <value>683, 78</value>
   </data>
   <data name="label39.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="label39.Text" xml:space="preserve">
-    <value>By default LaserGRBL use G0 - rapid movement - to skip white parts of your jobs. This speed up the engraving process but it can result in inaccurate positioning with disappointing results. It is usually possible to improve the results by correctly setting the maximum acceleration and speed values ($ 120,121,122 and $ 110,111,112) in the grbl configuration.
+    <value>Por padrão, o GRBL usa G0 - movimento rápido - para pular partes brancas de seus trabalhos. Isso acelera o processo de gravação, mas pode resultar em posicionamento impreciso com resultados decepcionantes. Geralmente é possível melhorar os resultados definindo corretamente os valores máximos de aceleração e velocidade ($ 120.121.122 e $ 110.111.112) na configuração grbl.
 
-If you disable this feature LaserGRBL will use G1 linear movement at the same job speed, with the result that all the engraving process is done at the same speed. This will slow down the process, but can drammatically improve the result where others approacs fails.</value>
+Se você desativar esse recurso, o GRBL usará o movimento linear G1 na mesma velocidade de trabalho, resultando em todo o processo de gravação na mesma velocidade. Isso retardará o processo, mas pode melhorar drasticamente o resultado onde outras abordagens falham.</value>
   </data>
   <data name="&gt;&gt;label39.Name" xml:space="preserve">
     <value>label39</value>
@@ -1278,16 +1278,16 @@ If you disable this feature LaserGRBL will use G1 linear movement at the same jo
     <value>NoControl</value>
   </data>
   <data name="CbDisableBoundWarn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 201</value>
+    <value>28, 214</value>
   </data>
   <data name="CbDisableBoundWarn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 17</value>
+    <value>140, 17</value>
   </data>
   <data name="CbDisableBoundWarn.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="CbDisableBoundWarn.Text" xml:space="preserve">
-    <value>Disable boundary warn</value>
+    <value>Desativar aviso de limite</value>
   </data>
   <data name="&gt;&gt;CbDisableBoundWarn.Name" xml:space="preserve">
     <value>CbDisableBoundWarn</value>
@@ -1308,7 +1308,7 @@ If you disable this feature LaserGRBL will use G1 linear movement at the same jo
     <value>NoControl</value>
   </data>
   <data name="label40.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 201</value>
+    <value>180, 214</value>
   </data>
   <data name="label40.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1317,14 +1317,14 @@ If you disable this feature LaserGRBL will use G1 linear movement at the same jo
     <value>690, 0</value>
   </data>
   <data name="label40.Size" type="System.Drawing.Size, System.Drawing">
-    <value>453, 26</value>
+    <value>452, 26</value>
   </data>
   <data name="label40.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
   <data name="label40.Text" xml:space="preserve">
-    <value>LaserGRBL will warn you if you are going to create a job bigger then your engraver workspace.
-Set this flag if you don't whant this safety control.</value>
+    <value>O GRBL irá avisá-lo se você for criar um trabalho maior que o espaço de trabalho do gravador.
+Defina este sinalizador se você não quiser este controle de segurança.</value>
   </data>
   <data name="&gt;&gt;label40.Name" xml:space="preserve">
     <value>label40</value>
@@ -1348,7 +1348,7 @@ Set this flag if you don't whant this safety control.</value>
     <value>5</value>
   </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>886, 359</value>
+    <value>886, 388</value>
   </data>
   <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -1375,13 +1375,13 @@ Set this flag if you don't whant this safety control.</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="TpRasterImport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 365</value>
+    <value>892, 394</value>
   </data>
   <data name="TpRasterImport.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="TpRasterImport.Text" xml:space="preserve">
-    <value>Raster import</value>
+    <value>Importação de raster</value>
   </data>
   <data name="&gt;&gt;TpRasterImport.Name" xml:space="preserve">
     <value>TpRasterImport</value>
@@ -1423,14 +1423,14 @@ Set this flag if you don't whant this safety control.</value>
     <value>690, 0</value>
   </data>
   <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>650, 26</value>
+    <value>672, 26</value>
   </data>
   <data name="label43.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label43.Text" xml:space="preserve">
-    <value>Starting from version 4.6.1 LaserGRBL uses a better approximation algorithm of bezier curves, capable of returning more accurate results.
-Disable this option if you prefer to use the old algorithm.</value>
+    <value>A partir da versão 4.6.1 o GRBL utiliza um algoritmo de aproximação melhor das curvas de Bezier, capaz de retornar resultados mais precisos.
+Desative esta opção se preferir usar o algoritmo antigo.</value>
   </data>
   <data name="&gt;&gt;label43.Name" xml:space="preserve">
     <value>label43</value>
@@ -1505,7 +1505,7 @@ Disable this option if you prefer to use the old algorithm.</value>
     <value>imageButton1</value>
   </data>
   <data name="&gt;&gt;imageButton1.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.8.4.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.9.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;imageButton1.Parent" xml:space="preserve">
     <value>tableLayoutPanel18</value>
@@ -1523,7 +1523,7 @@ Disable this option if you prefer to use the old algorithm.</value>
     <value>2</value>
   </data>
   <data name="tableLayoutPanel18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>886, 359</value>
+    <value>886, 388</value>
   </data>
   <data name="tableLayoutPanel18.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1550,13 +1550,13 @@ Disable this option if you prefer to use the old algorithm.</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="TpVectorImport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 365</value>
+    <value>892, 394</value>
   </data>
   <data name="TpVectorImport.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
   <data name="TpVectorImport.Text" xml:space="preserve">
-    <value>Vector import</value>
+    <value>Importação de vetores</value>
   </data>
   <data name="&gt;&gt;TpVectorImport.Name" xml:space="preserve">
     <value>TpVectorImport</value>
@@ -1589,7 +1589,7 @@ Disable this option if you prefer to use the old algorithm.</value>
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 4</value>
+    <value>250, 4</value>
   </data>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1598,16 +1598,16 @@ Disable this option if you prefer to use the old algorithm.</value>
     <value>690, 0</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 91</value>
+    <value>689, 91</value>
   </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
-    <value>Without "Continuous Jog" when jog button is pressed LaserGRBL send Jog request with settled speed and movement; and the jog is fully executed to the final position.
-If you enable "Continuous Jog" jogging is sent with mouse-down and aborted/interrupted on mouse-up, so you can do approximative positioning but in a very comfortable way.
+    <value>Sem "Jog Contínuo" quando o botão de jog é pressionado GRBL envia solicitação de Jog com velocidade e movimento estabelecidos; e o jog é totalmente executado até a posição final.
+Se você habilitar "Jog Contínuo", o jogging é enviado com o mouse para baixo e abortado/interrompido com o mouse para cima, para que você possa fazer um posicionamento aproximado, mas de uma maneira muito confortável.
 
-NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size is correctily configured in Grbl Configuration (Menu "Grbl" -&gt; "Grbl Configuration" $130, $131, $132)</value>
+NOTA: "Jog Contínuo" só funciona com Grbl v1.1 ou posterior, e requer que o tamanho da mesa esteja configurado corretamente na Configuração Grbl (Menu "Grbl" -&gt; "Configuração Grbl" $ 130, $ 131, $ 132)</value>
   </data>
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
@@ -1631,7 +1631,7 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 104</value>
+    <value>250, 104</value>
   </data>
   <data name="label11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1640,13 +1640,14 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>690, 0</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>566, 13</value>
+    <value>230, 13</value>
   </data>
   <data name="label11.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="label11.Text" xml:space="preserve">
-    <value>LaserGRBL is not designed to support Z axis, but if you have a 3axis hardware maybe you could find this option usefull.</value>
+    <value>Permite ao usuário habilitar o controle do eixo Z
+</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -1673,13 +1674,13 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>28, 102</value>
   </data>
   <data name="CbEnableZJog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 17</value>
+    <value>215, 17</value>
   </data>
   <data name="CbEnableZJog.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
   <data name="CbEnableZJog.Text" xml:space="preserve">
-    <value>Show Z up/down control</value>
+    <value>Mostrar controle Z para cima/para baixo</value>
   </data>
   <data name="&gt;&gt;CbEnableZJog.Name" xml:space="preserve">
     <value>CbEnableZJog</value>
@@ -1703,13 +1704,13 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>28, 4</value>
   </data>
   <data name="CbContinuosJog.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 17</value>
+    <value>89, 17</value>
   </data>
   <data name="CbContinuosJog.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="CbContinuosJog.Text" xml:space="preserve">
-    <value>Continuos Jog</value>
+    <value>Jog contínuo</value>
   </data>
   <data name="&gt;&gt;CbContinuosJog.Name" xml:space="preserve">
     <value>CbContinuosJog</value>
@@ -1766,7 +1767,7 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>NoControl</value>
   </data>
   <data name="label41.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 128</value>
+    <value>250, 128</value>
   </data>
   <data name="label41.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1775,13 +1776,13 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>690, 0</value>
   </data>
   <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>426, 13</value>
+    <value>529, 13</value>
   </data>
   <data name="label41.TabIndex" type="System.Int32, mscorlib">
     <value>37</value>
   </data>
   <data name="label41.Text" xml:space="preserve">
-    <value>With "click 'n jog" enabled a double-click on preview surface will jog to the click position.</value>
+    <value>Com "click 'n jog" ativado, um clique duplo na superfície de visualização irá deslocar para a posição de clique.</value>
   </data>
   <data name="&gt;&gt;label41.Name" xml:space="preserve">
     <value>label41</value>
@@ -1805,7 +1806,7 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>4</value>
   </data>
   <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>886, 359</value>
+    <value>886, 388</value>
   </data>
   <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1832,13 +1833,13 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>3, 3, 3, 3</value>
   </data>
   <data name="TpJogControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 365</value>
+    <value>892, 394</value>
   </data>
   <data name="TpJogControl.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="TpJogControl.Text" xml:space="preserve">
-    <value>Jog control</value>
+    <value>Controle de jog</value>
   </data>
   <data name="&gt;&gt;TpJogControl.Name" xml:space="preserve">
     <value>TpJogControl</value>
@@ -1874,7 +1875,7 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>NoControl</value>
   </data>
   <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 87</value>
+    <value>211, 113</value>
   </data>
   <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1883,13 +1884,13 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>690, 0</value>
   </data>
   <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>480, 13</value>
+    <value>619, 13</value>
   </data>
   <data name="label20.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
   <data name="label20.Text" xml:space="preserve">
-    <value>Time OFF: after this cooling time LaserGRBL will send a resume command to continue engraving job.</value>
+    <value>Tempo OFF: após esse tempo de resfriamento, o GRBL enviará um comando de retomada para continuar o trabalho de gravação.</value>
   </data>
   <data name="&gt;&gt;label20.Name" xml:space="preserve">
     <value>label20</value>
@@ -1922,14 +1923,14 @@ NOTE: "Continuous Jog" only work with Grbl v1.1 or later, and require table size
     <value>690, 0</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>672, 39</value>
+    <value>682, 65</value>
   </data>
   <data name="label12.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label12.Text" xml:space="preserve">
-    <value>Some laser diodes can heat-up to much if they run for a long time at the highest power. To prevent diode overheating and increase your laser lifetime you can add some automatic cooling-down cycles that insert some pause during engraivng process.
-If Auto Cooling is enabled LaserGRBL will send automatic "feed hold" and "job resume" according with ON-OFF timing configuration.</value>
+    <value>[LASER!] Alguns diodos laser podem esquentar muito se funcionarem por muito tempo na potência máxima. Para evitar o superaquecimento do diodo e aumentar a vida útil do laser, você pode adicionar alguns ciclos de resfriamento automático que inserem alguma pausa durante o processo de gravação.
+Se o Resfriamento Automático estiver ativado, o GRBL enviará automaticamente "retenção de alimentação" e "retomada do trabalho" de acordo com a configuração de tempo ON-OFF.</value>
   </data>
   <data name="&gt;&gt;label12.Name" xml:space="preserve">
     <value>label12</value>
@@ -1953,7 +1954,7 @@ If Auto Cooling is enabled LaserGRBL will send automatic "feed hold" and "job re
     <value>NoControl</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 50</value>
+    <value>211, 76</value>
   </data>
   <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -1962,14 +1963,14 @@ If Auto Cooling is enabled LaserGRBL will send automatic "feed hold" and "job re
     <value>690, 0</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>396, 26</value>
+    <value>471, 26</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="label13.Text" xml:space="preserve">
-    <value>Time ON: this is the maximum time that Laser will stay on during engraving process.
-After this time LaserGRBL will send an automatic feed hold to cool down the laser.</value>
+    <value>Tempo LIGADO: é o tempo máximo que o Laser ficará ligado durante o processo de gravação.
+Após esse período, o GRBL enviará uma retenção de alimentação automática para resfriar o laser.</value>
   </data>
   <data name="&gt;&gt;label13.Name" xml:space="preserve">
     <value>label13</value>
@@ -1993,13 +1994,13 @@ After this time LaserGRBL will send an automatic feed hold to cool down the lase
     <value>28, 4</value>
   </data>
   <data name="CbAutoCooling.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 17</value>
+    <value>168, 17</value>
   </data>
   <data name="CbAutoCooling.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="CbAutoCooling.Text" xml:space="preserve">
-    <value>Enable auto cooling</value>
+    <value>Ativar resfriamento automático</value>
   </data>
   <data name="&gt;&gt;CbAutoCooling.Name" xml:space="preserve">
     <value>CbAutoCooling</value>
@@ -2167,7 +2168,7 @@ After this time LaserGRBL will send an automatic feed hold to cool down the lase
     <value>4</value>
   </data>
   <data name="tableLayoutPanel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 47</value>
+    <value>25, 73</value>
   </data>
   <data name="tableLayoutPanel7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -2350,7 +2351,7 @@ After this time LaserGRBL will send an automatic feed hold to cool down the lase
     <value>4</value>
   </data>
   <data name="tableLayoutPanel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 80</value>
+    <value>25, 106</value>
   </data>
   <data name="tableLayoutPanel8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -2425,7 +2426,7 @@ After this time LaserGRBL will send an automatic feed hold to cool down the lase
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>172, 111</value>
+    <value>172, 137</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -2458,19 +2459,17 @@ After this time LaserGRBL will send an automatic feed hold to cool down the lase
     <value>NoControl</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 108</value>
+    <value>211, 140</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>538, 39</value>
+    <value>664, 26</value>
   </data>
   <data name="label21.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="label21.Text" xml:space="preserve">
-    <value>Warning: this feature will work only with grbl versions &gt; v1.1 with "laser mode" enabled.
-If you use auto-cooling with older grbl version (or with laser mode disabled) the laser will not turn off during pauses
-and burns holes in your work!
-</value>
+    <value>Aviso: este recurso funcionará apenas com versões grbl &gt; v1.1 com "modo laser" ativado. Se você usar o resfriamento automático com a 
+versão grbl mais antiga (ou com o modo laser desativado), o laser não será desligado durante as pausas e queima buracos em seu trabalho!</value>
   </data>
   <data name="&gt;&gt;label21.Name" xml:space="preserve">
     <value>label21</value>
@@ -2494,17 +2493,17 @@ and burns holes in your work!
     <value>NoControl</value>
   </data>
   <data name="LblWarnOrturAC.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 148</value>
+    <value>211, 173</value>
   </data>
   <data name="LblWarnOrturAC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>660, 26</value>
+    <value>651, 26</value>
   </data>
   <data name="LblWarnOrturAC.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
   </data>
   <data name="LblWarnOrturAC.Text" xml:space="preserve">
-    <value>Ortur User: Ortur Firmware (all version up to 137) has a bug on the machining resume that prevents properly using the auto-cooling function.
-Please do not use Automatic Cooling with Ortur engraver until a new firmware is released.</value>
+    <value>Usuário Ortur: Ortur Firmware (todas as versões até 137) tem um bug no resumo da usinagem que impede o uso adequado da função de 
+resfriamento automático. Por favor, não use o resfriamento automático com o gravador Ortur até que um novo firmware seja lançado.</value>
   </data>
   <data name="&gt;&gt;LblWarnOrturAC.Name" xml:space="preserve">
     <value>LblWarnOrturAC</value>
@@ -2528,7 +2527,7 @@ Please do not use Automatic Cooling with Ortur engraver until a new firmware is 
     <value>6</value>
   </data>
   <data name="tableLayoutPanel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>886, 359</value>
+    <value>886, 388</value>
   </data>
   <data name="tableLayoutPanel6.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2555,13 +2554,13 @@ Please do not use Automatic Cooling with Ortur engraver until a new firmware is 
     <value>3, 3, 3, 3</value>
   </data>
   <data name="TpAutoCooling.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 365</value>
+    <value>892, 394</value>
   </data>
   <data name="TpAutoCooling.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="TpAutoCooling.Text" xml:space="preserve">
-    <value>Automatic cooling</value>
+    <value>Resfriamento automático</value>
   </data>
   <data name="&gt;&gt;TpAutoCooling.Name" xml:space="preserve">
     <value>TpAutoCooling</value>
@@ -2606,17 +2605,17 @@ Please do not use Automatic Cooling with Ortur engraver until a new firmware is 
     <value>690, 0</value>
   </data>
   <data name="LblHeader.Size" type="System.Drawing.Size, System.Drawing">
-    <value>431, 65</value>
+    <value>520, 65</value>
   </data>
   <data name="LblHeader.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="LblHeader.Text" xml:space="preserve">
-    <value>LaserGRBL will append this GCode before starting any job.
-You can customize this code, for example adding M8 to turn on fan.
+    <value>O GRBL anexará este GCode antes de iniciar qualquer trabalho.
+Você pode personalizar esse código, por exemplo, adicionando M8 para ligar o ventilador.
 
-Here you can use the same syntax of custom buttons if you need to push some positioning
-related to the specific job is going to be executed.</value>
+Aqui você pode usar a mesma sintaxe dos botões personalizados se precisar empurrar algum posicionamento
+relacionado ao trabalho específico que será executado.</value>
   </data>
   <data name="&gt;&gt;LblHeader.Name" xml:space="preserve">
     <value>LblHeader</value>
@@ -2667,7 +2666,7 @@ related to the specific job is going to be executed.</value>
     <value>36</value>
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
-    <value>Header</value>
+    <value>Cabeçalho</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -2718,7 +2717,7 @@ related to the specific job is going to be executed.</value>
     <value>37</value>
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Footer</value>
+    <value>Rodapé</value>
   </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
@@ -2769,7 +2768,7 @@ related to the specific job is going to be executed.</value>
     <value>38</value>
   </data>
   <data name="groupBox3.Text" xml:space="preserve">
-    <value>Multiple Passes</value>
+    <value>Passes Múltiplos</value>
   </data>
   <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
     <value>groupBox3</value>
@@ -2802,17 +2801,17 @@ related to the specific job is going to be executed.</value>
     <value>690, 0</value>
   </data>
   <data name="LblFooter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>421, 65</value>
+    <value>452, 65</value>
   </data>
   <data name="LblFooter.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
   </data>
   <data name="LblFooter.Text" xml:space="preserve">
-    <value>LaserGRBL will enqueue this GCode at the end of any job.
-Can be used to push back your engraver in a initial state like going back to zero position
-or sending M9 to turn off fan etc.
+    <value>O GRBL enfileirará este GCode no final de qualquer trabalho.
+Pode ser usado para empurrar seu gravador para um estado inicial, como voltar à posição zero
+ou enviar M9 para desligar o ventilador, etc.
 
-Here you can use the same syntax of custom buttons.</value>
+Aqui você pode usar a mesma sintaxe dos botões personalizados.</value>
   </data>
   <data name="&gt;&gt;LblFooter.Name" xml:space="preserve">
     <value>LblFooter</value>
@@ -2845,16 +2844,16 @@ Here you can use the same syntax of custom buttons.</value>
     <value>690, 0</value>
   </data>
   <data name="LblPasses.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 52</value>
+    <value>398, 52</value>
   </data>
   <data name="LblPasses.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="LblPasses.Text" xml:space="preserve">
-    <value>When performing multiple passes LaserGRBL will push this GCode in the between of each passes.
-Can be used to move Z down to perform deeper cuts.
+    <value>Ao executar várias passagens, o GRBL enviará este GCode entre cada passagem.
+Pode ser usado para mover Z para baixo para realizar cortes mais profundos.
 
-Here you can use the same syntax of custom buttons.</value>
+Aqui você pode usar a mesma sintaxe dos botões personalizados.</value>
   </data>
   <data name="&gt;&gt;LblPasses.Name" xml:space="preserve">
     <value>LblPasses</value>
@@ -2878,7 +2877,7 @@ Here you can use the same syntax of custom buttons.</value>
     <value>4</value>
   </data>
   <data name="tableLayoutPanel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 365</value>
+    <value>892, 394</value>
   </data>
   <data name="tableLayoutPanel9.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -2902,7 +2901,7 @@ Here you can use the same syntax of custom buttons.</value>
     <value>4, 22</value>
   </data>
   <data name="TpGCodeSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 365</value>
+    <value>892, 394</value>
   </data>
   <data name="TpGCodeSettings.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -3316,7 +3315,7 @@ Here you can use the same syntax of custom buttons.</value>
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 12</value>
+    <value>413, 12</value>
   </data>
   <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -3325,15 +3324,14 @@ Here you can use the same syntax of custom buttons.</value>
     <value>690, 0</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 26</value>
+    <value>425, 26</value>
   </data>
   <data name="label23.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label23.Text" xml:space="preserve">
-    <value>Here you can set another sound for success events, like when a job is finished.
-Check to enable.
-</value>
+    <value>Aqui você pode definir outro som para eventos de sucesso, como quando um trabalho é 
+concluído. Marque para habilitar.</value>
   </data>
   <data name="&gt;&gt;label23.Name" xml:space="preserve">
     <value>label23</value>
@@ -3357,7 +3355,7 @@ Check to enable.
     <value>NoControl</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 56</value>
+    <value>413, 56</value>
   </data>
   <data name="label24.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
@@ -3366,16 +3364,15 @@ Check to enable.
     <value>690, 0</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
-    <value>417, 39</value>
+    <value>441, 39</value>
   </data>
   <data name="label24.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
-    <value>Here you can set another warning sound.
-This usually fired on a bad GCode command, but your machine can continue operating.
-Check to enable.
-</value>
+    <value>Aqui você pode definir outro som de aviso.
+Isso geralmente é acionado em um comando GCode ruim, mas sua máquina pode continuar 
+operando. Marque para habilitar.</value>
   </data>
   <data name="&gt;&gt;label24.Name" xml:space="preserve">
     <value>label24</value>
@@ -3414,13 +3411,13 @@ Check to enable.
     <value>3, 0</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 20</value>
+    <value>116, 20</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
-    <value>Warning Sound</value>
+    <value>Som de aviso</value>
   </data>
   <data name="&gt;&gt;label26.Name" xml:space="preserve">
     <value>label26</value>
@@ -3450,7 +3447,7 @@ Check to enable.
     <value>6</value>
   </data>
   <data name="changeWarBtn.Text" xml:space="preserve">
-    <value>Change</value>
+    <value>Alterar</value>
   </data>
   <data name="&gt;&gt;changeWarBtn.Name" xml:space="preserve">
     <value>changeWarBtn</value>
@@ -3480,13 +3477,13 @@ Check to enable.
     <value>229, 2</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 16</value>
+    <value>115, 16</value>
   </data>
   <data name="label27.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="label27.Text" xml:space="preserve">
-    <value>Sound File</value>
+    <value>Arquivo de som</value>
   </data>
   <data name="&gt;&gt;label27.Name" xml:space="preserve">
     <value>label27</value>
@@ -3543,7 +3540,7 @@ Check to enable.
     <value>2</value>
   </data>
   <data name="tableLayoutPanel11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 49</value>
+    <value>347, 49</value>
   </data>
   <data name="tableLayoutPanel11.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
@@ -3588,13 +3585,13 @@ Check to enable.
     <value>3, 0</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 20</value>
+    <value>107, 20</value>
   </data>
   <data name="label29.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label29.Text" xml:space="preserve">
-    <value>Error Sound</value>
+    <value>Som de erro</value>
   </data>
   <data name="&gt;&gt;label29.Name" xml:space="preserve">
     <value>label29</value>
@@ -3624,7 +3621,7 @@ Check to enable.
     <value>6</value>
   </data>
   <data name="changeFatBtn.Text" xml:space="preserve">
-    <value>Change</value>
+    <value>Alterar</value>
   </data>
   <data name="&gt;&gt;changeFatBtn.Name" xml:space="preserve">
     <value>changeFatBtn</value>
@@ -3654,13 +3651,13 @@ Check to enable.
     <value>229, 2</value>
   </data>
   <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 16</value>
+    <value>115, 16</value>
   </data>
   <data name="label30.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="label30.Text" xml:space="preserve">
-    <value>Sound File</value>
+    <value>Arquivo de som</value>
   </data>
   <data name="&gt;&gt;label30.Name" xml:space="preserve">
     <value>label30</value>
@@ -3717,7 +3714,7 @@ Check to enable.
     <value>2</value>
   </data>
   <data name="tableLayoutPanel12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>326, 49</value>
+    <value>347, 49</value>
   </data>
   <data name="tableLayoutPanel12.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -3762,13 +3759,13 @@ Check to enable.
     <value>3, 0</value>
   </data>
   <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 20</value>
+    <value>142, 20</value>
   </data>
   <data name="label34.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label34.Text" xml:space="preserve">
-    <value>Connect Sound</value>
+    <value>Som de conexão</value>
   </data>
   <data name="&gt;&gt;label34.Name" xml:space="preserve">
     <value>label34</value>
@@ -3798,7 +3795,7 @@ Check to enable.
     <value>6</value>
   </data>
   <data name="changeConBtn.Text" xml:space="preserve">
-    <value>Change</value>
+    <value>Alterar</value>
   </data>
   <data name="&gt;&gt;changeConBtn.Name" xml:space="preserve">
     <value>changeConBtn</value>
@@ -3828,13 +3825,13 @@ Check to enable.
     <value>229, 2</value>
   </data>
   <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 16</value>
+    <value>115, 16</value>
   </data>
   <data name="label35.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="label35.Text" xml:space="preserve">
-    <value>Sound File</value>
+    <value>Arquivo de som</value>
   </data>
   <data name="&gt;&gt;label35.Name" xml:space="preserve">
     <value>label35</value>
@@ -3891,7 +3888,7 @@ Check to enable.
     <value>2</value>
   </data>
   <data name="tableLayoutPanel14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 49</value>
+    <value>347, 49</value>
   </data>
   <data name="tableLayoutPanel14.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
@@ -3936,13 +3933,13 @@ Check to enable.
     <value>3, 0</value>
   </data>
   <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 20</value>
+    <value>171, 20</value>
   </data>
   <data name="label37.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label37.Text" xml:space="preserve">
-    <value>Disconnect Sound</value>
+    <value>Som de desconexão</value>
   </data>
   <data name="&gt;&gt;label37.Name" xml:space="preserve">
     <value>label37</value>
@@ -3972,7 +3969,7 @@ Check to enable.
     <value>6</value>
   </data>
   <data name="changeDconBtn.Text" xml:space="preserve">
-    <value>Change</value>
+    <value>Alterar</value>
   </data>
   <data name="&gt;&gt;changeDconBtn.Name" xml:space="preserve">
     <value>changeDconBtn</value>
@@ -4002,13 +3999,13 @@ Check to enable.
     <value>229, 2</value>
   </data>
   <data name="label38.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 16</value>
+    <value>115, 16</value>
   </data>
   <data name="label38.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="label38.Text" xml:space="preserve">
-    <value>Sound File</value>
+    <value>Arquivo de som</value>
   </data>
   <data name="&gt;&gt;label38.Name" xml:space="preserve">
     <value>label38</value>
@@ -4110,13 +4107,13 @@ Check to enable.
     <value>3, 0</value>
   </data>
   <data name="LblSuccessSound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 20</value>
+    <value>141, 20</value>
   </data>
   <data name="LblSuccessSound.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="LblSuccessSound.Text" xml:space="preserve">
-    <value>Success Sound</value>
+    <value>Som de sucesso</value>
   </data>
   <data name="&gt;&gt;LblSuccessSound.Name" xml:space="preserve">
     <value>LblSuccessSound</value>
@@ -4146,7 +4143,7 @@ Check to enable.
     <value>6</value>
   </data>
   <data name="changeSucBtn.Text" xml:space="preserve">
-    <value>Change</value>
+    <value>Alterar</value>
   </data>
   <data name="&gt;&gt;changeSucBtn.Name" xml:space="preserve">
     <value>changeSucBtn</value>
@@ -4176,13 +4173,13 @@ Check to enable.
     <value>229, 2</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 16</value>
+    <value>115, 16</value>
   </data>
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
   <data name="label25.Text" xml:space="preserve">
-    <value>Sound File</value>
+    <value>Arquivo de som</value>
   </data>
   <data name="&gt;&gt;label25.Name" xml:space="preserve">
     <value>label25</value>
@@ -4239,7 +4236,7 @@ Check to enable.
     <value>2</value>
   </data>
   <data name="tableLayoutPanel13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>345, 49</value>
+    <value>347, 49</value>
   </data>
   <data name="tableLayoutPanel13.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
@@ -4269,18 +4266,16 @@ Check to enable.
     <value>NoControl</value>
   </data>
   <data name="label32.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 162</value>
+    <value>413, 169</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 26</value>
+    <value>315, 13</value>
   </data>
   <data name="label32.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
   </data>
   <data name="label32.Text" xml:space="preserve">
-    <value>Here you can set a sound for a successful connection.
-Check to enable.
-</value>
+    <value>Aqui você pode definir um som para uma conexão bem-sucedida.</value>
   </data>
   <data name="&gt;&gt;label32.Name" xml:space="preserve">
     <value>label32</value>
@@ -4304,19 +4299,18 @@ Check to enable.
     <value>NoControl</value>
   </data>
   <data name="label36.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 206</value>
+    <value>413, 206</value>
   </data>
   <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>216, 39</value>
+    <value>240, 39</value>
   </data>
   <data name="label36.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
   <data name="label36.Text" xml:space="preserve">
-    <value>Here you can set a sound for disconnection.
-Useful for some WiFi connections.
-Check to enable.
-</value>
+    <value>Aqui você pode definir um som para desconexão.
+Útil para algumas conexões WiFi.
+Marque para habilitar.</value>
   </data>
   <data name="&gt;&gt;label36.Name" xml:space="preserve">
     <value>label36</value>
@@ -4340,19 +4334,18 @@ Check to enable.
     <value>NoControl</value>
   </data>
   <data name="label28.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 106</value>
+    <value>413, 106</value>
   </data>
   <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>429, 39</value>
+    <value>426, 39</value>
   </data>
   <data name="label28.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
   <data name="label28.Text" xml:space="preserve">
-    <value>Here you can set an error sound for fatal errors.
-This means, your job most likely stopped, and LaserGRBL can not continue the operation.
-Check to enable.
-</value>
+    <value>Aqui você pode definir um som de erro para erros fatais.
+Isso significa que seu trabalho provavelmente parou e o LaserGRBL não pode continuar 
+a operação. Marque para habilitar.</value>
   </data>
   <data name="&gt;&gt;label28.Name" xml:space="preserve">
     <value>label28</value>
@@ -4391,13 +4384,13 @@ Check to enable.
     <value>3, 60</value>
   </data>
   <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
-    <value>222, 16</value>
+    <value>225, 16</value>
   </data>
   <data name="label44.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
   <data name="label44.Text" xml:space="preserve">
-    <value>Don't notify if job time less then</value>
+    <value>Tempo mínimo para notificação</value>
   </data>
   <data name="&gt;&gt;label44.Name" xml:space="preserve">
     <value>label44</value>
@@ -4427,7 +4420,7 @@ Check to enable.
 </value>
   </data>
   <data name="BtnTelegNoteInfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 3</value>
+    <value>291, 3</value>
   </data>
   <data name="BtnTelegNoteInfo.Size" type="System.Drawing.Size, System.Drawing">
     <value>17, 17</value>
@@ -4439,7 +4432,7 @@ Check to enable.
     <value>BtnTelegNoteInfo</value>
   </data>
   <data name="&gt;&gt;BtnTelegNoteInfo.Type" xml:space="preserve">
-    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.8.4.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>LaserGRBL.UserControls.ImageButton, LaserGRBL, Version=4.9.4.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;BtnTelegNoteInfo.Parent" xml:space="preserve">
     <value>tableLayoutPanel17</value>
@@ -4463,13 +4456,13 @@ Check to enable.
     <value>3, 1</value>
   </data>
   <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 20</value>
+    <value>203, 20</value>
   </data>
   <data name="label31.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label31.Text" xml:space="preserve">
-    <value>Telegram notification</value>
+    <value>Notificação do Telegram</value>
   </data>
   <data name="&gt;&gt;label31.Name" xml:space="preserve">
     <value>label31</value>
@@ -4499,13 +4492,13 @@ Check to enable.
     <value>3, 29</value>
   </data>
   <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 16</value>
+    <value>117, 16</value>
   </data>
   <data name="label33.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
   <data name="label33.Text" xml:space="preserve">
-    <value>Personal Code</value>
+    <value>Código pessoal</value>
   </data>
   <data name="&gt;&gt;label33.Name" xml:space="preserve">
     <value>label33</value>
@@ -4523,7 +4516,7 @@ Check to enable.
     <value>Left</value>
   </data>
   <data name="TxtNotification.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 27</value>
+    <value>126, 27</value>
   </data>
   <data name="TxtNotification.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 20</value>
@@ -4553,7 +4546,7 @@ Check to enable.
     <value>NoControl</value>
   </data>
   <data name="BtnTestNotification.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 26</value>
+    <value>291, 26</value>
   </data>
   <data name="BtnTestNotification.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 23</value>
@@ -4562,7 +4555,7 @@ Check to enable.
     <value>10</value>
   </data>
   <data name="BtnTestNotification.Text" xml:space="preserve">
-    <value>Test</value>
+    <value>Teste</value>
   </data>
   <data name="&gt;&gt;BtnTestNotification.Name" xml:space="preserve">
     <value>BtnTestNotification</value>
@@ -4640,7 +4633,7 @@ Check to enable.
     <value>1</value>
   </data>
   <data name="tableLayoutPanel19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 55</value>
+    <value>291, 55</value>
   </data>
   <data name="tableLayoutPanel19.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -4676,7 +4669,7 @@ Check to enable.
     <value>3</value>
   </data>
   <data name="tableLayoutPanel17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>378, 84</value>
+    <value>384, 84</value>
   </data>
   <data name="tableLayoutPanel17.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -4706,17 +4699,17 @@ Check to enable.
     <value>NoControl</value>
   </data>
   <data name="label42.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 290</value>
+    <value>413, 290</value>
   </data>
   <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 26</value>
+    <value>257, 26</value>
   </data>
   <data name="label42.TabIndex" type="System.Int32, mscorlib">
     <value>57</value>
   </data>
   <data name="label42.Text" xml:space="preserve">
-    <value>If you have telegram search for @LaserGRBL bot
-Obtain your personal code and write it here!</value>
+    <value>Se você tiver telegrama, procure o bot @LaserGRBL
+Obtenha seu código pessoal e escreva-o aqui!</value>
   </data>
   <data name="&gt;&gt;label42.Name" xml:space="preserve">
     <value>label42</value>
@@ -4740,7 +4733,7 @@ Obtain your personal code and write it here!</value>
     <value>8</value>
   </data>
   <data name="tableLayoutPanel10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>886, 359</value>
+    <value>886, 388</value>
   </data>
   <data name="tableLayoutPanel10.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -4767,7 +4760,7 @@ Obtain your personal code and write it here!</value>
     <value>3, 3, 3, 3</value>
   </data>
   <data name="TpSoundSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>892, 365</value>
+    <value>892, 394</value>
   </data>
   <data name="TpSoundSettings.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -8370,9 +8363,6 @@ Obtain your personal code and write it here!</value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAA
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

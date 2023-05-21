@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
@@ -143,7 +143,7 @@
   <data name="CbRestoreWCO.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CbRestoreWCO.Location" type="System.Drawing.Point, System.Drawing">
     <value>123, 13</value>
   </data>
@@ -160,7 +160,7 @@
     <value>CbRestoreWCO</value>
   </data>
   <data name="&gt;&gt;CbRestoreWCO.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CbRestoreWCO.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -190,7 +190,7 @@
     <value>BtnOK</value>
   </data>
   <data name="&gt;&gt;BtnOK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BtnOK.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -211,13 +211,13 @@
     <value>15</value>
   </data>
   <data name="BtnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cencelar</value>
   </data>
   <data name="&gt;&gt;BtnCancel.Name" xml:space="preserve">
     <value>BtnCancel</value>
   </data>
   <data name="&gt;&gt;BtnCancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BtnCancel.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -247,7 +247,7 @@
     <value>CbRedoHoming</value>
   </data>
   <data name="&gt;&gt;CbRedoHoming.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CbRedoHoming.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -259,7 +259,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 225</value>
+    <value>3, 243</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -274,7 +274,7 @@
     <value>tableLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -313,7 +313,7 @@
     <value>True</value>
   </data>
   <data name="LblSomeLines.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 51</value>
+    <value>386, 51</value>
   </data>
   <data name="LblSomeLines.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 13</value>
@@ -328,7 +328,7 @@
     <value>LblSomeLines</value>
   </data>
   <data name="&gt;&gt;LblSomeLines.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblSomeLines.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -346,19 +346,19 @@
     <value>4, 49</value>
   </data>
   <data name="RbSomeLines.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 17</value>
+    <value>214, 17</value>
   </data>
   <data name="RbSomeLines.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="RbSomeLines.Text" xml:space="preserve">
-    <value>Resume some lines before the stop</value>
+    <value>Retome algumas linhas antes da parada</value>
   </data>
   <data name="&gt;&gt;RbSomeLines.Name" xml:space="preserve">
     <value>RbSomeLines</value>
   </data>
   <data name="&gt;&gt;RbSomeLines.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RbSomeLines.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -373,7 +373,7 @@
     <value>Fill</value>
   </data>
   <data name="LblLineNumber.Location" type="System.Drawing.Point, System.Drawing">
-    <value>381, 1</value>
+    <value>383, 1</value>
   </data>
   <data name="LblLineNumber.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -388,7 +388,7 @@
     <value>5</value>
   </data>
   <data name="LblLineNumber.Text" xml:space="preserve">
-    <value>Line #</value>
+    <value>Linha #</value>
   </data>
   <data name="LblLineNumber.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -397,7 +397,7 @@
     <value>LblLineNumber</value>
   </data>
   <data name="&gt;&gt;LblLineNumber.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblLineNumber.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -412,22 +412,22 @@
     <value>True</value>
   </data>
   <data name="RbFromSpecific.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 98</value>
+    <value>4, 101</value>
   </data>
   <data name="RbFromSpecific.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 17</value>
+    <value>181, 17</value>
   </data>
   <data name="RbFromSpecific.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="RbFromSpecific.Text" xml:space="preserve">
-    <value>Resume from specific line</value>
+    <value>Retomar de uma linha específica</value>
   </data>
   <data name="&gt;&gt;RbFromSpecific.Name" xml:space="preserve">
     <value>RbFromSpecific</value>
   </data>
   <data name="&gt;&gt;RbFromSpecific.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RbFromSpecific.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -445,19 +445,19 @@
     <value>4, 25</value>
   </data>
   <data name="RbFromBeginning.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 17</value>
+    <value>217, 17</value>
   </data>
   <data name="RbFromBeginning.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
   <data name="RbFromBeginning.Text" xml:space="preserve">
-    <value>Start again from beginning [safe]</value>
+    <value>Comece novamente do começo [seguro]</value>
   </data>
   <data name="&gt;&gt;RbFromBeginning.Name" xml:space="preserve">
     <value>RbFromBeginning</value>
   </data>
   <data name="&gt;&gt;RbFromBeginning.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RbFromBeginning.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -481,13 +481,13 @@
     <value>0, 20</value>
   </data>
   <data name="LblOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 20</value>
+    <value>381, 20</value>
   </data>
   <data name="LblOptions.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="LblOptions.Text" xml:space="preserve">
-    <value>Options</value>
+    <value>Opções</value>
   </data>
   <data name="LblOptions.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -496,7 +496,7 @@
     <value>LblOptions</value>
   </data>
   <data name="&gt;&gt;LblOptions.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblOptions.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -511,7 +511,7 @@
     <value>True</value>
   </data>
   <data name="LblBegin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 27</value>
+    <value>386, 27</value>
   </data>
   <data name="LblBegin.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 13</value>
@@ -526,7 +526,7 @@
     <value>LblBegin</value>
   </data>
   <data name="&gt;&gt;LblBegin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblBegin.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -541,7 +541,7 @@
     <value>False</value>
   </data>
   <data name="UdSpecific.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 97</value>
+    <value>386, 99</value>
   </data>
   <data name="UdSpecific.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 20</value>
@@ -553,7 +553,7 @@
     <value>UdSpecific</value>
   </data>
   <data name="&gt;&gt;UdSpecific.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UdSpecific.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -571,19 +571,19 @@
     <value>4, 73</value>
   </data>
   <data name="RbFromSent.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 17</value>
+    <value>203, 17</value>
   </data>
   <data name="RbFromSent.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="RbFromSent.Text" xml:space="preserve">
-    <value>Resume from last command sent</value>
+    <value>Continuar do último comando enviado</value>
   </data>
   <data name="&gt;&gt;RbFromSent.Name" xml:space="preserve">
     <value>RbFromSent</value>
   </data>
   <data name="&gt;&gt;RbFromSent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RbFromSent.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -598,7 +598,7 @@
     <value>True</value>
   </data>
   <data name="LblSent.Location" type="System.Drawing.Point, System.Drawing">
-    <value>384, 75</value>
+    <value>386, 75</value>
   </data>
   <data name="LblSent.Size" type="System.Drawing.Size, System.Drawing">
     <value>13, 13</value>
@@ -613,7 +613,7 @@
     <value>LblSent</value>
   </data>
   <data name="&gt;&gt;LblSent.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblSent.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -625,7 +625,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 90</value>
+    <value>5, 103</value>
   </data>
   <data name="tableLayoutPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -634,7 +634,7 @@
     <value>5</value>
   </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>474, 121</value>
+    <value>476, 126</value>
   </data>
   <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -643,7 +643,7 @@
     <value>tableLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -664,21 +664,22 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="LblBrief.Size" type="System.Drawing.Size, System.Drawing">
-    <value>476, 39</value>
+    <value>480, 52</value>
   </data>
   <data name="LblBrief.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="LblBrief.Text" xml:space="preserve">
-    <value>LaserGRBL can start this job again from beginning or try to resume from last known position.
-As it is not always possible to determine the best restart position we let you to take the final decision.
-Last speed, power and laser state are recovered automatically.</value>
+    <value>O GRBL pode iniciar este trabalho novamente desde o início ou tentar retomar a partir da última
+posição conhecida. Como nem sempre é possível determinar a melhor posição de reinício, deixamos
+que você tome a decisão final. A última velocidade, potência e estado do laser 
+são recuperados automaticamente.</value>
   </data>
   <data name="&gt;&gt;LblBrief.Name" xml:space="preserve">
     <value>LblBrief</value>
   </data>
   <data name="&gt;&gt;LblBrief.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblBrief.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -692,7 +693,7 @@ Last speed, power and laser state are recovered automatically.</value>
   <data name="PBWarn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAO6SURBVFhHxZbLT1NBFMbPQqNu
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAO6SURBVFhHxZbLT1NBFMbPQqNu
         lY3+B0aNUdfGFejeGBe4MhBcEhIeJTwC5VHe7zeFAqW2IiQsYAE0sbWViCRujAkxbmBh3AgqCbrQ6/dN
         esntZWhvjcXFL/feuTNzvjnnzJkRwzD+K9rGk0QqKyszoqKiQurq6mR2dvbU4OCga2BgoDIQCJxubm6W
         6upqqampkdraWsdIWVlZRpSWlkpVVZVMTEwU9PT07Hd3d+9PTk4Wud1uKSkpkeLiYvV0irS1tWVES0uL
@@ -727,7 +728,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>PBWarn</value>
   </data>
   <data name="&gt;&gt;PBWarn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PBWarn.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -763,13 +764,13 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>5</value>
   </data>
   <data name="LblCause.Text" xml:space="preserve">
-    <value>Cause:</value>
+    <value>Causa:</value>
   </data>
   <data name="&gt;&gt;LblCause.Name" xml:space="preserve">
     <value>LblCause</value>
   </data>
   <data name="&gt;&gt;LblCause.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblCause.Parent" xml:space="preserve">
     <value>tableLayoutPanel5</value>
@@ -802,7 +803,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>TxtCause</value>
   </data>
   <data name="&gt;&gt;TxtCause.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TxtCause.Parent" xml:space="preserve">
     <value>tableLayoutPanel5</value>
@@ -823,20 +824,20 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>2, 2, 2, 2</value>
   </data>
   <data name="LblDetected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 13</value>
+    <value>282, 13</value>
   </data>
   <data name="LblDetected.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="LblDetected.Text" xml:space="preserve">
-    <value>LaserGRBL detected last job was not completed!
+    <value>O GRBL detectou que o último trabalho não foi concluído!
 </value>
   </data>
   <data name="&gt;&gt;LblDetected.Name" xml:space="preserve">
     <value>LblDetected</value>
   </data>
   <data name="&gt;&gt;LblDetected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblDetected.Parent" xml:space="preserve">
     <value>tableLayoutPanel5</value>
@@ -854,7 +855,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>2</value>
   </data>
   <data name="tableLayoutPanel5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 34</value>
+    <value>442, 34</value>
   </data>
   <data name="tableLayoutPanel5.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -863,7 +864,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>tableLayoutPanel5</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel5.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -884,7 +885,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>3</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 216</value>
+    <value>484, 234</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -893,7 +894,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -914,7 +915,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 261</value>
+    <value>490, 279</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -923,7 +924,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -934,6 +935,9 @@ Last speed, power and laser state are recovered automatically.</value>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,100,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -944,7 +948,7 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>490, 261</value>
+    <value>490, 279</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
@@ -956,9 +960,6 @@ Last speed, power and laser state are recovered automatically.</value>
     <value>ResumeJobForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
