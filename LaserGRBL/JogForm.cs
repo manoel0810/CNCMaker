@@ -5,11 +5,12 @@
 // You should have received a copy of the GPLv3 General Public License  along with this program; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,  USA. using System;
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace LaserGRBL
 {
-    public partial class JogForm : System.Windows.Forms.UserControl
+    public partial class JogForm : UserControl
     {
         GrblCore Core;
 
@@ -104,9 +105,29 @@ namespace LaserGRBL
             }
         }
 
+        private void JogForm_Load(object sender, EventArgs e)
+        {
+            foreach (Control c in tlp.Controls)
+            {
+                if (c is DirectionButton directionButton)
+                {
+                    directionButton.MouseEnter += (senderObj, eventarg) =>
+                    {
+                        var button = (DirectionButton)senderObj;
+                        button.BackColor = SystemColors.ButtonFace;
+                    };
+
+                    directionButton.MouseLeave += (senderObj, eventarg) =>
+                    {
+                        var button = (DirectionButton)senderObj;
+                        button.BackColor = Color.Transparent;
+                    };
+                }
+            }
+        }
     }
 
-    public class StepBar : System.Windows.Forms.TrackBar
+    public class StepBar : TrackBar
     {
         decimal[] values = { 0.1M, 0.2M, 0.5M, 1, 2, 5, 10, 20, 50, 100, 200 };
 
