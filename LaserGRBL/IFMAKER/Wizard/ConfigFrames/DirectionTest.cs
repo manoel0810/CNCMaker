@@ -101,11 +101,11 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
             foreach (string s in Config)
                 if (s.Contains("$3="))
                 {
-                    int i = 0;
-                    string mask = s.Substring(3);
+                    int j = 2;
+                    string mask = GetMask(int.Parse(s.Substring(3)));
                     bool[] parahm = new bool[] { false, false, false };
-                    foreach (char c in mask)
-                        parahm[i++] = c == '1';
+                    for (int i = 7; i > 4; i--)
+                        parahm[j--] = mask[i] == '1';
 
                     Cb_InvertedZ.Checked = parahm[0];
                     Cb_InvertedY.Checked = parahm[1];
@@ -121,7 +121,7 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
 
             List<GrblConfST.GrblConfParam> config = new List<GrblConfST.GrblConfParam>
             {
-                new GrblConfST.GrblConfParam(3, mask)
+                new GrblConfST.GrblConfParam(3, BinaryToInt(mask).ToString())
             };
 
             mCore.WriteConfig(config);
@@ -131,6 +131,19 @@ namespace LaserGRBL.IFMAKER.Wizard.ConfigFrames
         {
             Config = newops;
             LoadConfiguration();
+        }
+
+        public string GetMask(int n)
+        {
+            string Binary = Convert.ToString(n, 2);
+            Binary = Binary.PadLeft(8, '0');
+            return Binary;
+        }
+
+        public int BinaryToInt(string binaryString)
+        {
+            int result = Convert.ToInt32(binaryString, 2);
+            return result;
         }
     }
 }
