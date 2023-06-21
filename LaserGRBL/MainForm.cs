@@ -81,8 +81,10 @@ namespace LaserGRBL
             JogForm.SetCore(Core);
 
             GitHub.NewVersion += GitHub_NewVersion;
+            if(Settings.GetObject("User Language", "pt-BR") != "pt-BR")
+                SetLanguage(new System.Globalization.CultureInfo("pt-BR"));
 
-            ColorScheme.CurrentScheme = Settings.GetObject("Color Schema", ColorScheme.Scheme.BlueLaser); ;
+            ColorScheme.CurrentScheme = Settings.GetObject("Color Schema", ColorScheme.Scheme.IFPB); ;
             RefreshColorSchema(); //include RefreshOverride();
             RefreshFormTitle();
         }
@@ -162,6 +164,8 @@ namespace LaserGRBL
             //Removendo acessos desnecessários
             donateToolStripMenuItem.Visible = false;
             facebookCommunityToolStripMenuItem.Visible = false;
+            linguaToolStripMenuItem.Visible = false;
+            schemaToolStripMenuItem.Visible = false;
         }
 
         private void ManageCommandLineArgs(string[] args)
@@ -1011,6 +1015,7 @@ namespace LaserGRBL
         {
             SetSchema(ColorScheme.Scheme.IFPB);
         }
+
     }
 
 

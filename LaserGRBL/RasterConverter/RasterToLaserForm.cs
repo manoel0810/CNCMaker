@@ -170,7 +170,7 @@ namespace LaserGRBL.RasterConverter
         void BtnCreateClick(object sender, EventArgs e)
         {
             if (IP.SelectedTool == ImageProcessor.Tool.Vectorize && GrblFile.TimeConsumingFilling(IP.FillingDirection) && IP.FillingQuality > 2
-            && MessageBox.Show(this, $"Using {GrblCore.TranslateEnum(IP.FillingDirection)} with quality > 2 line/mm could be very time consuming with big image. Continue?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != DialogResult.OK)
+            && MessageBox.Show(this, $"Usando {GrblCore.TranslateEnum(IP.FillingDirection)} com qualidade > 2 linhas/mm pode levar muito tempo para grandes imagens. Continue?", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != DialogResult.OK)
                 return;
 
             if (RbVectorize.Checked == false)
@@ -179,7 +179,7 @@ namespace LaserGRBL.RasterConverter
 
             if (RbVectorize.Checked)
             {
-                if (DialogResult.Yes == MessageBox.Show("Definir as cotas de profundidade (eixo Z) para a peça?", "Cotas de paças", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                if (DialogResult.Yes == MessageBox.Show("Definir as cotas de profundidade (eixo Z) para a peça?", "Cotas de peças", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {
                     IFMAKER.ZSettings Z = new IFMAKER.ZSettings();
                     Z.ShowDialog();

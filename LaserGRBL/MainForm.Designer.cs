@@ -87,6 +87,7 @@
             this.darkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hackerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nightyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.IFPBScheme = new System.Windows.Forms.ToolStripMenuItem();
             this.linguaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MNEnglish = new System.Windows.Forms.ToolStripMenuItem();
             this.MNItalian = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,7 +111,6 @@
             this.installCH340DriverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flashGrblFirmwareToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.configurationWizardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MnOrtur = new System.Windows.Forms.ToolStripMenuItem();
             this.orturSupportGroupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.orturSupportAndFeedbackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -143,7 +143,6 @@
             this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             this.JogForm = new LaserGRBL.JogForm();
             this.PreviewForm = new LaserGRBL.PreviewForm();
-            this.IFPBScheme = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -566,6 +565,12 @@
             resources.ApplyResources(this.nightyToolStripMenuItem, "nightyToolStripMenuItem");
             this.nightyToolStripMenuItem.Click += new System.EventHandler(this.NightyToolStripMenuItem_Click);
             // 
+            // IFPBScheme
+            // 
+            this.IFPBScheme.Name = "IFPBScheme";
+            resources.ApplyResources(this.IFPBScheme, "IFPBScheme");
+            this.IFPBScheme.Click += new System.EventHandler(this.IFPBScheme_Click);
+            // 
             // linguaToolStripMenuItem
             // 
             this.linguaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -703,8 +708,7 @@
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.installCH340DriverToolStripMenuItem,
             this.flashGrblFirmwareToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.configurationWizardToolStripMenuItem});
+            this.toolStripSeparator3});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
             resources.ApplyResources(this.toolsToolStripMenuItem, "toolsToolStripMenuItem");
             this.toolsToolStripMenuItem.DropDownOpening += new System.EventHandler(this.ToolsToolStripMenuItem_DropDownOpening);
@@ -725,11 +729,6 @@
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            // 
-            // configurationWizardToolStripMenuItem
-            // 
-            resources.ApplyResources(this.configurationWizardToolStripMenuItem, "configurationWizardToolStripMenuItem");
-            this.configurationWizardToolStripMenuItem.Name = "configurationWizardToolStripMenuItem";
             // 
             // MnOrtur
             // 
@@ -942,12 +941,6 @@
             resources.ApplyResources(this.PreviewForm, "PreviewForm");
             this.PreviewForm.Name = "PreviewForm";
             // 
-            // IFPBScheme
-            // 
-            this.IFPBScheme.Name = "IFPBScheme";
-            resources.ApplyResources(this.IFPBScheme, "IFPBScheme");
-            this.IFPBScheme.Click += new System.EventHandler(this.IFPBScheme_Click);
-            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -1050,7 +1043,6 @@
 		private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem flashGrblFirmwareToolStripMenuItem;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-		private System.Windows.Forms.ToolStripMenuItem configurationWizardToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem installCH340DriverToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem activateExtendedLogToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nightyToolStripMenuItem;
