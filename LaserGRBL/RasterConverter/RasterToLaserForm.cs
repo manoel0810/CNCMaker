@@ -173,11 +173,11 @@ namespace LaserGRBL.RasterConverter
             && MessageBox.Show(this, $"Usando {GrblCore.TranslateEnum(IP.FillingDirection)} com qualidade > 2 linhas/mm pode levar muito tempo para grandes imagens. Continue?", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button2) != DialogResult.OK)
                 return;
 
-            if (RbVectorize.Checked == false)
-                if (MessageBox.Show("Atenção. Você não escolheu a opção de vetor. Nessas condições, não existe compatibilidade com fresas e controle do eixo Z. Deseja continuar?", "Modo de operação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+            if (RbVectorize.Checked == false && RbCenterline.Checked == false)
+                if (MessageBox.Show("Atenção. Você não escolheu a opção de vetor ou centerline. Nessas condições, não existe compatibilidade com fresas e controle do eixo Z. Deseja continuar?", "Modo de operação", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
                     return;
 
-            if (RbVectorize.Checked)
+            if (RbVectorize.Checked || RbCenterline.Checked)
             {
                 if (DialogResult.Yes == MessageBox.Show("Definir as cotas de profundidade (eixo Z) para a peça?", "Cotas de peças", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                 {

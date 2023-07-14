@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace LaserGRBL
@@ -1060,24 +1061,106 @@ namespace LaserGRBL
             }
             catch (Exception ex) { Logger.LogException("Centerline", ex); }
 
-            SvgConverter.GCodeFromSVG converter = new SvgConverter.GCodeFromSVG();
-            converter.GCodeXYFeed = Settings.GetObject("GrayScaleConversion.VectorizeOptions.BorderSpeed", 1000);
-            converter.SvgScaleApply = true;
-            converter.SvgMaxSize = (float)Math.Max(bmp.Width / 10.0, bmp.Height / 10.0);
+            SvgConverter.GCodeFromSVG converter = new SvgConverter.GCodeFromSVG
+            {
+                GCodeXYFeed = Settings.GetObject("GrayScaleConversion.VectorizeOptions.BorderSpeed", 1000),
+                SvgScaleApply = true,
+                SvgMaxSize = (float)Math.Max(bmp.Width / 10.0, bmp.Height / 10.0)
+            };
+
             converter.UserOffset.X = Settings.GetObject("GrayScaleConversion.Gcode.Offset.X", 0F);
             converter.UserOffset.Y = Settings.GetObject("GrayScaleConversion.Gcode.Offset.Y", 0F);
             converter.UseLegacyBezier = !Settings.GetObject($"Vector.UseSmartBezier", true);
 
-            string gcode = converter.convertFromText(content, core);
-            string[] lines = gcode.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-            foreach (string l in lines)
+            //Configurações originais para a centerLine
+            if (IFMAKER.ZSettings.USE_COTE_Z == false)
             {
-                string line = l;
-                if ((line = line.Trim()).Length > 0)
+                string gcode = converter.convertFromText(content, core);
+                string[] lines = gcode.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                foreach (string l in lines)
                 {
-                    GrblCommand cmd = new GrblCommand(line);
-                    if (!cmd.IsEmpty)
-                        list.Add(cmd);
+                    string line = l;
+                    if ((line = line.Trim()).Length > 0)
+                    {
+                        GrblCommand cmd = new GrblCommand(line);
+                        if (!cmd.IsEmpty)
+                            list.Add(cmd);
+                    }
+                }
+            }
+            else //Configurações especiais
+            {
+                if (!IFMAKER.ZSettings.MULTI_LAYERS_ENABLE)
+                {
+                    string gcode = converter.convertFromText(content, core);
+                    gcode = Regex.Replace(gcode, @"S1000 \([^)]*\)\r\n", $"S1000 (L)\r\nG0 Z-{IFMAKER.ZSettings.Z_COTE.ToString().Replace(",", ".")}\r\n");
+                    //gcode.Replace("S1000 (L)\r\n", $"S1000 (L)\r\nG0 Z-{IFMAKER.ZSettings.Z_COTE.ToString().Replace(",", ".")}\r\n");
+                    gcode = gcode.Replace("S0 (Stop Path)\r\n", "S0 (Stop Path)\r\nG0 Z2\r\n");
+
+                    string[] lines = gcode.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string l in lines)
+                    {
+                        string line = l;
+                        if ((line = line.Trim()).Length > 0)
+                        {
+                            GrblCommand cmd = new GrblCommand(line);
+                            if (!cmd.IsEmpty)
+                                list.Add(cmd);
+                        }
+                    }
+                }
+                else
+                {
+                    List<string> Passos = new List<string>();
+                    string gcode = converter.convertFromText(content, core);
+
+                    for (int i = 0; i < IFMAKER.ZSettings.LAYERS_COUNT; i++)
+                    {
+                        if (i == 0)
+                        {
+                            string code = gcode;
+                            code = Regex.Replace(code, @"S1000 \([^)]*\)\r\n", $"S1000 (L)\r\nG0 Z-{(IFMAKER.ZSettings.LAYERS_COTE * (i + 1)).ToString().Replace(",", ".")}\r\n");
+                            //code = code.Replace("S1000 (L)\r\n", $"S1000 (L)\r\nG0 Z-{(IFMAKER.ZSettings.LAYERS_COTE * (i + 1)).ToString().Replace(",", ".")}\r\n");
+                            code = code.Replace("S0 (Stop Path)\r\n", "S0 (Stop Path)\r\nG0 Z2\r\n");
+                            code = code.Replace("S0 (End path)\r\nM5 S0\r\n", "S0\r\n");
+                            Passos.Add(code);
+                        }
+                        else if (i > 0 && i < IFMAKER.ZSettings.LAYERS_COUNT - 1)
+                        {
+                            string code = gcode;
+                            code = code.Replace("M3 S0\r\nS0 (M)\r\n", "");
+                            code = Regex.Replace(code, @"S1000 \([^)]*\)\r\n", $"S1000 (L)\r\nG0 Z-{(IFMAKER.ZSettings.LAYERS_COTE * (i + 1)).ToString().Replace(",", ".")}\r\n");
+                            //code = code.Replace("S1000 (L)\r\n", $"S1000 (L)\r\nG0 Z-{(IFMAKER.ZSettings.LAYERS_COTE * (i + 1)).ToString().Replace(",", ".")}\r\n");
+                            code = code.Replace("S0 (Stop Path)\r\n", "S0 (Stop Path)\r\nG0 Z2\r\n");
+                            code = code.Replace("S0 (End path)\r\nM5 S0\r\n", "S0\r\n");
+                            Passos.Add(code);
+                        }
+                        else if (i == IFMAKER.ZSettings.LAYERS_COUNT - 1)
+                        {
+                            string code = gcode;
+                            code = code.Replace("M3 S0\r\nS0 (M)\r\n", "");
+                            code = Regex.Replace(code, @"S1000 \([^)]*\)\r\n", $"S1000 (L)\r\nG0 Z-{(IFMAKER.ZSettings.LAYERS_COTE * (i + 1)).ToString().Replace(",", ".")}\r\n");
+                            //code = code.Replace("S1000 (L)\r\n", $"S1000 (L)\r\nG0 Z-{(IFMAKER.ZSettings.LAYERS_COTE * (i + 1)).ToString().Replace(",", ".")}\r\n");
+                            code = code.Replace("S0 (Stop Path)\r\n", "S0 (Stop Path)\r\nG0 Z2\r\n");
+                            Passos.Add(code);
+                        }
+                    }
+
+                    string fullGcode = string.Empty;
+                    foreach (string s in Passos)
+                        fullGcode += s;
+
+                    string[] lines = fullGcode.Split(Environment.NewLine.ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
+                    foreach (string l in lines)
+                    {
+                        string line = l;
+                        if ((line = line.Trim()).Length > 0)
+                        {
+                            GrblCommand cmd = new GrblCommand(line);
+                            if (!cmd.IsEmpty)
+                                list.Add(cmd);
+                        }
+                    }
                 }
             }
 

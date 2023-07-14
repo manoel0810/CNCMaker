@@ -45,7 +45,8 @@ namespace LaserGRBL.IFMAKER
                 MULTI_LAYERS_ENABLE = true;
                 LAYERS_COTE = (double)(Profundidade.Value / NunCamadas.Value);
                 LAYERS_COUNT = (int)NunCamadas.Value;
-            }
+            }else
+                MULTI_LAYERS_ENABLE = false;
 
             ExitResult = DialogResult.OK;
             Close();

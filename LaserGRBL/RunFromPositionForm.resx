@@ -117,11 +117,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="tableLayoutPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
   </data>
@@ -140,7 +140,7 @@
   <data name="BtnOK.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BtnOK.Location" type="System.Drawing.Point, System.Drawing">
     <value>435, 3</value>
   </data>
@@ -157,7 +157,7 @@
     <value>BtnOK</value>
   </data>
   <data name="&gt;&gt;BtnOK.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BtnOK.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -178,13 +178,13 @@
     <value>15</value>
   </data>
   <data name="BtnCancel.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Cancelar</value>
   </data>
   <data name="&gt;&gt;BtnCancel.Name" xml:space="preserve">
     <value>BtnCancel</value>
   </data>
   <data name="&gt;&gt;BtnCancel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BtnCancel.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -202,19 +202,19 @@
     <value>3, 13</value>
   </data>
   <data name="CbRedoHoming.Size" type="System.Drawing.Size, System.Drawing">
-    <value>102, 17</value>
+    <value>130, 17</value>
   </data>
   <data name="CbRedoHoming.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
   <data name="CbRedoHoming.Text" xml:space="preserve">
-    <value>Do Homing [$H]</value>
+    <value>Executar Homing [$H]</value>
   </data>
   <data name="&gt;&gt;CbRedoHoming.Name" xml:space="preserve">
     <value>CbRedoHoming</value>
   </data>
   <data name="&gt;&gt;CbRedoHoming.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CbRedoHoming.Parent" xml:space="preserve">
     <value>tableLayoutPanel2</value>
@@ -226,7 +226,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 106</value>
+    <value>3, 116</value>
   </data>
   <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
     <value>1</value>
@@ -241,7 +241,7 @@
     <value>tableLayoutPanel2</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -295,7 +295,7 @@
     <value>5</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>Line #</value>
+    <value>Linha #</value>
   </data>
   <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -304,7 +304,7 @@
     <value>label2</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -319,22 +319,22 @@
     <value>True</value>
   </data>
   <data name="RbFromSpecific.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 26</value>
+    <value>4, 28</value>
   </data>
   <data name="RbFromSpecific.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 17</value>
+    <value>145, 17</value>
   </data>
   <data name="RbFromSpecific.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="RbFromSpecific.Text" xml:space="preserve">
-    <value>Run from specific line</value>
+    <value>Executar a partir da linha:</value>
   </data>
   <data name="&gt;&gt;RbFromSpecific.Name" xml:space="preserve">
     <value>RbFromSpecific</value>
   </data>
   <data name="&gt;&gt;RbFromSpecific.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;RbFromSpecific.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -364,7 +364,7 @@
     <value>4</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Options</value>
+    <value>Opções</value>
   </data>
   <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -373,7 +373,7 @@
     <value>label1</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -385,7 +385,7 @@
     <value>Left</value>
   </data>
   <data name="UdSpecific.Location" type="System.Drawing.Point, System.Drawing">
-    <value>412, 25</value>
+    <value>412, 26</value>
   </data>
   <data name="UdSpecific.Size" type="System.Drawing.Size, System.Drawing">
     <value>86, 20</value>
@@ -397,7 +397,7 @@
     <value>UdSpecific</value>
   </data>
   <data name="&gt;&gt;UdSpecific.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UdSpecific.Parent" xml:space="preserve">
     <value>tableLayoutPanel4</value>
@@ -409,7 +409,7 @@
     <value>Fill</value>
   </data>
   <data name="tableLayoutPanel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 43</value>
+    <value>5, 50</value>
   </data>
   <data name="tableLayoutPanel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>5, 5, 5, 5</value>
@@ -418,7 +418,7 @@
     <value>2</value>
   </data>
   <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>502, 49</value>
+    <value>502, 52</value>
   </data>
   <data name="tableLayoutPanel4.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -427,7 +427,7 @@
     <value>tableLayoutPanel4</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel4.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -448,20 +448,21 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="LblBrief.Size" type="System.Drawing.Size, System.Drawing">
-    <value>450, 26</value>
+    <value>450, 39</value>
   </data>
   <data name="LblBrief.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="LblBrief.Text" xml:space="preserve">
-    <value>This feature allow to run your job starting from a specific line, skipping any previous movement.
-LaserGRBL compute the exact position and state and put the engraver in the correct state.</value>
+    <value>Este recurso permite executar seu trabalho a partir de uma linha específica, pulando qualquer 
+movimento anterior. O software calcula a posição e o estado exatos e coloca o gravador no
+estado correto.</value>
   </data>
   <data name="&gt;&gt;LblBrief.Name" xml:space="preserve">
     <value>LblBrief</value>
   </data>
   <data name="&gt;&gt;LblBrief.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LblBrief.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -475,7 +476,7 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
   <data name="PBWarn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1
-        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxMAAAsTAQCanBgAAAO6SURBVFhHxZbLT1NBFMbPQqNu
+        MAAA6mAAADqYAAAXb5JfxUYAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAO6SURBVFhHxZbLT1NBFMbPQqNu
         lY3+B0aNUdfGFejeGBe4MhBcEhIeJTwC5VHe7zeFAqW2IiQsYAE0sbWViCRujAkxbmBh3AgqCbrQ6/dN
         esntZWhvjcXFL/feuTNzvjnnzJkRwzD+K9rGk0QqKyszoqKiQurq6mR2dvbU4OCga2BgoDIQCJxubm6W
         6upqqampkdraWsdIWVlZRpSWlkpVVZVMTEwU9PT07Hd3d+9PTk4Wud1uKSkpkeLiYvV0irS1tWVES0uL
@@ -495,7 +496,7 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
 </value>
   </data>
   <data name="PBWarn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>3, 6</value>
   </data>
   <data name="PBWarn.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 32</value>
@@ -510,7 +511,7 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
     <value>PBWarn</value>
   </data>
   <data name="&gt;&gt;PBWarn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PBWarn.Parent" xml:space="preserve">
     <value>tableLayoutPanel3</value>
@@ -528,7 +529,7 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
     <value>2</value>
   </data>
   <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>512, 97</value>
+    <value>512, 107</value>
   </data>
   <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -537,7 +538,7 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
     <value>tableLayoutPanel3</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
     <value>tableLayoutPanel1</value>
@@ -558,7 +559,7 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
     <value>2</value>
   </data>
   <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>518, 142</value>
+    <value>518, 152</value>
   </data>
   <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -567,7 +568,7 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
     <value>tableLayoutPanel1</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -578,6 +579,9 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
     <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tableLayoutPanel2" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tableLayoutPanel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,100,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -588,21 +592,18 @@ LaserGRBL compute the exact position and state and put the engraver in the corre
     <value>GrowAndShrink</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>518, 142</value>
+    <value>518, 152</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Run From Position</value>
+    <value>Executar da posição</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>RunFromPositionForm</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
