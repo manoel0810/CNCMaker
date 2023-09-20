@@ -16,7 +16,7 @@
 
 
 ### Informações legais:
-### Este software possui seu código aberto, derivado do mencionado LaserGRBL, que se encontra sob [licença](https://github.com/arkypita/LaserGRBL/blob/master/LICENSE.md) no seu repositório original. Seguindo as derivações da licenciante, o repositório atual segue com a seguinte licença: GNU 3.0, disponível em: [LICENCE](https://github.com/manoel0810/CNCMaker/blob/master/LICENSE.md).
+### Este software possui seu código aberto, derivado do mencionado LaserGRBL, que se encontra sob [licença](https://github.com/arkypita/LaserGRBL/blob/master/LICENSE.md) no seu repositório original. Seguindo as derivações da licenciante, o repositório atual segue com a seguinte licença: GPL 3.0, disponível em: [LICENCE](https://github.com/manoel0810/CNCMaker/blob/master/LICENSE).
 
 
 ### Das observações gerais:
