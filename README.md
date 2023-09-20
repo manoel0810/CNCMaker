@@ -7,10 +7,10 @@
 * Correções de estabilidade geral no software.
 * Correção, tradução e re-traduções do software para o idioma Português Brasil.
 * Adição de suporte para máquinas de usinagem subtrativa (CNC Router).
-* Adição de verificações para segurança na operação dos esquipamentos.
-* Adicionado suporte à multicamadas de usinagem, que é essêncial para máquinas se manufatura subtrativa.
+* Adição de verificações para segurança na operação dos equipamentos.
+* Adicionado suporte à multicamadas de usinagem, que é essêncial para máquinas de manufatura subtrativa.
 * Readequação do layout do usuário, visando facilitar a disposição de controles e funções.
-* Remoção de atalhos, ferramentas configurações e campos desnecessários para o contexto e proposta do software na sua versão adaptada.
+* Remoção de atalhos, ferramentas, configurações e campos desnecessários para o contexto e proposta do software na sua versão adaptada.
 * Criado um sistema de configurações rápidas, para facilitar as configurações da controladora (Arduíno Uno). 
 * Adicionado sistema de calibragem de passos por interface intuitiva, visando tornar uma tarefa simples a calibração do passo dos motores.
 
