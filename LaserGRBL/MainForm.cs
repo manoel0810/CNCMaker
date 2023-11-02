@@ -4,6 +4,7 @@
 // This program is distributed in the hope that it will be useful, but  WITHOUT ANY WARRANTY; without even the implied warranty of  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GPLv3  General Public License for more details.
 // You should have received a copy of the GPLv3 General Public License  along with this program; if not, write to the Free Software  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307,  USA. using System;
 
+using LaserGRBL.IFMAKER;
 using LaserGRBL.IFMAKER.Wizard;
 using LaserGRBL.WiFiConfigurator;
 using System;
@@ -81,7 +82,7 @@ namespace LaserGRBL
             JogForm.SetCore(Core);
 
             GitHub.NewVersion += GitHub_NewVersion;
-            if(Settings.GetObject("User Language", "pt-BR") != "pt-BR")
+            if (Settings.GetObject("User Language", "pt-BR") != "pt-BR")
                 SetLanguage(new System.Globalization.CultureInfo("pt-BR"));
 
             ColorScheme.CurrentScheme = Settings.GetObject("Color Schema", ColorScheme.Scheme.IFPB); ;
@@ -406,7 +407,7 @@ namespace LaserGRBL
 
         private void RefreshFormTitle()
         {
-            string FormTitle = string.Format("CNC v.b. {0} - IFPB", Program.CurrentVersion.ToString(3));
+            string FormTitle = string.Format("Mandacaru Tech {0}", Program.CurrentVersion.ToString(3));
 
             if (Core.Type != Firmware.Grbl)
                 FormTitle += $" (for {Core.Type})";
@@ -1016,6 +1017,22 @@ namespace LaserGRBL
             SetSchema(ColorScheme.Scheme.IFPB);
         }
 
+        private void ShowModeOptions()
+        {
+            InitMode initMode = new InitMode();
+            initMode.ShowDialog();
+            initMode?.Dispose();
+        }
+
+        private void MainForm_Shown(object sender, EventArgs e)
+        {
+            ShowModeOptions();
+        }
+
+        private void ModoDeOperaçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ShowModeOptions();
+        }
     }
 
 

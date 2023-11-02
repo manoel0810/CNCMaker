@@ -911,8 +911,8 @@ namespace LaserGRBL
         public string formatnumber(double number)
         { return number.ToString("0.###", System.Globalization.CultureInfo.InvariantCulture); }
 
-        private static bool IsEven(int value)
-        { return value % 2 == 0; }
+            private static bool IsEven(int value)
+            { return value % 2 == 0; }
 
         public int Count
         { get { return list.Count; } }

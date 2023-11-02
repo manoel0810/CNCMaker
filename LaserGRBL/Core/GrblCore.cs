@@ -3522,7 +3522,6 @@ namespace LaserGRBL
     }
 
 
-
     [Serializable, Obsolete]
     public class GrblConf : IEnumerable<KeyValuePair<int, decimal>>
     {

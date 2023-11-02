@@ -143,6 +143,7 @@
             this.ConnectionForm = new LaserGRBL.ConnectLogForm();
             this.JogForm = new LaserGRBL.JogForm();
             this.PreviewForm = new LaserGRBL.PreviewForm();
+            this.ModoDeOperaçãoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -298,7 +299,8 @@
             this.linguaToolStripMenuItem,
             this.toolsToolStripMenuItem,
             this.MnOrtur,
-            this.questionMarkToolStripMenuItem});
+            this.questionMarkToolStripMenuItem,
+            this.ModoDeOperaçãoToolStripMenuItem});
             resources.ApplyResources(this.MMn, "MMn");
             this.MMn.Name = "MMn";
             // 
@@ -941,6 +943,12 @@
             resources.ApplyResources(this.PreviewForm, "PreviewForm");
             this.PreviewForm.Name = "PreviewForm";
             // 
+            // ModoDeOperaçãoToolStripMenuItem
+            // 
+            this.ModoDeOperaçãoToolStripMenuItem.Name = "ModoDeOperaçãoToolStripMenuItem";
+            resources.ApplyResources(this.ModoDeOperaçãoToolStripMenuItem, "ModoDeOperaçãoToolStripMenuItem");
+            this.ModoDeOperaçãoToolStripMenuItem.Click += new System.EventHandler(this.ModoDeOperaçãoToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AllowDrop = true;
@@ -954,6 +962,7 @@
             this.Name = "MainForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainFormFormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
+            this.Shown += new System.EventHandler(this.MainForm_Shown);
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.MainForm_DragEnter);
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -1084,6 +1093,7 @@
         private System.Windows.Forms.ToolStripMenuItem TooltipConfiguracoes;
         private System.Windows.Forms.ToolStripMenuItem GrblWizardSetup;
         private System.Windows.Forms.ToolStripMenuItem IFPBScheme;
+        private System.Windows.Forms.ToolStripMenuItem ModoDeOperaçãoToolStripMenuItem;
     }
 }
 
